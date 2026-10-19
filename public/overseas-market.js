@@ -1,3 +1,4 @@
+import {publicFetch as fetch} from './preview-client.js';
 // Overseas observations are a separately reviewed research snapshot, never a
 // replacement for the collector's signed TWSE/TPEx observations.
 export function validateOverseasData(data){
@@ -40,3 +41,4 @@ export async function loadMarketData(fetcher=fetch){
  try{const overseas=await fetcher('/overseas-market-data.json',{cache:'no-store'});if(!overseas.ok)throw Error();return mergeOverseasData(market,await overseas.json());}
  catch{return {...market,overseas:{unavailable:true}};}
 }
+
