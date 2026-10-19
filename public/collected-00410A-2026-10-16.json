@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00410A",
+  "sourceId": "sinopac.official.fund_equity",
+  "asOf": "2026-10-16",
+  "fundUnits": 182860000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 50000,
+      "weightPercent": 5.55
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 17000,
+      "weightPercent": 5.25
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "shares": 223000,
+      "weightPercent": 5.05
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 67000,
+      "weightPercent": 4.83
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 31000,
+      "weightPercent": 4.72
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科",
+      "shares": 67000,
+      "weightPercent": 4.47
+    },
+    {
+      "symbol": "3529",
+      "name": "力旺",
+      "shares": 33000,
+      "weightPercent": 4.16
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "shares": 277000,
+      "weightPercent": 3.9
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 39000,
+      "weightPercent": 3.61
+    },
+    {
+      "symbol": "1560",
+      "name": "中砂",
+      "shares": 89000,
+      "weightPercent": 3.57
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 17000,
+      "weightPercent": 3.32
+    },
+    {
+      "symbol": "3406",
+      "name": "玉晶光",
+      "shares": 66000,
+      "weightPercent": 3.29
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "shares": 28000,
+      "weightPercent": 3.27
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "shares": 11000,
+      "weightPercent": 3.23
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 13000,
+      "weightPercent": 3.08
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 112000,
+      "weightPercent": 2.86
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖",
+      "shares": 6000,
+      "weightPercent": 2.74
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 11000,
+      "weightPercent": 2.63
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩",
+      "shares": 56000,
+      "weightPercent": 2.57
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 40000,
+      "weightPercent": 2.49
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科",
+      "shares": 111000,
+      "weightPercent": 2.28
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 67000,
+      "weightPercent": 2.06
+    },
+    {
+      "symbol": "4749",
+      "name": "新應材",
+      "shares": 50000,
+      "weightPercent": 1.71
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 33000,
+      "weightPercent": 1.65
+    },
+    {
+      "symbol": "2301",
+      "name": "光寶科",
+      "shares": 111000,
+      "weightPercent": 1.35
+    },
+    {
+      "symbol": "1301",
+      "name": "台塑",
+      "shares": 333000,
+      "weightPercent": 1.25
+    },
+    {
+      "symbol": "2486",
+      "name": "一詮",
+      "shares": 111000,
+      "weightPercent": 1.1
+    },
+    {
+      "symbol": "1519",
+      "name": "華城",
+      "shares": 33000,
+      "weightPercent": 0.99
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 2179162810,
+    "stockAssetsTwd": null,
+    "validationMethod": "sinopac_equity_table",
+    "expectedRowCount": 28,
+    "announcementDate": null,
+    "pcfApplicableDate": "2026-10-19",
+    "uploadTimeDisplayed": null,
+    "scope": "官方完整股票表與畫面實際列數核對；五處基準日期一致，兩處基金資產、單位數及單位淨值核對。官網未提供股票資產合計，無法獨立核對權重加總；公開時間未知。",
+    "observedOn": "2026-10-16",
+    "captureSha256": "32904afbce9fbe4d0ba3ff1f23baf17c90015dcb0c049fa0602bd4cee273d182",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://sitc.sinopac.com/SinopacEtfs/Etfs/SinglePcf/00410A",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 28
+}

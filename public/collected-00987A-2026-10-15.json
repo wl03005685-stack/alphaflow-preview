@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00987A",
+  "sourceId": "taishin.official.fund_equity",
+  "asOf": "2026-10-15",
+  "fundUnits": 138143000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 90000,
+      "weightPercent": 9.8684
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 52000,
+      "weightPercent": 7.209
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 29000,
+      "weightPercent": 6.6724
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 116000,
+      "weightPercent": 5.6038
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 75000,
+      "weightPercent": 5.4768
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 18000,
+      "weightPercent": 5.4721
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 27000,
+      "weightPercent": 5.0535
+    },
+    {
+      "symbol": "3443",
+      "name": "創意",
+      "shares": 13000,
+      "weightPercent": 4.4808
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯 -KY",
+      "shares": 44000,
+      "weightPercent": 3.9842
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "shares": 29800,
+      "weightPercent": 3.5354
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達",
+      "shares": 36000,
+      "weightPercent": 3.4216
+    },
+    {
+      "symbol": "6510",
+      "name": "精測",
+      "shares": 25000,
+      "weightPercent": 3.2636
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電",
+      "shares": 60000,
+      "weightPercent": 3.2086
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科",
+      "shares": 52000,
+      "weightPercent": 3.0962
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 46000,
+      "weightPercent": 2.7803
+    },
+    {
+      "symbol": "8358",
+      "name": "金居",
+      "shares": 134000,
+      "weightPercent": 2.779
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "shares": 115000,
+      "weightPercent": 2.4987
+    },
+    {
+      "symbol": "4991",
+      "name": "環宇 -KY",
+      "shares": 122000,
+      "weightPercent": 2.4205
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 35000,
+      "weightPercent": 2.3907
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎 -KY",
+      "shares": 100000,
+      "weightPercent": 2.3323
+    },
+    {
+      "symbol": "3455",
+      "name": "由田",
+      "shares": 183000,
+      "weightPercent": 2.2122
+    },
+    {
+      "symbol": "3363",
+      "name": "上詮",
+      "shares": 92729,
+      "weightPercent": 2.1669
+    },
+    {
+      "symbol": "3529",
+      "name": "力旺",
+      "shares": 16000,
+      "weightPercent": 1.909
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴",
+      "shares": 8000,
+      "weightPercent": 1.8173
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 5000,
+      "weightPercent": 1.1909
+    },
+    {
+      "symbol": "7856",
+      "name": "漢測",
+      "shares": 6000,
+      "weightPercent": 0.8898
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊",
+      "shares": 300,
+      "weightPercent": 0.215
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 2225286555,
+    "stockAssetsTwd": null,
+    "equityWeightPercent": 95.9487,
+    "weightPrecision": 4,
+    "validationMethod": "taishin_equity_weight_total",
+    "expectedRowCount": 27,
+    "announcementDate": null,
+    "pcfApplicableDate": "2026-10-16",
+    "uploadTimeDisplayed": null,
+    "scope": "官方投資組合完整股票表；股票權重按四位小數與合計核對，基金資產與單位淨值核對。兩處申購價金基準日一致；清單適用日另存，公開時間未知。",
+    "observedOn": "2026-10-16",
+    "captureSha256": "b382d6272e6b2209d64e196aba0c2a5aa7374970a48a2f476e7707b80255a995",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.tsit.com.tw/ETF/Home/ETFSeriesDetail/00987A",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 27
+}

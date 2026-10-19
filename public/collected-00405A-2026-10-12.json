@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00405A",
+  "sourceId": "fubon.official.fund_equity",
+  "asOf": "2026-10-12",
+  "fundUnits": 2557245000,
+  "holdings": [
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 323000,
+      "weightPercent": 7.9785
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 1530000,
+      "weightPercent": 7.7374
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 1299000,
+      "weightPercent": 7.5375
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 260000,
+      "weightPercent": 7.5014
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 665000,
+      "weightPercent": 6.3106
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊",
+      "shares": 79300,
+      "weightPercent": 5.6543
+    },
+    {
+      "symbol": "3443",
+      "name": "創意",
+      "shares": 173000,
+      "weightPercent": 5.6466
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電",
+      "shares": 1127000,
+      "weightPercent": 5.6085
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 294000,
+      "weightPercent": 5.4792
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 212000,
+      "weightPercent": 5.2537
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "shares": 609000,
+      "weightPercent": 5.227
+    },
+    {
+      "symbol": "6531",
+      "name": "愛普*",
+      "shares": 1030000,
+      "weightPercent": 3.9305
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 278000,
+      "weightPercent": 3.7919
+    },
+    {
+      "symbol": "7769",
+      "name": "鴻勁",
+      "shares": 120000,
+      "weightPercent": 3.1382
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達",
+      "shares": 341000,
+      "weightPercent": 3.1191
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 306000,
+      "weightPercent": 2.1393
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖",
+      "shares": 50000,
+      "weightPercent": 2.1316
+    },
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 179000,
+      "weightPercent": 1.832
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 200000,
+      "weightPercent": 1.3861
+    },
+    {
+      "symbol": "6187",
+      "name": "萬潤",
+      "shares": 148000,
+      "weightPercent": 0.9989
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "shares": 99139,
+      "weightPercent": 0.9088
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "shares": 94000,
+      "weightPercent": 0.7196
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴",
+      "shares": 23000,
+      "weightPercent": 0.5584
+    },
+    {
+      "symbol": "6526",
+      "name": "達發",
+      "shares": 146000,
+      "weightPercent": 0.4606
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩",
+      "shares": 50000,
+      "weightPercent": 0.2135
+    },
+    {
+      "symbol": "5347",
+      "name": "世界",
+      "shares": 211000,
+      "weightPercent": 0.1538
+    },
+    {
+      "symbol": "6285",
+      "name": "啟碁",
+      "shares": 100000,
+      "weightPercent": 0.1061
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電子",
+      "shares": 42650,
+      "weightPercent": 0.0515
+    },
+    {
+      "symbol": "3264",
+      "name": "欣銓",
+      "shares": 34000,
+      "weightPercent": 0.0373
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "shares": 1000,
+      "weightPercent": 0.0295
+    },
+    {
+      "symbol": "8021",
+      "name": "尖點",
+      "shares": 10000,
+      "weightPercent": 0.0222
+    },
+    {
+      "symbol": "3661",
+      "name": "世芯-KY",
+      "shares": 1000,
+      "weightPercent": 0.0177
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 28000,
+      "weightPercent": 0.0164
+    },
+    {
+      "symbol": "2395",
+      "name": "研華",
+      "shares": 5000,
+      "weightPercent": 0.0145
+    },
+    {
+      "symbol": "6510",
+      "name": "精測",
+      "shares": 1000,
+      "weightPercent": 0.0137
+    },
+    {
+      "symbol": "6278",
+      "name": "台表科",
+      "shares": 10000,
+      "weightPercent": 0.0109
+    },
+    {
+      "symbol": "3450",
+      "name": "聯鈞",
+      "shares": 5000,
+      "weightPercent": 0.0104
+    },
+    {
+      "symbol": "6446",
+      "name": "藥華藥",
+      "shares": 2000,
+      "weightPercent": 0.0095
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 3000,
+      "weightPercent": 0.0092
+    },
+    {
+      "symbol": "3533",
+      "name": "嘉澤",
+      "shares": 1000,
+      "weightPercent": 0.0075
+    },
+    {
+      "symbol": "3605",
+      "name": "宏致",
+      "shares": 10000,
+      "weightPercent": 0.0072
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "shares": 5000,
+      "weightPercent": 0.0061
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科",
+      "shares": 1000,
+      "weightPercent": 0.0061
+    },
+    {
+      "symbol": "8150",
+      "name": "南茂",
+      "shares": 10000,
+      "weightPercent": 0.0049
+    },
+    {
+      "symbol": "1590",
+      "name": "亞德客-KY",
+      "shares": 1000,
+      "weightPercent": 0.0048
+    },
+    {
+      "symbol": "4576",
+      "name": "大銀微系統",
+      "shares": 2000,
+      "weightPercent": 0.0018
+    },
+    {
+      "symbol": "8028",
+      "name": "昇陽半導體",
+      "shares": 1000,
+      "weightPercent": 0.0011
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 24816433391,
+    "stockAssetsTwd": 23776092225,
+    "expectedRowCount": 47,
+    "scope": "基金資產頁完整股票表，逐股金額加總與官方股票合計一致；日期依頁面資料日期。",
+    "announcementDate": null,
+    "uploadTimeDisplayed": null,
+    "observedOn": "2026-10-12",
+    "captureSha256": "324966df4d1bda0b695805e0c6f35e8403d31dfd012b3022c461d3bfd4e398c6",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://websys.fsit.com.tw/FubonETF/Trade/Assets.aspx?lan=TW&stkId=00405A",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 47
+}

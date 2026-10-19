@@ -1,0 +1,1 @@
+{"name":"alphaflow-friends-preview","private":true,"type":"module","scripts":{"sync":"node scripts/sync-public-data.mjs","test":"node --test scripts/*.test.mjs"}}

@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00988A",
+  "sourceId": "ezmoney.official.fund_equity",
+  "asOf": "2026-09-10",
+  "fundUnits": 3211437000,
+  "observation": {
+    "netAssetsTwd": 51872480247,
+    "stockAssetsTwd": null,
+    "validationMethod": "issuer_equity_table",
+    "announcementDate": "2026-09-14",
+    "uploadTimeDisplayed": "115/09/11 16:50:24",
+    "scope": "現金申贖公告的整體基金股票表（不是每申購基數籃子）。日期依基金淨值基準日。保留完整股票表；歷史日期未另取得股票資產總額核對。",
+    "expectedRowCount": 42,
+    "observedOn": "2026-09-14",
+    "captureSha256": "d0d7fdd4140b01f8eb3a71c61d201008d54d1a1014dc729385727c44fff05674",
+    "corporateActions": "unknown"
+  },
+  "holdings": [
+    {
+      "symbol": "LITE US",
+      "name": "LUMENTUM HOLDINGS INC",
+      "shares": 117000,
+      "weightPercent": 6.66
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 2600000,
+      "weightPercent": 4.98
+    },
+    {
+      "symbol": "009150 KS",
+      "name": "Samsung Electro-Mechanics co(009150 ks)",
+      "shares": 70000,
+      "weightPercent": 4.4
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 400000,
+      "weightPercent": 4.14
+    },
+    {
+      "symbol": "SPCX US",
+      "name": "SPACE EXPLORATION TECHN-CL A",
+      "shares": 450000,
+      "weightPercent": 4.06
+    },
+    {
+      "symbol": "6981 JP",
+      "name": "MURATA MANUFACTURING CO LTD",
+      "shares": 1350000,
+      "weightPercent": 4.03
+    },
+    {
+      "symbol": "BE US",
+      "name": "BLOOM ENERGY CORP- A",
+      "shares": 250000,
+      "weightPercent": 3.93
+    },
+    {
+      "symbol": "MU US",
+      "name": "MICRON TECHNOLOGY INC",
+      "shares": 60000,
+      "weightPercent": 3.57
+    },
+    {
+      "symbol": "STX US",
+      "name": "SEAGATE TECHNOLOGY",
+      "shares": 60000,
+      "weightPercent": 3.15
+    },
+    {
+      "symbol": "PANW US",
+      "name": "PALO ALTO NETWORKS INC",
+      "shares": 150000,
+      "weightPercent": 3.09
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 440000,
+      "weightPercent": 2.93
+    },
+    {
+      "symbol": "MSFT US",
+      "name": "MICROSOFT CORP(微軟公司)",
+      "shares": 92000,
+      "weightPercent": 2.76
+    },
+    {
+      "symbol": "TSEM US",
+      "name": "TOWER SEMICONDUCTOR LTD",
+      "shares": 216825,
+      "weightPercent": 2.75
+    },
+    {
+      "symbol": "CRCL US",
+      "name": "CIRCLE INTERNET GROUP INC",
+      "shares": 480000,
+      "weightPercent": 2.64
+    },
+    {
+      "symbol": "SNOW US",
+      "name": "SNOWFLAKE INC-CLASS A(Snowflake公司)",
+      "shares": 130000,
+      "weightPercent": 2.61
+    },
+    {
+      "symbol": "285A JP",
+      "name": "KIOXIA HOLDINGS CORP",
+      "shares": 110000,
+      "weightPercent": 2.53
+    },
+    {
+      "symbol": "NVDA US",
+      "name": "NVIDIA CORP(輝達公司)",
+      "shares": 175000,
+      "weightPercent": 2.33
+    },
+    {
+      "symbol": "PLTR US",
+      "name": "PALANTIR TECHNOLOGIES INC-A",
+      "shares": 225000,
+      "weightPercent": 2.27
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 250000,
+      "weightPercent": 2.27
+    },
+    {
+      "symbol": "000660 KS",
+      "name": "SK HYNIX INC",
+      "shares": 25000,
+      "weightPercent": 2.1
+    },
+    {
+      "symbol": "HOOD US",
+      "name": "ROBINHOOD MARKETS INC - A",
+      "shares": 300120,
+      "weightPercent": 2.07
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 7000000,
+      "weightPercent": 1.92
+    },
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 400000,
+      "weightPercent": 1.89
+    },
+    {
+      "symbol": "NOW US",
+      "name": "SERVICENOW INC",
+      "shares": 230000,
+      "weightPercent": 1.84
+    },
+    {
+      "symbol": "INTC US",
+      "name": "INTEL CORP",
+      "shares": 300000,
+      "weightPercent": 1.83
+    },
+    {
+      "symbol": "4979",
+      "name": "華星光",
+      "shares": 1510000,
+      "weightPercent": 1.66
+    },
+    {
+      "symbol": "TER US",
+      "name": "TERADYNE INC",
+      "shares": 70000,
+      "weightPercent": 1.58
+    },
+    {
+      "symbol": "AMD US",
+      "name": "ADVANCED MICRO DEVICES.amd us(超微半導體公司)",
+      "shares": 50000,
+      "weightPercent": 1.53
+    },
+    {
+      "symbol": "992 HK",
+      "name": "LENOVO GROUP LTD",
+      "shares": 6000000,
+      "weightPercent": 1.5
+    },
+    {
+      "symbol": "3308 HK",
+      "name": "ZHONGJI INNOLIGHT CO LTD-H",
+      "shares": 170000,
+      "weightPercent": 1.48
+    },
+    {
+      "symbol": "300757 CH",
+      "name": "ROBOTECHNIK INTELLIGENT TE-A",
+      "shares": 249997,
+      "weightPercent": 1.45
+    },
+    {
+      "symbol": "6997 JP",
+      "name": "NIPPON CHEMI-CON CORP",
+      "shares": 1275100,
+      "weightPercent": 1.43
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴",
+      "shares": 100000,
+      "weightPercent": 1.39
+    },
+    {
+      "symbol": "NET US",
+      "name": "CLOUDFLARE INC - CLASS A",
+      "shares": 70000,
+      "weightPercent": 1.33
+    },
+    {
+      "symbol": "IFX GY",
+      "name": "INFINEON TECHNOLOGIES AG",
+      "shares": 300000,
+      "weightPercent": 1.19
+    },
+    {
+      "symbol": "SNDK US",
+      "name": "SANDISK CORP",
+      "shares": 10000,
+      "weightPercent": 1.03
+    },
+    {
+      "symbol": "5801 JP",
+      "name": "FURUKAWA ELECTRIC CO LTD",
+      "shares": 500000,
+      "weightPercent": 0.8
+    },
+    {
+      "symbol": "TWLO US",
+      "name": "TWILIO INC - A",
+      "shares": 55000,
+      "weightPercent": 0.77
+    },
+    {
+      "symbol": "AEM US",
+      "name": "AGNICO EAGLE MINES LTD",
+      "shares": 60000,
+      "weightPercent": 0.72
+    },
+    {
+      "symbol": "4180 JP",
+      "name": "APPIER GROUP INC",
+      "shares": 950000,
+      "weightPercent": 0.54
+    },
+    {
+      "symbol": "NTRA US",
+      "name": "NATERA INC",
+      "shares": 25000,
+      "weightPercent": 0.5
+    },
+    {
+      "symbol": "AIXA GY",
+      "name": "AIXTRON SE",
+      "shares": 170000,
+      "weightPercent": 0.44
+    }
+  ],
+  "sourceUrl": "https://www.ezmoney.com.tw/ETF/Transaction/PCF",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 42
+}

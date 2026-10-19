@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "funds": {
+    "00981A": {
+      "checkedAt": "2026-10-18T23:42:13.424Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00981A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00403A": {
+      "checkedAt": "2026-10-18T23:42:14.247Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00403A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00988A": {
+      "checkedAt": "2026-10-18T23:42:15.473Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-15",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00988A-2026-10-15.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00990A": {
+      "checkedAt": "2026-10-18T23:42:18.584Z",
+      "outcome": "failed",
+      "reason": "本次採集或資料驗證失敗，保留既有持股。",
+      "errorType": "Error",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00405A": {
+      "checkedAt": "2026-10-18T23:42:39.253Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00405A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00982A": {
+      "checkedAt": "2026-10-18T23:42:38.369Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00982A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00992A": {
+      "checkedAt": "2026-10-18T23:42:20.561Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00992A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00993A": {
+      "checkedAt": "2026-10-18T23:42:12.563Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00993A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00991A": {
+      "checkedAt": "2026-10-18T23:42:09.836Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00991A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00406A": {
+      "checkedAt": "2026-10-18T23:42:07.509Z",
+      "outcome": "failed",
+      "reason": "來源限制自動存取，未繞過限制。",
+      "errorType": "Error",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00984A": {
+      "checkedAt": "2026-10-18T23:42:07.508Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00984A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00995A": {
+      "checkedAt": "2026-10-18T23:42:04.520Z",
+      "outcome": "failed",
+      "reason": "來源限制自動存取，未繞過限制。",
+      "errorType": "Error",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00987A": {
+      "checkedAt": "2026-10-18T23:42:04.364Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00987A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00996A": {
+      "checkedAt": "2026-10-18T23:42:02.293Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00996A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00407A": {
+      "checkedAt": "2026-10-18T23:42:01.431Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00407A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00408A": {
+      "checkedAt": "2026-10-18T23:41:35.314Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00408A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00994A": {
+      "checkedAt": "2026-10-18T23:41:57.338Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00994A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    },
+    "00410A": {
+      "checkedAt": "2026-10-18T23:41:12.417Z",
+      "outcome": "no_new_data",
+      "latestOfficialAsOf": "2026-10-16",
+      "attempts": 1,
+      "reason": "完整持股與既有資料一致。",
+      "path": "/collected-00410A-2026-10-16.json",
+      "runId": "unattended-20261018234111150-dbdeeefc"
+    }
+  }
+}

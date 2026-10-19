@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00995A",
+  "sourceId": "ctbc.official.fund_equity",
+  "asOf": "2026-09-30",
+  "fundUnits": 270035000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台灣積體電路製造",
+      "shares": 174000,
+      "weightPercent": 9.03
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科技",
+      "shares": 74000,
+      "weightPercent": 7.6
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電子材料",
+      "shares": 72000,
+      "weightPercent": 7.42
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐科技",
+      "shares": 80000,
+      "weightPercent": 5.74
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎科技服務",
+      "shares": 128260,
+      "weightPercent": 5.6
+    },
+    {
+      "symbol": "8046",
+      "name": "南亞電路板",
+      "shares": 170000,
+      "weightPercent": 4.76
+    },
+    {
+      "symbol": "3653",
+      "name": "健策精密工業",
+      "shares": 33000,
+      "weightPercent": 4.69
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯控股",
+      "shares": 81000,
+      "weightPercent": 4.39
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電子工業",
+      "shares": 110000,
+      "weightPercent": 4.34
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽科技",
+      "shares": 38000,
+      "weightPercent": 4.07
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊科技",
+      "shares": 8800,
+      "weightPercent": 3.45
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦科技",
+      "shares": 85000,
+      "weightPercent": 3.15
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投資控股",
+      "shares": 207000,
+      "weightPercent": 3.04
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興電子",
+      "shares": 110000,
+      "weightPercent": 2.7
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿科技",
+      "shares": 68000,
+      "weightPercent": 2.16
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨*",
+      "shares": 180000,
+      "weightPercent": 2.06
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴科技",
+      "shares": 14000,
+      "weightPercent": 1.73
+    },
+    {
+      "symbol": "3443",
+      "name": "創意電子",
+      "shares": 8000,
+      "weightPercent": 1.34
+    },
+    {
+      "symbol": "6510",
+      "name": "中華精測科技",
+      "shares": 20000,
+      "weightPercent": 1.28
+    },
+    {
+      "symbol": "7769",
+      "name": "鴻勁",
+      "shares": 11000,
+      "weightPercent": 1.26
+    },
+    {
+      "symbol": "2344",
+      "name": "華邦電子",
+      "shares": 332000,
+      "weightPercent": 1.24
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂電子",
+      "shares": 26000,
+      "weightPercent": 1.16
+    },
+    {
+      "symbol": "2455",
+      "name": "全新光電科技",
+      "shares": 101000,
+      "weightPercent": 1.16
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電子",
+      "shares": 170850,
+      "weightPercent": 1.05
+    },
+    {
+      "symbol": "2303",
+      "name": "聯華電子",
+      "shares": 320000,
+      "weightPercent": 1.03
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電子",
+      "shares": 38000,
+      "weightPercent": 0.89
+    },
+    {
+      "symbol": "3264",
+      "name": "欣銓科技",
+      "shares": 152000,
+      "weightPercent": 0.77
+    },
+    {
+      "symbol": "8210",
+      "name": "勤誠興業",
+      "shares": 43000,
+      "weightPercent": 0.75
+    },
+    {
+      "symbol": "2486",
+      "name": "一詮精密工業",
+      "shares": 150000,
+      "weightPercent": 0.75
+    },
+    {
+      "symbol": "8150",
+      "name": "南茂科技",
+      "shares": 280000,
+      "weightPercent": 0.67
+    },
+    {
+      "symbol": "8996",
+      "name": "高力熱處理工業",
+      "shares": 20000,
+      "weightPercent": 0.67
+    },
+    {
+      "symbol": "6213",
+      "name": "聯茂電子",
+      "shares": 50000,
+      "weightPercent": 0.65
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩科技",
+      "shares": 31000,
+      "weightPercent": 0.63
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎科技控股",
+      "shares": 59000,
+      "weightPercent": 0.62
+    },
+    {
+      "symbol": "5289",
+      "name": "宜鼎國際",
+      "shares": 22438,
+      "weightPercent": 0.6
+    },
+    {
+      "symbol": "1326",
+      "name": "台灣化學纖維",
+      "shares": 400000,
+      "weightPercent": 0.58
+    },
+    {
+      "symbol": "6187",
+      "name": "萬潤科技",
+      "shares": 20000,
+      "weightPercent": 0.55
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖科技",
+      "shares": 2000,
+      "weightPercent": 0.5
+    },
+    {
+      "symbol": "7750",
+      "name": "新代",
+      "shares": 12000,
+      "weightPercent": 0.48
+    },
+    {
+      "symbol": "3131",
+      "name": "弘塑科技",
+      "shares": 9000,
+      "weightPercent": 0.47
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達股份有限公司",
+      "shares": 9000,
+      "weightPercent": 0.46
+    },
+    {
+      "symbol": "3450",
+      "name": "聯鈞光電",
+      "shares": 40000,
+      "weightPercent": 0.44
+    },
+    {
+      "symbol": "6147",
+      "name": "頎邦科技",
+      "shares": 94000,
+      "weightPercent": 0.41
+    },
+    {
+      "symbol": "8358",
+      "name": "金居開發",
+      "shares": 35000,
+      "weightPercent": 0.36
+    },
+    {
+      "symbol": "1560",
+      "name": "中國砂輪企業",
+      "shares": 15000,
+      "weightPercent": 0.3
+    },
+    {
+      "symbol": "2467",
+      "name": "志聖工業",
+      "shares": 27000,
+      "weightPercent": 0.3
+    },
+    {
+      "symbol": "3211",
+      "name": "順達科技",
+      "shares": 30000,
+      "weightPercent": 0.25
+    },
+    {
+      "symbol": "6531",
+      "name": "愛普科技",
+      "shares": 13000,
+      "weightPercent": 0.25
+    },
+    {
+      "symbol": "3023",
+      "name": "信邦電子",
+      "shares": 28000,
+      "weightPercent": 0.18
+    },
+    {
+      "symbol": "2885",
+      "name": "元大金融控股",
+      "shares": 112720,
+      "weightPercent": 0.16
+    },
+    {
+      "symbol": "3044",
+      "name": "健鼎科技",
+      "shares": 10000,
+      "weightPercent": 0.11
+    },
+    {
+      "symbol": "6139",
+      "name": "亞翔工程",
+      "shares": 1000,
+      "weightPercent": 0.02
+    },
+    {
+      "symbol": "6438",
+      "name": "迅得機械",
+      "shares": 3000,
+      "weightPercent": 0.01
+    },
+    {
+      "symbol": "2472",
+      "name": "立隆電子工業",
+      "shares": 2000,
+      "weightPercent": 0.01
+    },
+    {
+      "symbol": "2313",
+      "name": "華通電腦",
+      "shares": 1000,
+      "weightPercent": 0
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 4789286506,
+    "stockAssetsTwd": null,
+    "equityWeightPercent": 98.29,
+    "validationMethod": "ctbc_equity_weight_total",
+    "expectedRowCount": 55,
+    "announcementDate": null,
+    "uploadTimeDisplayed": null,
+    "scope": "官方投資組合展開完整股票表；序號連續、逐股權重與股票合計及基金淨值核對。日期採基金資產資料日期；期貨、選擇權及保證金未混入股票。公開時間未知。",
+    "observedOn": "2026-10-03",
+    "captureSha256": "6960352efc92225712d72435640e7951bda69aafa24abff607b27af9fc9a976c",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.ctbcinvestments.com.tw/Etf/00653201/Combination",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 55
+}

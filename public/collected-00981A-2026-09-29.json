@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00981A",
+  "sourceId": "ezmoney.official.fund_equity",
+  "asOf": "2026-09-29",
+  "fundUnits": 9343709000,
+  "observation": {
+    "netAssetsTwd": 283731096362,
+    "stockAssetsTwd": null,
+    "validationMethod": "issuer_equity_table",
+    "announcementDate": "2026-09-30",
+    "uploadTimeDisplayed": "115/09/29 16:29:21",
+    "scope": "現金申贖公告的整體基金股票表（不是每申購基數籃子）。日期依基金淨值基準日。保留完整股票表；歷史日期未另取得股票資產總額核對。",
+    "expectedRowCount": 50,
+    "observedOn": "2026-09-29",
+    "captureSha256": "35eb526fc8a248166933e26f67a74ec97ffdd53528949daa4fd7a72a11fb13b8",
+    "corporateActions": "unknown"
+  },
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 11464000,
+      "weightPercent": 10
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 5086000,
+      "weightPercent": 8.8
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 20100000,
+      "weightPercent": 8.25
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 4650000,
+      "weightPercent": 8.06
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 5889000,
+      "weightPercent": 7.06
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 2502000,
+      "weightPercent": 6.08
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "shares": 7389000,
+      "weightPercent": 4.78
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨*",
+      "shares": 24757000,
+      "weightPercent": 4.78
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 87118000,
+      "weightPercent": 4.71
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 2499000,
+      "weightPercent": 4.57
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 8937000,
+      "weightPercent": 4
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "shares": 6264000,
+      "weightPercent": 4
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "shares": 4812561,
+      "weightPercent": 3.56
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 3876848,
+      "weightPercent": 3.34
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 6151000,
+      "weightPercent": 3.22
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 12966000,
+      "weightPercent": 3.14
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達",
+      "shares": 1673000,
+      "weightPercent": 1.48
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電子",
+      "shares": 12938450,
+      "weightPercent": 1.34
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊",
+      "shares": 168900,
+      "weightPercent": 1.15
+    },
+    {
+      "symbol": "3443",
+      "name": "創意",
+      "shares": 388000,
+      "weightPercent": 1.08
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電",
+      "shares": 2022000,
+      "weightPercent": 0.8
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 3483000,
+      "weightPercent": 0.61
+    },
+    {
+      "symbol": "3264",
+      "name": "欣銓",
+      "shares": 4982000,
+      "weightPercent": 0.42
+    },
+    {
+      "symbol": "8210",
+      "name": "勤誠",
+      "shares": 1139000,
+      "weightPercent": 0.35
+    },
+    {
+      "symbol": "6510",
+      "name": "精測",
+      "shares": 251000,
+      "weightPercent": 0.28
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 476000,
+      "weightPercent": 0.27
+    },
+    {
+      "symbol": "6278",
+      "name": "台表科",
+      "shares": 2674000,
+      "weightPercent": 0.2
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴",
+      "shares": 93000,
+      "weightPercent": 0.19
+    },
+    {
+      "symbol": "6271",
+      "name": "同欣電",
+      "shares": 2185000,
+      "weightPercent": 0.17
+    },
+    {
+      "symbol": "6191",
+      "name": "精成科",
+      "shares": 3921000,
+      "weightPercent": 0.11
+    },
+    {
+      "symbol": "3376",
+      "name": "新日興",
+      "shares": 1740000,
+      "weightPercent": 0.11
+    },
+    {
+      "symbol": "6187",
+      "name": "萬潤",
+      "shares": 121000,
+      "weightPercent": 0.06
+    },
+    {
+      "symbol": "2313",
+      "name": "華通",
+      "shares": 501000,
+      "weightPercent": 0.04
+    },
+    {
+      "symbol": "2002",
+      "name": "中鋼",
+      "shares": 5163000,
+      "weightPercent": 0.03
+    },
+    {
+      "symbol": "8358",
+      "name": "金居",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "3661",
+      "name": "世芯-KY",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2439",
+      "name": "美律",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "1590",
+      "name": "亞德客-KY",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "4979",
+      "name": "華星光",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2637",
+      "name": "慧洋-KY",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "6488",
+      "name": "環球晶",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "4966",
+      "name": "譜瑞-KY",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "8150",
+      "name": "南茂",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "5347",
+      "name": "世界",
+      "shares": 1000,
+      "weightPercent": 0
+    },
+    {
+      "symbol": "2481",
+      "name": "強茂",
+      "shares": 5000,
+      "weightPercent": 0
+    }
+  ],
+  "sourceUrl": "https://www.ezmoney.com.tw/ETF/Transaction/PCF",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 50
+}

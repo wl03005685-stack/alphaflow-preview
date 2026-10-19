@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00410A",
+  "sourceId": "sinopac.official.fund_equity",
+  "asOf": "2026-10-13",
+  "fundUnits": 153860000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 45000,
+      "weightPercent": 5.79
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 15000,
+      "weightPercent": 5.43
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 60000,
+      "weightPercent": 5.33
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "shares": 200000,
+      "weightPercent": 5.26
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 28000,
+      "weightPercent": 4.76
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科",
+      "shares": 60000,
+      "weightPercent": 4.49
+    },
+    {
+      "symbol": "3529",
+      "name": "力旺",
+      "shares": 30000,
+      "weightPercent": 4.36
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "shares": 250000,
+      "weightPercent": 4.13
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 35000,
+      "weightPercent": 4.1
+    },
+    {
+      "symbol": "1560",
+      "name": "中砂",
+      "shares": 80000,
+      "weightPercent": 3.94
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "shares": 10000,
+      "weightPercent": 3.77
+    },
+    {
+      "symbol": "3406",
+      "name": "玉晶光",
+      "shares": 60000,
+      "weightPercent": 3.65
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "shares": 25000,
+      "weightPercent": 3.53
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 15000,
+      "weightPercent": 3.51
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 12000,
+      "weightPercent": 3.45
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 10000,
+      "weightPercent": 3.08
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "shares": 25776,
+      "weightPercent": 2.93
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 100000,
+      "weightPercent": 2.86
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 36000,
+      "weightPercent": 2.68
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖",
+      "shares": 5000,
+      "weightPercent": 2.6
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科",
+      "shares": 100000,
+      "weightPercent": 2.53
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 60000,
+      "weightPercent": 2.3
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 30000,
+      "weightPercent": 1.83
+    },
+    {
+      "symbol": "4749",
+      "name": "新應材",
+      "shares": 45000,
+      "weightPercent": 1.7
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩",
+      "shares": 30000,
+      "weightPercent": 1.62
+    },
+    {
+      "symbol": "8358",
+      "name": "金居",
+      "shares": 60000,
+      "weightPercent": 1.53
+    },
+    {
+      "symbol": "2301",
+      "name": "光寶科",
+      "shares": 100000,
+      "weightPercent": 1.43
+    },
+    {
+      "symbol": "2486",
+      "name": "一詮",
+      "shares": 100000,
+      "weightPercent": 1.14
+    },
+    {
+      "symbol": "1519",
+      "name": "華城",
+      "shares": 9000,
+      "weightPercent": 0.31
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 1931369374,
+    "stockAssetsTwd": null,
+    "validationMethod": "sinopac_equity_table",
+    "expectedRowCount": 29,
+    "announcementDate": null,
+    "pcfApplicableDate": "2026-10-14",
+    "uploadTimeDisplayed": null,
+    "scope": "官方完整股票表與畫面實際列數核對；五處基準日期一致，兩處基金資產、單位數及單位淨值核對。官網未提供股票資產合計，無法獨立核對權重加總；公開時間未知。",
+    "observedOn": "2026-10-13",
+    "captureSha256": "09ebe6b76319e0a2eb652536b4f60346c336e866ab4e6ea0ba58ebeeaa3ddccd",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://sitc.sinopac.com/SinopacEtfs/Etfs/SinglePcf/00410A",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 29
+}

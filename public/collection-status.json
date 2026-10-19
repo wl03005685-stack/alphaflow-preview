@@ -1,0 +1,253 @@
+{
+  "scheduleStatus": "每日 21:30、23:30、05:30、06:30、07:20、07:40（台灣時間）· 已收到排程模式執行",
+  "description": "固定程式採集，不使用 AI 模型；各基金失敗與資料日期分別記錄。",
+  "lastSourceCheck": "2026-10-18T23:42:39.254Z",
+  "lastRunResult": "主機採集完成；發布結果由資料簽章與線上核對確認。",
+  "sources": {
+    "00981A": {
+      "lastObservedOn": "2026-10-18",
+      "latestSavedAsOf": "2026-10-16",
+      "result": "47 個完整持股資料日；完整持股與既有資料一致。"
+    },
+    "00990A": {
+      "lastObservedOn": "2026-10-12",
+      "latestSavedAsOf": "2026-10-08",
+      "result": "25 個完整持股資料日；本次採集或資料驗證失敗，保留既有持股。"
+    },
+    "00403A": {
+      "lastObservedOn": "2026-10-18",
+      "latestSavedAsOf": "2026-10-16",
+      "result": "42 個完整持股資料日；完整持股與既有資料一致。"
+    },
+    "00988A": {
+      "lastObservedOn": "2026-10-18",
+      "latestSavedAsOf": "2026-10-15",
+      "result": "41 個完整持股資料日；完整持股與既有資料一致。"
+    },
+    "00982A": {
+      "lastObservedOn": "2026-10-18",
+      "latestSavedAsOf": "2026-10-16",
+      "result": "27 個完整持股資料日；完整持股與既有資料一致。"
+    },
+    "00405A": {
+      "lastObservedOn": "2026-10-18",
+      "latestSavedAsOf": "2026-10-16",
+      "result": "27 個完整持股資料日；完整持股與既有資料一致。"
+    },
+    "00992A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "31 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00993A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "31 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00991A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "31 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00406A": {
+      "latestSavedAsOf": "2026-10-02",
+      "result": "4 個完整持股資料日；來源限制自動存取，未繞過限制。"
+    },
+    "00984A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "31 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00987A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "11 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00995A": {
+      "latestSavedAsOf": "2026-10-02",
+      "result": "3 個完整持股資料日；來源限制自動存取，未繞過限制。"
+    },
+    "00996A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "10 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00407A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "10 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00408A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "12 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00994A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "12 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    },
+    "00410A": {
+      "latestSavedAsOf": "2026-10-16",
+      "result": "10 個完整持股資料日；完整持股與既有資料一致。",
+      "lastObservedOn": "2026-10-18"
+    }
+  },
+  "schedulerLastTriggeredAt": "2026-10-18T23:41:11.155Z",
+  "schedulerNextRunAt": null,
+  "schedulerCheckedAt": "2026-10-18T23:41:11.155Z",
+  "marketRefresh": {
+    "startedAt": "2026-10-18T23:42:39.256Z",
+    "appendedRows": 0,
+    "updated": [],
+    "failed": [
+      {
+        "symbol": "6197",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6239",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6223",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6271",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6282",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6426",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6438",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6442",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6446",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6469",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6472",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6488",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6515",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6531",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6526",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6584",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6640",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6669",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6691",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6739",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6805",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "6944",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "7734",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "7750",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "7751",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8021",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "7856",
+        "message": "Unexpected official price date"
+      },
+      {
+        "symbol": "8028",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8150",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8210",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8358",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8415",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8436",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "8996",
+        "message": "Official price HTTP 428"
+      },
+      {
+        "symbol": "9802",
+        "message": "Official price HTTP 428"
+      }
+    ],
+    "deferred": [],
+    "historicalGaps": [],
+    "finishedAt": "2026-10-18T23:42:44.644Z"
+  },
+  "lastRunAt": "2026-10-18T23:41:11.155Z",
+  "lastRunMode": "scheduled",
+  "lastManualRunAt": "2026-10-04T23:24:23.292Z",
+  "lastScheduledRunAt": "2026-10-18T23:41:11.155Z"
+}

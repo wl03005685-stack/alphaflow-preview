@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00407A",
+  "sourceId": "kgi.official.fund_equity",
+  "asOf": "2026-10-16",
+  "fundUnits": 2177239000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 830000,
+      "weightPercent": 9.52
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 375000,
+      "weightPercent": 5.89
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 1097000,
+      "weightPercent": 5.67
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 225000,
+      "weightPercent": 5.51
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 269000,
+      "weightPercent": 5.42
+    },
+    {
+      "symbol": "3443",
+      "name": "創意電子",
+      "shares": 128000,
+      "weightPercent": 4.54
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 539000,
+      "weightPercent": 4.13
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 116000,
+      "weightPercent": 3.7
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "shares": 387644,
+      "weightPercent": 3.39
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 528000,
+      "weightPercent": 3.39
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 952000,
+      "weightPercent": 3.03
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 114000,
+      "weightPercent": 2.81
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 278000,
+      "weightPercent": 2.65
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "shares": 323000,
+      "weightPercent": 2.5
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨*",
+      "shares": 895000,
+      "weightPercent": 2.41
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "shares": 240000,
+      "weightPercent": 2.25
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖",
+      "shares": 40000,
+      "weightPercent": 1.89
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電",
+      "shares": 306000,
+      "weightPercent": 1.81
+    },
+    {
+      "symbol": "6187",
+      "name": "萬潤",
+      "shares": 255000,
+      "weightPercent": 1.7
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "shares": 52000,
+      "weightPercent": 1.58
+    },
+    {
+      "symbol": "2301",
+      "name": "光寶科",
+      "shares": 1160000,
+      "weightPercent": 1.45
+    },
+    {
+      "symbol": "6510",
+      "name": "精測",
+      "shares": 95000,
+      "weightPercent": 1.4
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "shares": 113000,
+      "weightPercent": 1.36
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 179000,
+      "weightPercent": 1.33
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊",
+      "shares": 16900,
+      "weightPercent": 1.32
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達",
+      "shares": 112000,
+      "weightPercent": 1.19
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 418000,
+      "weightPercent": 1.1
+    },
+    {
+      "symbol": "2615",
+      "name": "萬海",
+      "shares": 1850000,
+      "weightPercent": 1.07
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "shares": 695000,
+      "weightPercent": 1.01
+    },
+    {
+      "symbol": "1560",
+      "name": "中砂",
+      "shares": 243000,
+      "weightPercent": 1.01
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂",
+      "shares": 105000,
+      "weightPercent": 1
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科",
+      "shares": 135000,
+      "weightPercent": 0.93
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科",
+      "shares": 426000,
+      "weightPercent": 0.9
+    },
+    {
+      "symbol": "3034",
+      "name": "聯詠",
+      "shares": 302000,
+      "weightPercent": 0.83
+    },
+    {
+      "symbol": "3131",
+      "name": "弘塑",
+      "shares": 80000,
+      "weightPercent": 0.83
+    },
+    {
+      "symbol": "3231",
+      "name": "緯創",
+      "shares": 878000,
+      "weightPercent": 0.76
+    },
+    {
+      "symbol": "3293",
+      "name": "鈊象",
+      "shares": 171000,
+      "weightPercent": 0.64
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 878000,
+      "weightPercent": 0.55
+    },
+    {
+      "symbol": "3533",
+      "name": "嘉澤",
+      "shares": 54000,
+      "weightPercent": 0.46
+    },
+    {
+      "symbol": "6446",
+      "name": "藥華藥",
+      "shares": 59000,
+      "weightPercent": 0.35
+    },
+    {
+      "symbol": "2451",
+      "name": "創見",
+      "shares": 252000,
+      "weightPercent": 0.33
+    },
+    {
+      "symbol": "6531",
+      "name": "愛普*",
+      "shares": 77000,
+      "weightPercent": 0.32
+    },
+    {
+      "symbol": "5289",
+      "name": "宜鼎",
+      "shares": 55294,
+      "weightPercent": 0.31
+    },
+    {
+      "symbol": "3260",
+      "name": "威剛",
+      "shares": 176828,
+      "weightPercent": 0.3
+    },
+    {
+      "symbol": "8299",
+      "name": "群聯",
+      "shares": 34000,
+      "weightPercent": 0.3
+    },
+    {
+      "symbol": "2379",
+      "name": "瑞昱",
+      "shares": 69000,
+      "weightPercent": 0.25
+    },
+    {
+      "symbol": "3529",
+      "name": "力旺",
+      "shares": 18000,
+      "weightPercent": 0.23
+    },
+    {
+      "symbol": "5434",
+      "name": "崇越",
+      "shares": 83000,
+      "weightPercent": 0.23
+    },
+    {
+      "symbol": "2344",
+      "name": "華邦電",
+      "shares": 187000,
+      "weightPercent": 0.14
+    },
+    {
+      "symbol": "1590",
+      "name": "亞德客-KY",
+      "shares": 13000,
+      "weightPercent": 0.07
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 21100368730,
+    "stockAssetsTwd": 20211576210,
+    "expectedRowCount": 50,
+    "announcementDate": null,
+    "uploadTimeDisplayed": null,
+    "scope": "官方持股表逐次展開至無看更多；股票權重與資產總額、基金單位淨值核對。日期採持股比重日；公開時間未知。",
+    "observedOn": "2026-10-16",
+    "captureSha256": "03523bd67f9e7e55307bb8037fa1397a4a88a2526a53d589f836569102ce3958",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.kgifund.com.tw/Fund/Detail?fundID=J024",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 50
+}

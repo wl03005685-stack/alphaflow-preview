@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00988A",
+  "sourceId": "ezmoney.official.fund_equity",
+  "asOf": "2026-10-06",
+  "fundUnits": 3071937000,
+  "observation": {
+    "netAssetsTwd": 54599967280,
+    "stockAssetsTwd": null,
+    "validationMethod": "issuer_equity_table",
+    "announcementDate": "2026-10-08",
+    "uploadTimeDisplayed": "115/10/07 16:29:33",
+    "scope": "現金申贖公告的整體基金股票表（不是每申購基數籃子）。日期依基金淨值基準日。保留完整股票表；歷史日期未另取得股票資產總額核對。",
+    "expectedRowCount": 40,
+    "observedOn": "2026-10-07",
+    "captureSha256": "9a53cc16956a8ef7c68d61c7cef12d6cb21ff2a79c0d64a415ada4bb77270f4b",
+    "corporateActions": "unknown"
+  },
+  "holdings": [
+    {
+      "symbol": "LITE US",
+      "name": "LUMENTUM HOLDINGS INC",
+      "shares": 117000,
+      "weightPercent": 7.72
+    },
+    {
+      "symbol": "BE US",
+      "name": "BLOOM ENERGY CORP- A",
+      "shares": 390000,
+      "weightPercent": 6.72
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 2600000,
+      "weightPercent": 6.24
+    },
+    {
+      "symbol": "SPCX US",
+      "name": "SPACE EXPLORATION TECHN-CL A",
+      "shares": 550000,
+      "weightPercent": 5.51
+    },
+    {
+      "symbol": "009150 KS",
+      "name": "Samsung Electro-Mechanics co(009150 ks)",
+      "shares": 70000,
+      "weightPercent": 5.08
+    },
+    {
+      "symbol": "6981 JP",
+      "name": "MURATA MANUFACTURING CO LTD",
+      "shares": 1350000,
+      "weightPercent": 4.39
+    },
+    {
+      "symbol": "PANW US",
+      "name": "PALO ALTO NETWORKS INC",
+      "shares": 150000,
+      "weightPercent": 3.67
+    },
+    {
+      "symbol": "NVDA US",
+      "name": "NVIDIA CORP(輝達公司)",
+      "shares": 250000,
+      "weightPercent": 3.48
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 510000,
+      "weightPercent": 3.44
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 380000,
+      "weightPercent": 3.42
+    },
+    {
+      "symbol": "INTC US",
+      "name": "INTEL CORP",
+      "shares": 475000,
+      "weightPercent": 3.11
+    },
+    {
+      "symbol": "PLTR US",
+      "name": "PALANTIR TECHNOLOGIES INC-A",
+      "shares": 275000,
+      "weightPercent": 3.08
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 250000,
+      "weightPercent": 2.74
+    },
+    {
+      "symbol": "HOOD US",
+      "name": "ROBINHOOD MARKETS INC - A",
+      "shares": 400120,
+      "weightPercent": 2.61
+    },
+    {
+      "symbol": "OKTA US",
+      "name": "OKTA INC",
+      "shares": 200000,
+      "weightPercent": 2.55
+    },
+    {
+      "symbol": "MU US",
+      "name": "MICRON TECHNOLOGY INC",
+      "shares": 40000,
+      "weightPercent": 2.44
+    },
+    {
+      "symbol": "CRWD US",
+      "name": "CROWDSTRIKE HOLDINGS INC - A",
+      "shares": 130754,
+      "weightPercent": 2.12
+    },
+    {
+      "symbol": "TWLO US",
+      "name": "TWILIO INC - A",
+      "shares": 120000,
+      "weightPercent": 1.96
+    },
+    {
+      "symbol": "SNOW US",
+      "name": "SNOWFLAKE INC-CLASS A(Snowflake公司)",
+      "shares": 100000,
+      "weightPercent": 1.96
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 7200000,
+      "weightPercent": 1.95
+    },
+    {
+      "symbol": "000660 KS",
+      "name": "SK HYNIX INC",
+      "shares": 25000,
+      "weightPercent": 1.92
+    },
+    {
+      "symbol": "AMD US",
+      "name": "ADVANCED MICRO DEVICES.amd us(超微半導體公司)",
+      "shares": 50000,
+      "weightPercent": 1.89
+    },
+    {
+      "symbol": "NOW US",
+      "name": "SERVICENOW INC",
+      "shares": 230000,
+      "weightPercent": 1.85
+    },
+    {
+      "symbol": "TER US",
+      "name": "TERADYNE INC",
+      "shares": 70000,
+      "weightPercent": 1.75
+    },
+    {
+      "symbol": "NET US",
+      "name": "CLOUDFLARE INC - CLASS A",
+      "shares": 82000,
+      "weightPercent": 1.7
+    },
+    {
+      "symbol": "992 HK",
+      "name": "LENOVO GROUP LTD",
+      "shares": 6000000,
+      "weightPercent": 1.58
+    },
+    {
+      "symbol": "300757 CH",
+      "name": "ROBOTECHNIK INTELLIGENT TE-A",
+      "shares": 334997,
+      "weightPercent": 1.55
+    },
+    {
+      "symbol": "MRVL US",
+      "name": "MARVELL TECHNOLOGY INC",
+      "shares": 90000,
+      "weightPercent": 1.5
+    },
+    {
+      "symbol": "5801 JP",
+      "name": "FURUKAWA ELECTRIC CO LTD",
+      "shares": 800000,
+      "weightPercent": 1.32
+    },
+    {
+      "symbol": "IFX GY",
+      "name": "INFINEON TECHNOLOGIES AG",
+      "shares": 300000,
+      "weightPercent": 1.27
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "shares": 1850000,
+      "weightPercent": 0.99
+    },
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 200000,
+      "weightPercent": 0.95
+    },
+    {
+      "symbol": "6762 JP",
+      "name": "TDK CORP",
+      "shares": 700000,
+      "weightPercent": 0.94
+    },
+    {
+      "symbol": "IREN US",
+      "name": "IREN LTD",
+      "shares": 325000,
+      "weightPercent": 0.78
+    },
+    {
+      "symbol": "COIN US",
+      "name": "COINBASE GLOBAL INC -CLASS A",
+      "shares": 70000,
+      "weightPercent": 0.76
+    },
+    {
+      "symbol": "SNDK US",
+      "name": "SANDISK CORP",
+      "shares": 5000,
+      "weightPercent": 0.48
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "shares": 75000,
+      "weightPercent": 0.4
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "shares": 100000,
+      "weightPercent": 0.38
+    },
+    {
+      "symbol": "6787 JP",
+      "name": "MEIKO ELECTRONICS CO LTD",
+      "shares": 23900,
+      "weightPercent": 0.24
+    },
+    {
+      "symbol": "4180 JP",
+      "name": "APPIER GROUP INC",
+      "shares": 200000,
+      "weightPercent": 0.1
+    }
+  ],
+  "sourceUrl": "https://www.ezmoney.com.tw/ETF/Transaction/PCF",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 40
+}

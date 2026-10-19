@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00992A",
+  "sourceId": "capital.official.fund_equity",
+  "asOf": "2026-09-29",
+  "fundUnits": 2226455000,
+  "holdings": [
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "weightPercent": 8.18,
+      "shares": 1001000
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "weightPercent": 6.95,
+      "shares": 2482000
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "weightPercent": 6.82,
+      "shares": 1161000
+    },
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "weightPercent": 6.64,
+      "shares": 1116000
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "weightPercent": 6.21,
+      "shares": 1630000
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖",
+      "weightPercent": 5.97,
+      "shares": 205000
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "weightPercent": 5.5,
+      "shares": 465000
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "weightPercent": 4.8,
+      "shares": 1104000
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "weightPercent": 4.29,
+      "shares": 344000
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光",
+      "weightPercent": 4.24,
+      "shares": 293000
+    },
+    {
+      "symbol": "3231",
+      "name": "緯創",
+      "weightPercent": 3.23,
+      "shares": 7245000
+    },
+    {
+      "symbol": "1815",
+      "name": "富喬",
+      "weightPercent": 3.18,
+      "shares": 11420868
+    },
+    {
+      "symbol": "3443",
+      "name": "創意",
+      "weightPercent": 3.12,
+      "shares": 164000
+    },
+    {
+      "symbol": "8021",
+      "name": "尖點",
+      "weightPercent": 3.09,
+      "shares": 2682000
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "weightPercent": 2.96,
+      "shares": 968000
+    },
+    {
+      "symbol": "6584",
+      "name": "南俊國際",
+      "weightPercent": 2.89,
+      "shares": 2213000
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "weightPercent": 2.22,
+      "shares": 1700000
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "weightPercent": 2.17,
+      "shares": 429675
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "weightPercent": 2.16,
+      "shares": 3645000
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "weightPercent": 2.11,
+      "shares": 179000
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩",
+      "weightPercent": 1.94,
+      "shares": 844013
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "weightPercent": 1.2,
+      "shares": 1000000
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "weightPercent": 0.88,
+      "shares": 200000
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴",
+      "weightPercent": 0.7,
+      "shares": 51000
+    },
+    {
+      "symbol": "6213",
+      "name": "聯茂",
+      "weightPercent": 0.56,
+      "shares": 373000
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "weightPercent": 0.55,
+      "shares": 33000
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊",
+      "weightPercent": 0.51,
+      "shares": 11000
+    },
+    {
+      "symbol": "3026",
+      "name": "禾伸堂",
+      "weightPercent": 0.5,
+      "shares": 261000
+    },
+    {
+      "symbol": "8150",
+      "name": "南茂",
+      "weightPercent": 0.49,
+      "shares": 1957000
+    },
+    {
+      "symbol": "2404",
+      "name": "漢唐",
+      "weightPercent": 0.45,
+      "shares": 155000
+    },
+    {
+      "symbol": "2357",
+      "name": "華碩",
+      "weightPercent": 0.45,
+      "shares": 196000
+    },
+    {
+      "symbol": "2301",
+      "name": "光寶科",
+      "weightPercent": 0.45,
+      "shares": 659000
+    },
+    {
+      "symbol": "2376",
+      "name": "技嘉",
+      "weightPercent": 0.44,
+      "shares": 508000
+    },
+    {
+      "symbol": "6139",
+      "name": "亞翔",
+      "weightPercent": 0.44,
+      "shares": 250000
+    },
+    {
+      "symbol": "6187",
+      "name": "萬潤",
+      "weightPercent": 0.42,
+      "shares": 134000
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "weightPercent": 0.41,
+      "shares": 250000
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "weightPercent": 0.4,
+      "shares": 113000
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "weightPercent": 0.4,
+      "shares": 63000
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂",
+      "weightPercent": 0.4,
+      "shares": 76000
+    },
+    {
+      "symbol": "5289",
+      "name": "宜鼎",
+      "weightPercent": 0.31,
+      "shares": 99952
+    },
+    {
+      "symbol": "5347",
+      "name": "世界",
+      "weightPercent": 0.27,
+      "shares": 629000
+    },
+    {
+      "symbol": "3131",
+      "name": "弘塑",
+      "weightPercent": 0.01,
+      "shares": 1000
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 41602243157,
+    "stockAssetsTwd": null,
+    "validationMethod": "issuer_equity_table",
+    "expectedRowCount": 42,
+    "announcementDate": "2026-09-30",
+    "uploadTimeDisplayed": null,
+    "scope": "申購買回公告展開全部股票；基準日核對兩處實際申贖價金日期與匯率日一致。公告查詢日分開保留；未另取得股票總額。",
+    "observedOn": "2026-09-29",
+    "captureSha256": "2469695957dbe480adeb0f17d28e383dd8acb171922bcd904a9fb79e6795c366",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.capitalfund.com.tw/etf/product/detail/500/buyback",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 42
+}

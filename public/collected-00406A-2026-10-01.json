@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00406A",
+  "sourceId": "ctbc.official.fund_equity",
+  "asOf": "2026-10-01",
+  "fundUnits": 6119062000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台灣積體電路製造",
+      "shares": 2289000,
+      "weightPercent": 9.41
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科技",
+      "shares": 747000,
+      "weightPercent": 6.09
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐科技",
+      "shares": 996000,
+      "weightPercent": 5.72
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興電子",
+      "shares": 2735000,
+      "weightPercent": 5.44
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電子材料",
+      "shares": 647000,
+      "weightPercent": 5.27
+    },
+    {
+      "symbol": "3653",
+      "name": "健策精密工業",
+      "shares": 346000,
+      "weightPercent": 3.89
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電子工業",
+      "shares": 1123000,
+      "weightPercent": 3.5
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽科技",
+      "shares": 401000,
+      "weightPercent": 3.3
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯控股",
+      "shares": 771000,
+      "weightPercent": 3.22
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦科技",
+      "shares": 1028000,
+      "weightPercent": 3.2
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊科技",
+      "shares": 93000,
+      "weightPercent": 2.9
+    },
+    {
+      "symbol": "8046",
+      "name": "南亞電路板",
+      "shares": 1082000,
+      "weightPercent": 2.52
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎科技服務",
+      "shares": 711711,
+      "weightPercent": 2.46
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投資控股",
+      "shares": 2115000,
+      "weightPercent": 2.46
+    },
+    {
+      "symbol": "2303",
+      "name": "聯華電子",
+      "shares": 9068000,
+      "weightPercent": 2.4
+    },
+    {
+      "symbol": "3443",
+      "name": "創意電子",
+      "shares": 136000,
+      "weightPercent": 1.76
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨*",
+      "shares": 1638000,
+      "weightPercent": 1.61
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖科技",
+      "shares": 80000,
+      "weightPercent": 1.55
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿科技",
+      "shares": 508000,
+      "weightPercent": 1.28
+    },
+    {
+      "symbol": "6510",
+      "name": "中華精測科技",
+      "shares": 245000,
+      "weightPercent": 1.2
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩科技",
+      "shares": 686000,
+      "weightPercent": 1.13
+    },
+    {
+      "symbol": "2885",
+      "name": "元大金融控股",
+      "shares": 8620000,
+      "weightPercent": 0.95
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科技",
+      "shares": 330000,
+      "weightPercent": 0.8
+    },
+    {
+      "symbol": "3167",
+      "name": "大量科技",
+      "shares": 450000,
+      "weightPercent": 0.72
+    },
+    {
+      "symbol": "1560",
+      "name": "中國砂輪企業",
+      "shares": 425000,
+      "weightPercent": 0.7
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂電子",
+      "shares": 204000,
+      "weightPercent": 0.69
+    },
+    {
+      "symbol": "6488",
+      "name": "環球晶圓",
+      "shares": 372000,
+      "weightPercent": 0.66
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電子",
+      "shares": 1310000,
+      "weightPercent": 0.63
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海精密工業",
+      "shares": 1400000,
+      "weightPercent": 0.58
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電子",
+      "shares": 310000,
+      "weightPercent": 0.56
+    },
+    {
+      "symbol": "6213",
+      "name": "聯茂電子",
+      "shares": 501000,
+      "weightPercent": 0.53
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴科技",
+      "shares": 54000,
+      "weightPercent": 0.51
+    },
+    {
+      "symbol": "6147",
+      "name": "頎邦科技",
+      "shares": 1330000,
+      "weightPercent": 0.49
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎科技控股",
+      "shares": 579000,
+      "weightPercent": 0.48
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞光電工業",
+      "shares": 98000,
+      "weightPercent": 0.43
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光電",
+      "shares": 40000,
+      "weightPercent": 0.41
+    },
+    {
+      "symbol": "3363",
+      "name": "上詮光纖通信",
+      "shares": 389000,
+      "weightPercent": 0.41
+    },
+    {
+      "symbol": "8996",
+      "name": "高力熱處理工業",
+      "shares": 152000,
+      "weightPercent": 0.39
+    },
+    {
+      "symbol": "7769",
+      "name": "鴻勁",
+      "shares": 41000,
+      "weightPercent": 0.37
+    },
+    {
+      "symbol": "2344",
+      "name": "華邦電子",
+      "shares": 1173000,
+      "weightPercent": 0.35
+    },
+    {
+      "symbol": "2486",
+      "name": "一詮精密工業",
+      "shares": 837000,
+      "weightPercent": 0.34
+    },
+    {
+      "symbol": "6187",
+      "name": "萬潤科技",
+      "shares": 160000,
+      "weightPercent": 0.33
+    },
+    {
+      "symbol": "2481",
+      "name": "強茂",
+      "shares": 1060000,
+      "weightPercent": 0.31
+    },
+    {
+      "symbol": "1326",
+      "name": "台灣化學纖維",
+      "shares": 2500000,
+      "weightPercent": 0.28
+    },
+    {
+      "symbol": "3450",
+      "name": "聯鈞光電",
+      "shares": 315000,
+      "weightPercent": 0.27
+    },
+    {
+      "symbol": "3529",
+      "name": "力旺電子",
+      "shares": 50000,
+      "weightPercent": 0.27
+    },
+    {
+      "symbol": "6531",
+      "name": "愛普科技",
+      "shares": 165000,
+      "weightPercent": 0.25
+    },
+    {
+      "symbol": "3264",
+      "name": "欣銓科技",
+      "shares": 600000,
+      "weightPercent": 0.24
+    },
+    {
+      "symbol": "2886",
+      "name": "兆豐金融控股",
+      "shares": 2500000,
+      "weightPercent": 0.2
+    },
+    {
+      "symbol": "3105",
+      "name": "穩懋半導體",
+      "shares": 216000,
+      "weightPercent": 0.19
+    },
+    {
+      "symbol": "8358",
+      "name": "金居開發",
+      "shares": 235000,
+      "weightPercent": 0.19
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達股份有限公司",
+      "shares": 44000,
+      "weightPercent": 0.17
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞塑膠工業",
+      "shares": 395000,
+      "weightPercent": 0.16
+    },
+    {
+      "symbol": "2395",
+      "name": "研華",
+      "shares": 121000,
+      "weightPercent": 0.14
+    },
+    {
+      "symbol": "2455",
+      "name": "全新光電科技",
+      "shares": 155000,
+      "weightPercent": 0.14
+    },
+    {
+      "symbol": "6285",
+      "name": "啟碁科技",
+      "shares": 323000,
+      "weightPercent": 0.12
+    },
+    {
+      "symbol": "3260",
+      "name": "威剛科技",
+      "shares": 180000,
+      "weightPercent": 0.11
+    },
+    {
+      "symbol": "8210",
+      "name": "勤誠興業",
+      "shares": 71000,
+      "weightPercent": 0.1
+    },
+    {
+      "symbol": "8150",
+      "name": "南茂科技",
+      "shares": 455000,
+      "weightPercent": 0.09
+    },
+    {
+      "symbol": "6139",
+      "name": "亞翔工程",
+      "shares": 72000,
+      "weightPercent": 0.09
+    },
+    {
+      "symbol": "3583",
+      "name": "辛耘企業",
+      "shares": 78000,
+      "weightPercent": 0.09
+    },
+    {
+      "symbol": "3131",
+      "name": "弘塑科技",
+      "shares": 24000,
+      "weightPercent": 0.09
+    },
+    {
+      "symbol": "5289",
+      "name": "宜鼎國際",
+      "shares": 26517,
+      "weightPercent": 0.06
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 61085370756,
+    "stockAssetsTwd": null,
+    "equityWeightPercent": 85.2,
+    "validationMethod": "ctbc_equity_weight_total",
+    "expectedRowCount": 63,
+    "announcementDate": null,
+    "uploadTimeDisplayed": null,
+    "scope": "官方投資組合展開完整股票表；序號連續、逐股權重與股票合計及基金淨值核對。日期採基金資產資料日期；期貨、選擇權及保證金未混入股票。公開時間未知。",
+    "observedOn": "2026-10-03",
+    "captureSha256": "338ecd568e178c6629b3da2bde93214e288514d5c7de4f59ef0788ce4f5e9989",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.ctbcinvestments.com.tw/Etf/00682450/Combination",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 63
+}

@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00996A",
+  "sourceId": "mega.official.fund_equity",
+  "asOf": "2026-10-14",
+  "fundUnits": 344399000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 170000,
+      "weightPercent": 8.19
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 557000,
+      "weightPercent": 6.11
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 67000,
+      "weightPercent": 5.8
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨",
+      "shares": 443000,
+      "weightPercent": 5.38
+    },
+    {
+      "symbol": "6510",
+      "name": "精測",
+      "shares": 74000,
+      "weightPercent": 4.62
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "shares": 131000,
+      "weightPercent": 4.53
+    },
+    {
+      "symbol": "3443",
+      "name": "創意電子",
+      "shares": 27000,
+      "weightPercent": 4.31
+    },
+    {
+      "symbol": "6278",
+      "name": "台表科",
+      "shares": 751000,
+      "weightPercent": 4.22
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電子",
+      "shares": 35000,
+      "weightPercent": 3.74
+    },
+    {
+      "symbol": "8021",
+      "name": "尖點",
+      "shares": 332000,
+      "weightPercent": 3.45
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩科技",
+      "shares": 161000,
+      "weightPercent": 3.27
+    },
+    {
+      "symbol": "6683",
+      "name": "雍智科技",
+      "shares": 117000,
+      "weightPercent": 3.19
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 23000,
+      "weightPercent": 3.15
+    },
+    {
+      "symbol": "2472",
+      "name": "立隆電子",
+      "shares": 617000,
+      "weightPercent": 2.91
+    },
+    {
+      "symbol": "7751",
+      "name": "竑騰",
+      "shares": 88000,
+      "weightPercent": 2.88
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐科技",
+      "shares": 41000,
+      "weightPercent": 2.63
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興電子",
+      "shares": 112000,
+      "weightPercent": 2.57
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 921000,
+      "weightPercent": 2.53
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 20000,
+      "weightPercent": 2.28
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 71000,
+      "weightPercent": 1.97
+    },
+    {
+      "symbol": "6831",
+      "name": "邁科",
+      "shares": 195000,
+      "weightPercent": 1.8
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 49000,
+      "weightPercent": 1.65
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 46000,
+      "weightPercent": 1.5
+    },
+    {
+      "symbol": "3363",
+      "name": "上詮",
+      "shares": 118000,
+      "weightPercent": 1.28
+    },
+    {
+      "symbol": "6830",
+      "name": "汎銓",
+      "shares": 124495,
+      "weightPercent": 1.25
+    },
+    {
+      "symbol": "8210",
+      "name": "勤誠興業",
+      "shares": 65000,
+      "weightPercent": 1.07
+    },
+    {
+      "symbol": "8358",
+      "name": "金居開發",
+      "shares": 103000,
+      "weightPercent": 1
+    },
+    {
+      "symbol": "3042",
+      "name": "晶技",
+      "shares": 221000,
+      "weightPercent": 0.88
+    },
+    {
+      "symbol": "2344",
+      "name": "華邦電",
+      "shares": 228000,
+      "weightPercent": 0.73
+    },
+    {
+      "symbol": "3533",
+      "name": "嘉澤端子",
+      "shares": 16000,
+      "weightPercent": 0.6
+    },
+    {
+      "symbol": "2408",
+      "name": "南科",
+      "shares": 63000,
+      "weightPercent": 0.59
+    },
+    {
+      "symbol": "6770",
+      "name": "力積電",
+      "shares": 373000,
+      "weightPercent": 0.51
+    },
+    {
+      "symbol": "3693",
+      "name": "營邦",
+      "shares": 28000,
+      "weightPercent": 0.41
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電",
+      "shares": 14000,
+      "weightPercent": 0.34
+    },
+    {
+      "symbol": "2467",
+      "name": "志聖工業",
+      "shares": 25000,
+      "weightPercent": 0.26
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞塑膠",
+      "shares": 34000,
+      "weightPercent": 0.23
+    },
+    {
+      "symbol": "3131",
+      "name": "弘塑科技",
+      "shares": 5000,
+      "weightPercent": 0.23
+    },
+    {
+      "symbol": "2881",
+      "name": "富邦金",
+      "shares": 70000,
+      "weightPercent": 0.22
+    },
+    {
+      "symbol": "2882",
+      "name": "國泰金",
+      "shares": 95000,
+      "weightPercent": 0.21
+    },
+    {
+      "symbol": "5269",
+      "name": "祥碩科技",
+      "shares": 7000,
+      "weightPercent": 0.21
+    },
+    {
+      "symbol": "6526",
+      "name": "達發",
+      "shares": 12000,
+      "weightPercent": 0.19
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電",
+      "shares": 32300,
+      "weightPercent": 0.18
+    },
+    {
+      "symbol": "6415",
+      "name": "矽力-KY",
+      "shares": 16000,
+      "weightPercent": 0.15
+    },
+    {
+      "symbol": "6239",
+      "name": "力成",
+      "shares": 24000,
+      "weightPercent": 0.14
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 3000,
+      "weightPercent": 0.13
+    },
+    {
+      "symbol": "1802",
+      "name": "台玻",
+      "shares": 90000,
+      "weightPercent": 0.12
+    },
+    {
+      "symbol": "6213",
+      "name": "聯茂",
+      "shares": 6000,
+      "weightPercent": 0.1
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂電子",
+      "shares": 2000,
+      "weightPercent": 0.09
+    },
+    {
+      "symbol": "6531",
+      "name": "愛普科技",
+      "shares": 5000,
+      "weightPercent": 0.09
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 5000,
+      "weightPercent": 0.07
+    },
+    {
+      "symbol": "4749",
+      "name": "新應材",
+      "shares": 5086,
+      "weightPercent": 0.07
+    },
+    {
+      "symbol": "2317",
+      "name": "鴻海",
+      "shares": 9000,
+      "weightPercent": 0.04
+    },
+    {
+      "symbol": "2382",
+      "name": "廣達",
+      "shares": 6000,
+      "weightPercent": 0.04
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 5165189299,
+    "stockAssetsTwd": 4860743930,
+    "expectedRowCount": 53,
+    "announcementDate": null,
+    "uploadTimeDisplayed": null,
+    "scope": "官方基金配置展開至收回狀態；完整股票權重與股票資產總額及基金淨資產核對，單位淨值核對。日期採持股資料來源日；公開時間未知。",
+    "observedOn": "2026-10-14",
+    "captureSha256": "41b196b1400a3d1d946339a07bdea01b198d0ac46873ef3562e3eb6fd0c89f2f",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.megafunds.com.tw/MEGA/etf/etf_product.aspx?id=23",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 53
+}

@@ -1,0 +1,99 @@
+{
+  "syncedAt": "2026-10-19T02:03:25.378Z",
+  "source": "https://alphaflow-observation-lab.wl03005685.chatgpt.site",
+  "sourceContentId": "1465e59a45334048c27d38fc5754fd663139f471131b44b3a55aee805fc8069f",
+  "files": 420,
+  "snapshots": 405,
+  "funds": [
+    {
+      "symbol": "00981A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00405A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00982A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00403A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00988A",
+      "asOf": "2026-10-15",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00990A",
+      "asOf": "2026-10-08",
+      "acquisition": "failed"
+    },
+    {
+      "symbol": "00992A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00993A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00984A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00995A",
+      "asOf": "2026-10-02",
+      "acquisition": "failed"
+    },
+    {
+      "symbol": "00987A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00410A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00408A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00994A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00407A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00996A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00991A",
+      "asOf": "2026-10-16",
+      "acquisition": "no_new_data"
+    },
+    {
+      "symbol": "00406A",
+      "asOf": "2026-10-02",
+      "acquisition": "failed"
+    }
+  ]
+}

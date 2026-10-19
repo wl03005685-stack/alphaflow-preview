@@ -1,0 +1,1228 @@
+[
+  {
+    "id": "moneyweekly-237442",
+    "fundSymbol": "00981A",
+    "sourceId": "moneyweekly.reported_equity_rows",
+    "sourceUrl": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/237442",
+    "articleDate": "2026-07-16",
+    "observedOn": "2026-09-14",
+    "fromDate": "2026-06-12",
+    "toDate": "2026-07-15",
+    "coverage": "reported_rows",
+    "unit": "lots",
+    "fundLotsBefore": 9320209,
+    "fundLotsAfter": 9359209,
+    "rows": [
+      {
+        "symbol": "1319",
+        "name": "東陽",
+        "beforeLots": 278.0,
+        "afterLots": 0.0,
+        "reportedChangeLots": -278.0
+      },
+      {
+        "symbol": "1590",
+        "name": "亞德客-KY",
+        "beforeLots": 530.0,
+        "afterLots": 528.0,
+        "reportedChangeLots": -2.0
+      },
+      {
+        "symbol": "1815",
+        "name": "富喬",
+        "beforeLots": 107.0,
+        "afterLots": 107.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "2002",
+        "name": "中鋼",
+        "beforeLots": 5163.0,
+        "afterLots": 5163.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "2303",
+        "name": "聯電",
+        "beforeLots": 75890.0,
+        "afterLots": 86550.0,
+        "reportedChangeLots": 10660.0
+      },
+      {
+        "symbol": "2308",
+        "name": "台達電",
+        "beforeLots": 6572.0,
+        "afterLots": 5181.0,
+        "reportedChangeLots": -1391.0
+      },
+      {
+        "symbol": "2313",
+        "name": "華通",
+        "beforeLots": 329.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -328.0
+      },
+      {
+        "symbol": "2317",
+        "name": "鴻海",
+        "beforeLots": 7307.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -7306.0
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨*",
+        "beforeLots": 21168.0,
+        "afterLots": 25098.0,
+        "reportedChangeLots": 3930.0
+      },
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "beforeLots": 11960.0,
+        "afterLots": 11960.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "2345",
+        "name": "智邦",
+        "beforeLots": 6334.0,
+        "afterLots": 6334.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "2368",
+        "name": "金像電",
+        "beforeLots": 8315.0,
+        "afterLots": 8315.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "2382",
+        "name": "廣達",
+        "beforeLots": 1.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "beforeLots": 4486.0,
+        "afterLots": 4653.0,
+        "reportedChangeLots": 167.0
+      },
+      {
+        "symbol": "2404",
+        "name": "漢唐",
+        "beforeLots": 1200.0,
+        "afterLots": 0.0,
+        "reportedChangeLots": -1200.0
+      },
+      {
+        "symbol": "2439",
+        "name": "美律",
+        "beforeLots": 18.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -17.0
+      },
+      {
+        "symbol": "2449",
+        "name": "京元電子",
+        "beforeLots": 3645.0,
+        "afterLots": 4119.0,
+        "reportedChangeLots": 474.0
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "beforeLots": 4649.0,
+        "afterLots": 5131.0,
+        "reportedChangeLots": 482.0
+      },
+      {
+        "symbol": "2481",
+        "name": "強茂",
+        "beforeLots": 5.0,
+        "afterLots": 5.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3008",
+        "name": "大立光",
+        "beforeLots": 1.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3017",
+        "name": "奇鋐",
+        "beforeLots": 5191.0,
+        "afterLots": 5191.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3037",
+        "name": "欣興",
+        "beforeLots": 12466.0,
+        "afterLots": 16607.0,
+        "reportedChangeLots": 4141.0
+      },
+      {
+        "symbol": "3264",
+        "name": "欣銓",
+        "beforeLots": 1.0,
+        "afterLots": 1508.0,
+        "reportedChangeLots": 1507.0
+      },
+      {
+        "symbol": "3376",
+        "name": "新日興",
+        "beforeLots": 1741.0,
+        "afterLots": 1741.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3443",
+        "name": "創意",
+        "beforeLots": 258.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -257.0
+      },
+      {
+        "symbol": "3533",
+        "name": "嘉澤",
+        "beforeLots": 852.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -851.0
+      },
+      {
+        "symbol": "3653",
+        "name": "健策",
+        "beforeLots": 2267.0,
+        "afterLots": 2267.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3661",
+        "name": "世芯-KY",
+        "beforeLots": 1.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3665",
+        "name": "貿聯-KY",
+        "beforeLots": 4833.848,
+        "afterLots": 4833.848,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "3711",
+        "name": "日月光投控",
+        "beforeLots": 17948.0,
+        "afterLots": 15770.0,
+        "reportedChangeLots": -2178.0
+      },
+      {
+        "symbol": "4958",
+        "name": "臻鼎-KY",
+        "beforeLots": 1428.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -1427.0
+      },
+      {
+        "symbol": "4966",
+        "name": "譜瑞-KY",
+        "beforeLots": 1642.0,
+        "afterLots": 140.0,
+        "reportedChangeLots": -1502.0
+      },
+      {
+        "symbol": "5274",
+        "name": "信驊",
+        "beforeLots": 422.0,
+        "afterLots": 448.9,
+        "reportedChangeLots": 26.9
+      },
+      {
+        "symbol": "5347",
+        "name": "世界",
+        "beforeLots": 1.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "5439",
+        "name": "高技",
+        "beforeLots": 3528.0,
+        "afterLots": 3528.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "6147",
+        "name": "頎邦",
+        "beforeLots": 5775.0,
+        "afterLots": 6275.0,
+        "reportedChangeLots": 500.0
+      },
+      {
+        "symbol": "6187",
+        "name": "萬潤",
+        "beforeLots": 1334.0,
+        "afterLots": 1334.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "6191",
+        "name": "精成科",
+        "beforeLots": 3988.0,
+        "afterLots": 3988.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "6223",
+        "name": "旺矽",
+        "beforeLots": 2279.0,
+        "afterLots": 2443.0,
+        "reportedChangeLots": 164.0
+      },
+      {
+        "symbol": "6271",
+        "name": "同欣電",
+        "beforeLots": 1066.0,
+        "afterLots": 2966.0,
+        "reportedChangeLots": 1900.0
+      },
+      {
+        "symbol": "6274",
+        "name": "台燿",
+        "beforeLots": 4763.0,
+        "afterLots": 5160.0,
+        "reportedChangeLots": 397.0
+      },
+      {
+        "symbol": "6278",
+        "name": "台表科",
+        "beforeLots": 4334.0,
+        "afterLots": 4334.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "6488",
+        "name": "環球晶",
+        "beforeLots": 0.0,
+        "afterLots": 50.0,
+        "reportedChangeLots": 50.0
+      },
+      {
+        "symbol": "6510",
+        "name": "精測",
+        "beforeLots": 930.0,
+        "afterLots": 349.0,
+        "reportedChangeLots": -581.0
+      },
+      {
+        "symbol": "6515",
+        "name": "穎崴",
+        "beforeLots": 442.0,
+        "afterLots": 204.0,
+        "reportedChangeLots": -238.0
+      },
+      {
+        "symbol": "6669",
+        "name": "緯穎",
+        "beforeLots": 2492.0,
+        "afterLots": 2417.0,
+        "reportedChangeLots": -75.0
+      },
+      {
+        "symbol": "6805",
+        "name": "富世達",
+        "beforeLots": 1811.0,
+        "afterLots": 1811.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "8046",
+        "name": "南電",
+        "beforeLots": 10828.0,
+        "afterLots": 9519.0,
+        "reportedChangeLots": -1309.0
+      },
+      {
+        "symbol": "8150",
+        "name": "南茂",
+        "beforeLots": 11635.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -11634.0
+      },
+      {
+        "symbol": "8210",
+        "name": "勤誠",
+        "beforeLots": 2267.0,
+        "afterLots": 2267.0,
+        "reportedChangeLots": 0.0
+      },
+      {
+        "symbol": "8358",
+        "name": "金居",
+        "beforeLots": 980.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -979.0
+      },
+      {
+        "symbol": "8996",
+        "name": "高力",
+        "beforeLots": 1034.0,
+        "afterLots": 1.0,
+        "reportedChangeLots": -1033.0
+      }
+    ],
+    "limitations": [
+      "第三方整理自投信；尚未取得原始兩期官方檔逐筆核對。",
+      "只就文章列出的52筆比較；不宣稱涵蓋全部資產或所有交易。",
+      "原表單位為張，保留小數張；沒有成交價、完整權重或公司行動校正。",
+      "這是事後取得的歷史資料，僅供回溯研究，不列入事前預測績效。"
+    ]
+  },
+  {
+    "id": "moneyweekly-236237",
+    "fundSymbol": "00982A",
+    "sourceId": "moneyweekly.reported_equity_rows",
+    "sourceUrl": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/236237",
+    "articleDate": "2026-07-08",
+    "observedOn": "2026-09-14",
+    "fromDate": "2026-05-29",
+    "toDate": "2026-06-30",
+    "coverage": "reported_rows",
+    "unit": "lots",
+    "fundLotsBefore": null,
+    "fundLotsAfter": null,
+    "rows": [
+      {
+        "symbol": "1519",
+        "name": "華城",
+        "beforeLots": 0.6,
+        "afterLots": 0.6,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "1785",
+        "name": "光洋科",
+        "beforeLots": 5607,
+        "afterLots": 5491,
+        "reportedChangeLots": -116
+      },
+      {
+        "symbol": "2059",
+        "name": "川湖",
+        "beforeLots": 186,
+        "afterLots": 183,
+        "reportedChangeLots": -3
+      },
+      {
+        "symbol": "2303",
+        "name": "聯電",
+        "beforeLots": 9119,
+        "afterLots": 8964,
+        "reportedChangeLots": -155
+      },
+      {
+        "symbol": "2316",
+        "name": "楠梓電",
+        "beforeLots": 3422,
+        "afterLots": 3375,
+        "reportedChangeLots": -47
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨*",
+        "beforeLots": 833,
+        "afterLots": 849,
+        "reportedChangeLots": 16
+      },
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "beforeLots": 1937,
+        "afterLots": 1967,
+        "reportedChangeLots": 30
+      },
+      {
+        "symbol": "2345",
+        "name": "智邦",
+        "beforeLots": 816,
+        "afterLots": 799,
+        "reportedChangeLots": -17
+      },
+      {
+        "symbol": "2351",
+        "name": "順德",
+        "beforeLots": 1369,
+        "afterLots": 900,
+        "reportedChangeLots": -469
+      },
+      {
+        "symbol": "2360",
+        "name": "致茂",
+        "beforeLots": 835,
+        "afterLots": 823,
+        "reportedChangeLots": -12
+      },
+      {
+        "symbol": "2368",
+        "name": "金像電",
+        "beforeLots": 398,
+        "afterLots": 389,
+        "reportedChangeLots": -9
+      },
+      {
+        "symbol": "2376",
+        "name": "技嘉",
+        "beforeLots": 538,
+        "afterLots": 1060,
+        "reportedChangeLots": 522
+      },
+      {
+        "symbol": "2377",
+        "name": "微星",
+        "beforeLots": 5736,
+        "afterLots": 5663,
+        "reportedChangeLots": -73
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "beforeLots": 335,
+        "afterLots": 328,
+        "reportedChangeLots": -7
+      },
+      {
+        "symbol": "2404",
+        "name": "漢唐",
+        "beforeLots": 379,
+        "afterLots": 0,
+        "reportedChangeLots": -379
+      },
+      {
+        "symbol": "2451",
+        "name": "創見",
+        "beforeLots": 525,
+        "afterLots": 519,
+        "reportedChangeLots": -6
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "beforeLots": 873,
+        "afterLots": 862,
+        "reportedChangeLots": -11
+      },
+      {
+        "symbol": "2467",
+        "name": "志聖",
+        "beforeLots": 1484,
+        "afterLots": 1450,
+        "reportedChangeLots": -34
+      },
+      {
+        "symbol": "2472",
+        "name": "立隆電",
+        "beforeLots": 2820,
+        "afterLots": 2356,
+        "reportedChangeLots": -464
+      },
+      {
+        "symbol": "2548",
+        "name": "華固",
+        "beforeLots": 2,
+        "afterLots": 0,
+        "reportedChangeLots": -2
+      },
+      {
+        "symbol": "2881",
+        "name": "富邦金",
+        "beforeLots": 0.25,
+        "afterLots": 0.25,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2885",
+        "name": "元大金",
+        "beforeLots": 1128.42,
+        "afterLots": 2114.42,
+        "reportedChangeLots": 986
+      },
+      {
+        "symbol": "2886",
+        "name": "兆豐金",
+        "beforeLots": 1,
+        "afterLots": 1,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "3008",
+        "name": "大立光",
+        "beforeLots": 204,
+        "afterLots": 200,
+        "reportedChangeLots": -4
+      },
+      {
+        "symbol": "3017",
+        "name": "奇鋐",
+        "beforeLots": 412,
+        "afterLots": 407,
+        "reportedChangeLots": -5
+      },
+      {
+        "symbol": "3036",
+        "name": "文曄",
+        "beforeLots": 2344,
+        "afterLots": 2290,
+        "reportedChangeLots": -54
+      },
+      {
+        "symbol": "3105",
+        "name": "穩懋",
+        "beforeLots": 4039,
+        "afterLots": 4143,
+        "reportedChangeLots": 104
+      },
+      {
+        "symbol": "3264",
+        "name": "欣銓",
+        "beforeLots": 9176,
+        "afterLots": 4628,
+        "reportedChangeLots": -4548
+      },
+      {
+        "symbol": "3376",
+        "name": "新日興",
+        "beforeLots": 364,
+        "afterLots": 359,
+        "reportedChangeLots": -5
+      },
+      {
+        "symbol": "3443",
+        "name": "創意",
+        "beforeLots": 1,
+        "afterLots": 1,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "3491",
+        "name": "昇達科",
+        "beforeLots": 980,
+        "afterLots": 967,
+        "reportedChangeLots": -13
+      },
+      {
+        "symbol": "3583",
+        "name": "辛耘",
+        "beforeLots": 1138,
+        "afterLots": 1113,
+        "reportedChangeLots": -25
+      },
+      {
+        "symbol": "3665",
+        "name": "貿聯-KY",
+        "beforeLots": 0.136,
+        "afterLots": 0,
+        "reportedChangeLots": -0.136
+      },
+      {
+        "symbol": "3702",
+        "name": "大聯大",
+        "beforeLots": 5498,
+        "afterLots": 5380,
+        "reportedChangeLots": -118
+      },
+      {
+        "symbol": "3706",
+        "name": "神達",
+        "beforeLots": 1.4,
+        "afterLots": 1.4,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "3711",
+        "name": "日月光投控",
+        "beforeLots": 1022,
+        "afterLots": 1002,
+        "reportedChangeLots": -20
+      },
+      {
+        "symbol": "4441",
+        "name": "振大環球",
+        "beforeLots": 4,
+        "afterLots": 4,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "4958",
+        "name": "臻鼎-KY",
+        "beforeLots": 3192,
+        "afterLots": 3147,
+        "reportedChangeLots": -45
+      },
+      {
+        "symbol": "5274",
+        "name": "信驊",
+        "beforeLots": 9,
+        "afterLots": 9,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "5536",
+        "name": "聖暉*",
+        "beforeLots": 3804,
+        "afterLots": 3734,
+        "reportedChangeLots": -70
+      },
+      {
+        "symbol": "6139",
+        "name": "亞翔",
+        "beforeLots": 2813,
+        "afterLots": 3067,
+        "reportedChangeLots": 254
+      },
+      {
+        "symbol": "6147",
+        "name": "頎邦",
+        "beforeLots": 5987,
+        "afterLots": 2300,
+        "reportedChangeLots": -3687
+      },
+      {
+        "symbol": "6177",
+        "name": "達麗",
+        "beforeLots": 665.35,
+        "afterLots": 194.35,
+        "reportedChangeLots": -471
+      },
+      {
+        "symbol": "6187",
+        "name": "萬潤",
+        "beforeLots": 0,
+        "afterLots": 91,
+        "reportedChangeLots": 91
+      },
+      {
+        "symbol": "6223",
+        "name": "旺矽",
+        "beforeLots": 312,
+        "afterLots": 307,
+        "reportedChangeLots": -5
+      },
+      {
+        "symbol": "6239",
+        "name": "力成",
+        "beforeLots": 0,
+        "afterLots": 700,
+        "reportedChangeLots": 700
+      },
+      {
+        "symbol": "6257",
+        "name": "矽格",
+        "beforeLots": 4756,
+        "afterLots": 4657,
+        "reportedChangeLots": -99
+      },
+      {
+        "symbol": "6274",
+        "name": "台燿",
+        "beforeLots": 446,
+        "afterLots": 439,
+        "reportedChangeLots": -7
+      },
+      {
+        "symbol": "6278",
+        "name": "台表科",
+        "beforeLots": 2235,
+        "afterLots": 2184,
+        "reportedChangeLots": -51
+      },
+      {
+        "symbol": "6285",
+        "name": "啟碁",
+        "beforeLots": 4083,
+        "afterLots": 0,
+        "reportedChangeLots": -4083
+      },
+      {
+        "symbol": "6488",
+        "name": "環球晶",
+        "beforeLots": 1159,
+        "afterLots": 1140,
+        "reportedChangeLots": -19
+      },
+      {
+        "symbol": "6531",
+        "name": "愛普*",
+        "beforeLots": 303,
+        "afterLots": 694,
+        "reportedChangeLots": 391
+      },
+      {
+        "symbol": "6669",
+        "name": "緯穎",
+        "beforeLots": 300,
+        "afterLots": 294,
+        "reportedChangeLots": -6
+      },
+      {
+        "symbol": "6805",
+        "name": "富世達",
+        "beforeLots": 1,
+        "afterLots": 121,
+        "reportedChangeLots": 120
+      },
+      {
+        "symbol": "6831",
+        "name": "邁科",
+        "beforeLots": 226,
+        "afterLots": 0,
+        "reportedChangeLots": -226
+      },
+      {
+        "symbol": "7769",
+        "name": "鴻勁",
+        "beforeLots": 94,
+        "afterLots": 92,
+        "reportedChangeLots": -2
+      },
+      {
+        "symbol": "8016",
+        "name": "矽創",
+        "beforeLots": 2240,
+        "afterLots": 2198,
+        "reportedChangeLots": -42
+      },
+      {
+        "symbol": "8046",
+        "name": "南電",
+        "beforeLots": 2,
+        "afterLots": 1,
+        "reportedChangeLots": -1
+      },
+      {
+        "symbol": "8358",
+        "name": "金居",
+        "beforeLots": 1,
+        "afterLots": 1,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "8996",
+        "name": "高力",
+        "beforeLots": 382,
+        "afterLots": 376,
+        "reportedChangeLots": -6
+      }
+    ],
+    "limitations": [
+      "第三方文章整理的表內股票；未獨立證實涵蓋基金全部持股。",
+      "只比較兩個資料日的張數，不代表區間內完整成交紀錄。",
+      "首次公開時間、公司行動與基金申贖影響尚未完整核對；屬回溯探索，不計為事前預測。"
+    ]
+  },
+  {
+    "id": "moneyweekly-236980",
+    "fundSymbol": "00405A",
+    "sourceId": "moneyweekly.reported_equity_rows",
+    "sourceUrl": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/236980",
+    "articleDate": "2026-07-14",
+    "observedOn": "2026-09-14",
+    "fromDate": "2026-06-12",
+    "toDate": "2026-07-13",
+    "coverage": "reported_rows",
+    "unit": "lots",
+    "fundLotsBefore": 2459245,
+    "fundLotsAfter": 2978245,
+    "rows": [
+      {
+        "symbol": "2049",
+        "name": "上銀",
+        "beforeLots": 769,
+        "afterLots": 19,
+        "reportedChangeLots": -750
+      },
+      {
+        "symbol": "2059",
+        "name": "川湖",
+        "beforeLots": 42,
+        "afterLots": 42,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2303",
+        "name": "聯電",
+        "beforeLots": 78,
+        "afterLots": 78,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2308",
+        "name": "台達電",
+        "beforeLots": 264,
+        "afterLots": 144,
+        "reportedChangeLots": -120
+      },
+      {
+        "symbol": "2327",
+        "name": "國巨*",
+        "beforeLots": 0,
+        "afterLots": 1270,
+        "reportedChangeLots": 1270
+      },
+      {
+        "symbol": "2330",
+        "name": "台積電",
+        "beforeLots": 239,
+        "afterLots": 239,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2337",
+        "name": "旺宏",
+        "beforeLots": 2800,
+        "afterLots": 2800,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2344",
+        "name": "華邦電",
+        "beforeLots": 70,
+        "afterLots": 5896,
+        "reportedChangeLots": 5826
+      },
+      {
+        "symbol": "2345",
+        "name": "智邦",
+        "beforeLots": 459,
+        "afterLots": 529,
+        "reportedChangeLots": 70
+      },
+      {
+        "symbol": "2360",
+        "name": "致茂",
+        "beforeLots": 145,
+        "afterLots": 0,
+        "reportedChangeLots": -145
+      },
+      {
+        "symbol": "2368",
+        "name": "金像電",
+        "beforeLots": 303,
+        "afterLots": 303,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2383",
+        "name": "台光電",
+        "beforeLots": 110,
+        "afterLots": 157,
+        "reportedChangeLots": 47
+      },
+      {
+        "symbol": "2408",
+        "name": "南亞科",
+        "beforeLots": 49,
+        "afterLots": 49,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2449",
+        "name": "京元電子",
+        "beforeLots": 793,
+        "afterLots": 793,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "2454",
+        "name": "聯發科",
+        "beforeLots": 295,
+        "afterLots": 430,
+        "reportedChangeLots": 135
+      },
+      {
+        "symbol": "3017",
+        "name": "奇鋐",
+        "beforeLots": 383,
+        "afterLots": 693,
+        "reportedChangeLots": 310
+      },
+      {
+        "symbol": "3026",
+        "name": "禾伸堂",
+        "beforeLots": 0,
+        "afterLots": 580,
+        "reportedChangeLots": 580
+      },
+      {
+        "symbol": "3037",
+        "name": "欣興",
+        "beforeLots": 940,
+        "afterLots": 1290,
+        "reportedChangeLots": 350
+      },
+      {
+        "symbol": "3081",
+        "name": "聯亞",
+        "beforeLots": 144,
+        "afterLots": 144,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "3105",
+        "name": "穩懋",
+        "beforeLots": 1212,
+        "afterLots": 1212,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "3131",
+        "name": "弘塑",
+        "beforeLots": 245,
+        "afterLots": 327,
+        "reportedChangeLots": 82
+      },
+      {
+        "symbol": "3163",
+        "name": "波若威",
+        "beforeLots": 376,
+        "afterLots": 76,
+        "reportedChangeLots": -300
+      },
+      {
+        "symbol": "3264",
+        "name": "欣銓",
+        "beforeLots": 1134,
+        "afterLots": 34,
+        "reportedChangeLots": -1100
+      },
+      {
+        "symbol": "3443",
+        "name": "創意",
+        "beforeLots": 9,
+        "afterLots": 334,
+        "reportedChangeLots": 325
+      },
+      {
+        "symbol": "3533",
+        "name": "嘉澤",
+        "beforeLots": 9,
+        "afterLots": 1,
+        "reportedChangeLots": -8
+      },
+      {
+        "symbol": "3583",
+        "name": "辛耘",
+        "beforeLots": 604,
+        "afterLots": 604,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "3653",
+        "name": "健策",
+        "beforeLots": 75,
+        "afterLots": 180,
+        "reportedChangeLots": 105
+      },
+      {
+        "symbol": "3661",
+        "name": "世芯-KY",
+        "beforeLots": 0,
+        "afterLots": 1,
+        "reportedChangeLots": 1
+      },
+      {
+        "symbol": "3665",
+        "name": "貿聯-KY",
+        "beforeLots": 126,
+        "afterLots": 5,
+        "reportedChangeLots": -121
+      },
+      {
+        "symbol": "3711",
+        "name": "日月光投控",
+        "beforeLots": 323,
+        "afterLots": 323,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "4576",
+        "name": "大銀微系統",
+        "beforeLots": 72,
+        "afterLots": 72,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "4749",
+        "name": "新應材",
+        "beforeLots": 95,
+        "afterLots": 95,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "4979",
+        "name": "華星光",
+        "beforeLots": 475,
+        "afterLots": 0,
+        "reportedChangeLots": -475
+      },
+      {
+        "symbol": "5274",
+        "name": "信驊",
+        "beforeLots": 33,
+        "afterLots": 36.3,
+        "reportedChangeLots": 3.3
+      },
+      {
+        "symbol": "5347",
+        "name": "世界",
+        "beforeLots": 211,
+        "afterLots": 211,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6187",
+        "name": "萬潤",
+        "beforeLots": 553,
+        "afterLots": 553,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6223",
+        "name": "旺矽",
+        "beforeLots": 228,
+        "afterLots": 228,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6274",
+        "name": "台燿",
+        "beforeLots": 67,
+        "afterLots": 67,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6285",
+        "name": "啟碁",
+        "beforeLots": 2201,
+        "afterLots": 0,
+        "reportedChangeLots": -2201
+      },
+      {
+        "symbol": "6291",
+        "name": "沛亨",
+        "beforeLots": 220,
+        "afterLots": 220,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6442",
+        "name": "光聖",
+        "beforeLots": 150,
+        "afterLots": 70,
+        "reportedChangeLots": -80
+      },
+      {
+        "symbol": "6488",
+        "name": "環球晶",
+        "beforeLots": 0,
+        "afterLots": 1000,
+        "reportedChangeLots": 1000
+      },
+      {
+        "symbol": "6510",
+        "name": "精測",
+        "beforeLots": 135,
+        "afterLots": 135,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6515",
+        "name": "穎崴",
+        "beforeLots": 24,
+        "afterLots": 23,
+        "reportedChangeLots": -1
+      },
+      {
+        "symbol": "6526",
+        "name": "達發",
+        "beforeLots": 146,
+        "afterLots": 146,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "6669",
+        "name": "緯穎",
+        "beforeLots": 55,
+        "afterLots": 5,
+        "reportedChangeLots": -50
+      },
+      {
+        "symbol": "6805",
+        "name": "富世達",
+        "beforeLots": 256,
+        "afterLots": 0,
+        "reportedChangeLots": -256
+      },
+      {
+        "symbol": "7734",
+        "name": "印能科技",
+        "beforeLots": 159,
+        "afterLots": 159,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "7769",
+        "name": "鴻勁",
+        "beforeLots": 100,
+        "afterLots": 100,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "8028",
+        "name": "昇陽半導體",
+        "beforeLots": 889,
+        "afterLots": 889,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "8046",
+        "name": "南電",
+        "beforeLots": 569,
+        "afterLots": 569,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "8210",
+        "name": "勤誠",
+        "beforeLots": 708,
+        "afterLots": 218,
+        "reportedChangeLots": -490
+      },
+      {
+        "symbol": "8299",
+        "name": "群聯",
+        "beforeLots": 175,
+        "afterLots": 175,
+        "reportedChangeLots": 0
+      },
+      {
+        "symbol": "8996",
+        "name": "高力",
+        "beforeLots": 332,
+        "afterLots": 282,
+        "reportedChangeLots": -50
+      }
+    ],
+    "limitations": [
+      "第三方文章整理的表內股票；未獨立證實涵蓋基金全部持股。",
+      "只比較兩個資料日的張數，不代表區間內完整成交紀錄。",
+      "首次公開時間、公司行動與基金申贖影響尚未完整核對；屬回溯探索，不計為事前預測。"
+    ]
+  }
+]

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00987A",
+  "sourceId": "taishin.official.fund_equity",
+  "asOf": "2026-10-07",
+  "fundUnits": 138643000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 90000,
+      "weightPercent": 9.2508
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 52000,
+      "weightPercent": 7.3299
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 29000,
+      "weightPercent": 6.861
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 126000,
+      "weightPercent": 6.5382
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 32000,
+      "weightPercent": 6.1521
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 75000,
+      "weightPercent": 5.1294
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 18000,
+      "weightPercent": 4.8705
+    },
+    {
+      "symbol": "3443",
+      "name": "創意",
+      "shares": 13000,
+      "weightPercent": 4.3731
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯 -KY",
+      "shares": 44000,
+      "weightPercent": 4.0502
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞",
+      "shares": 29800,
+      "weightPercent": 3.7207
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科",
+      "shares": 52000,
+      "weightPercent": 3.5254
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達",
+      "shares": 36000,
+      "weightPercent": 3.5142
+    },
+    {
+      "symbol": "2368",
+      "name": "金像電",
+      "shares": 60000,
+      "weightPercent": 2.9703
+    },
+    {
+      "symbol": "8358",
+      "name": "金居",
+      "shares": 134000,
+      "weightPercent": 2.9252
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 46000,
+      "weightPercent": 2.707
+    },
+    {
+      "symbol": "6510",
+      "name": "精測",
+      "shares": 22000,
+      "weightPercent": 2.6418
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "shares": 115000,
+      "weightPercent": 2.5561
+    },
+    {
+      "symbol": "4991",
+      "name": "環宇 -KY",
+      "shares": 122000,
+      "weightPercent": 2.5128
+    },
+    {
+      "symbol": "3363",
+      "name": "上詮",
+      "shares": 92729,
+      "weightPercent": 2.5036
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎 -KY",
+      "shares": 100000,
+      "weightPercent": 2.3659
+    },
+    {
+      "symbol": "8996",
+      "name": "高力",
+      "shares": 35000,
+      "weightPercent": 2.2893
+    },
+    {
+      "symbol": "3455",
+      "name": "由田",
+      "shares": 183000,
+      "weightPercent": 2.0447
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科",
+      "shares": 100000,
+      "weightPercent": 2.0438
+    },
+    {
+      "symbol": "3529",
+      "name": "力旺",
+      "shares": 16000,
+      "weightPercent": 1.9182
+    },
+    {
+      "symbol": "6515",
+      "name": "穎崴",
+      "shares": 8000,
+      "weightPercent": 1.7559
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 5000,
+      "weightPercent": 1.0994
+    },
+    {
+      "symbol": "7856",
+      "name": "漢測",
+      "shares": 6000,
+      "weightPercent": 1.045
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊",
+      "shares": 300,
+      "weightPercent": 0.2117
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 2514921391,
+    "stockAssetsTwd": null,
+    "equityWeightPercent": 98.9063,
+    "weightPrecision": 4,
+    "validationMethod": "taishin_equity_weight_total",
+    "expectedRowCount": 28,
+    "announcementDate": null,
+    "pcfApplicableDate": "2026-10-08",
+    "uploadTimeDisplayed": null,
+    "scope": "官方投資組合完整股票表；股票權重按四位小數與合計核對，基金資產與單位淨值核對。兩處申購價金基準日一致；清單適用日另存，公開時間未知。",
+    "observedOn": "2026-10-07",
+    "captureSha256": "f9a8990f1fe50674cf20fb18236fbec0c4ba5718097d0c4992130e0e5ae7266d",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://www.tsit.com.tw/ETF/Home/ETFSeriesDetail/00987A",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 28
+}

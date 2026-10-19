@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00990A",
+  "sourceId": "yuanta.official.fund_equity",
+  "asOf": "2026-10-05",
+  "fundUnits": 2326022000,
+  "observation": {
+    "netAssetsTwd": 39056642388,
+    "stockAssetsTwd": 37485466633,
+    "expectedRowCount": 48,
+    "announcementDate": "2026-10-07",
+    "uploadTimeDisplayed": "2026-10-06 14:14:46",
+    "scope": "展開基金權重-股票全部資料，筆數與各投資區域合計一致；基金資產日期與股票日期一致。",
+    "observedOn": "2026-10-06",
+    "captureSha256": "c3d352624c0597ea4ac2c616bf94bbda1021d3409ef814c66ea0bafecc55ba9e",
+    "corporateActions": "unknown"
+  },
+  "holdings": [
+    {
+      "symbol": "LITE US",
+      "name": "LUMENTUM HOLDINGS INC",
+      "shares": 91359,
+      "weightPercent": 8.11
+    },
+    {
+      "symbol": "BE US",
+      "name": "BLOOM ENERGY CORP- A",
+      "shares": 249100,
+      "weightPercent": 5.81
+    },
+    {
+      "symbol": "META US",
+      "name": "META PLATFORMS INC-CLASS A",
+      "shares": 73160,
+      "weightPercent": 4.42
+    },
+    {
+      "symbol": "AMD US",
+      "name": "ADVANCED MICRO DEVICES",
+      "shares": 81379,
+      "weightPercent": 4.18
+    },
+    {
+      "symbol": "NVDA US",
+      "name": "NVIDIA CORP",
+      "shares": 207400,
+      "weightPercent": 4.03
+    },
+    {
+      "symbol": "MRVL US",
+      "name": "MARVELL TECHNOLOGY INC",
+      "shares": 168000,
+      "weightPercent": 3.71
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電",
+      "shares": 633000,
+      "weightPercent": 3.25
+    },
+    {
+      "symbol": "LRCX US",
+      "name": "LAM RESEARCH CORP",
+      "shares": 113000,
+      "weightPercent": 3.18
+    },
+    {
+      "symbol": "SPCX US",
+      "name": "SPACE EXPLORATION TECHN-CL A",
+      "shares": 220628,
+      "weightPercent": 3.07
+    },
+    {
+      "symbol": "PLTR US",
+      "name": "PALANTIR TECHNOLOGIES INC-A",
+      "shares": 187342,
+      "weightPercent": 2.89
+    },
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 406000,
+      "weightPercent": 2.68
+    },
+    {
+      "symbol": "MU US",
+      "name": "MICRON TECHNOLOGY INC",
+      "shares": 27125,
+      "weightPercent": 2.35
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 667000,
+      "weightPercent": 2.26
+    },
+    {
+      "symbol": "SMTC US",
+      "name": "SEMTECH CORP",
+      "shares": 142700,
+      "weightPercent": 2.24
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 165000,
+      "weightPercent": 2.18
+    },
+    {
+      "symbol": "6857 JP",
+      "name": "ADVANTEST CORP",
+      "shares": 103200,
+      "weightPercent": 2.15
+    },
+    {
+      "symbol": "NET US",
+      "name": "CLOUDFLARE INC - CLASS A",
+      "shares": 72800,
+      "weightPercent": 2.13
+    },
+    {
+      "symbol": "SNOW US",
+      "name": "SNOWFLAKE INC",
+      "shares": 74000,
+      "weightPercent": 2.04
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電",
+      "shares": 134000,
+      "weightPercent": 1.96
+    },
+    {
+      "symbol": "6981 JP",
+      "name": "MURATA MANUFACTURING CO LTD",
+      "shares": 418400,
+      "weightPercent": 1.89
+    },
+    {
+      "symbol": "TWST US",
+      "name": "TWIST BIOSCIENCE CORP",
+      "shares": 103936,
+      "weightPercent": 1.73
+    },
+    {
+      "symbol": "CRWD US",
+      "name": "CROWDSTRIKE HOLDINGS INC - A",
+      "shares": 74263,
+      "weightPercent": 1.65
+    },
+    {
+      "symbol": "PANW US",
+      "name": "PALO ALTO NETWORKS INC",
+      "shares": 47955,
+      "weightPercent": 1.59
+    },
+    {
+      "symbol": "HPE US",
+      "name": "HEWLETT PACKARD ENTERPRISE",
+      "shares": 277100,
+      "weightPercent": 1.54
+    },
+    {
+      "symbol": "4062 JP",
+      "name": "IBIDEN CO LTD",
+      "shares": 236200,
+      "weightPercent": 1.49
+    },
+    {
+      "symbol": "DDOG US",
+      "name": "DATADOG INC - CLASS A",
+      "shares": 66200,
+      "weightPercent": 1.49
+    },
+    {
+      "symbol": "6920 JP",
+      "name": "LASERTEC CORP",
+      "shares": 62100,
+      "weightPercent": 1.48
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 158000,
+      "weightPercent": 1.45
+    },
+    {
+      "symbol": "CLS US",
+      "name": "CELESTICA INC",
+      "shares": 45160,
+      "weightPercent": 1.41
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 348000,
+      "weightPercent": 1.33
+    },
+    {
+      "symbol": "2449",
+      "name": "京元電子",
+      "shares": 1665000,
+      "weightPercent": 1.25
+    },
+    {
+      "symbol": "SHOP US",
+      "name": "SHOPIFY INC - CLASS A",
+      "shares": 93200,
+      "weightPercent": 1.21
+    },
+    {
+      "symbol": "INTC US",
+      "name": "INTEL CORP",
+      "shares": 115600,
+      "weightPercent": 1.09
+    },
+    {
+      "symbol": "MSFT US",
+      "name": "MICROSOFT CORP",
+      "shares": 25280,
+      "weightPercent": 1.08
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "shares": 193000,
+      "weightPercent": 1.03
+    },
+    {
+      "symbol": "OKTA US",
+      "name": "OKTA INC",
+      "shares": 57400,
+      "weightPercent": 1.02
+    },
+    {
+      "symbol": "SNDK US",
+      "name": "SANDISK CORP",
+      "shares": 7263,
+      "weightPercent": 1.01
+    },
+    {
+      "symbol": "AXTI US",
+      "name": "AXT INC",
+      "shares": 141500,
+      "weightPercent": 1
+    },
+    {
+      "symbol": "TTMI US",
+      "name": "TTM TECHNOLOGIES",
+      "shares": 92100,
+      "weightPercent": 1
+    },
+    {
+      "symbol": "AEHR US",
+      "name": "AEHR TEST SYSTEMS",
+      "shares": 116500,
+      "weightPercent": 0.99
+    },
+    {
+      "symbol": "DELL US",
+      "name": "DELL TECHNOLOGIES -C",
+      "shares": 21800,
+      "weightPercent": 0.98
+    },
+    {
+      "symbol": "FORM US",
+      "name": "FORMFACTOR INC",
+      "shares": 70000,
+      "weightPercent": 0.84
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂",
+      "shares": 130000,
+      "weightPercent": 0.77
+    },
+    {
+      "symbol": "009150 KP",
+      "name": "SAMSUNG ELECTRO-MECHANICS CO",
+      "shares": 7234,
+      "weightPercent": 0.69
+    },
+    {
+      "symbol": "MXL US",
+      "name": "MAXLINEAR INC",
+      "shares": 80300,
+      "weightPercent": 0.69
+    },
+    {
+      "symbol": "VSH US",
+      "name": "VISHAY INTERTECHNOLOGY INC",
+      "shares": 206900,
+      "weightPercent": 0.62
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 364000,
+      "weightPercent": 0.54
+    },
+    {
+      "symbol": "WOLF US",
+      "name": "WOLFSPEED INC",
+      "shares": 179224,
+      "weightPercent": 0.49
+    }
+  ],
+  "sourceUrl": "https://www.yuantaetfs.com/tradeInfo/pcf/00990A",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 48
+}

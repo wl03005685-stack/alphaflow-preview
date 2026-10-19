@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "fundSymbol": "00993A",
+  "sourceId": "allianz.official.fund_equity",
+  "asOf": "2026-10-02",
+  "fundUnits": 734091000,
+  "holdings": [
+    {
+      "symbol": "2330",
+      "name": "台積電",
+      "shares": 349000,
+      "weightPercent": 8.32
+    },
+    {
+      "symbol": "3037",
+      "name": "欣興",
+      "shares": 531000,
+      "weightPercent": 6.61
+    },
+    {
+      "symbol": "2454",
+      "name": "聯發科",
+      "shares": 131000,
+      "weightPercent": 6.19
+    },
+    {
+      "symbol": "3017",
+      "name": "奇鋐",
+      "shares": 169000,
+      "weightPercent": 5.55
+    },
+    {
+      "symbol": "2383",
+      "name": "台光電子",
+      "shares": 101000,
+      "weightPercent": 5
+    },
+    {
+      "symbol": "3443",
+      "name": "創意電子",
+      "shares": 66000,
+      "weightPercent": 4.98
+    },
+    {
+      "symbol": "3189",
+      "name": "景碩科技",
+      "shares": 440000,
+      "weightPercent": 4.41
+    },
+    {
+      "symbol": "6223",
+      "name": "旺矽",
+      "shares": 82000,
+      "weightPercent": 4.16
+    },
+    {
+      "symbol": "6669",
+      "name": "緯穎",
+      "shares": 195191,
+      "weightPercent": 3.88
+    },
+    {
+      "symbol": "5274",
+      "name": "信驊科技",
+      "shares": 20600,
+      "weightPercent": 3.7
+    },
+    {
+      "symbol": "8046",
+      "name": "南電",
+      "shares": 254000,
+      "weightPercent": 3.54
+    },
+    {
+      "symbol": "2408",
+      "name": "南亞科",
+      "shares": 626000,
+      "weightPercent": 3.14
+    },
+    {
+      "symbol": "2303",
+      "name": "聯電",
+      "shares": 1938000,
+      "weightPercent": 2.99
+    },
+    {
+      "symbol": "3653",
+      "name": "健策",
+      "shares": 41000,
+      "weightPercent": 2.66
+    },
+    {
+      "symbol": "6274",
+      "name": "台燿",
+      "shares": 159000,
+      "weightPercent": 2.46
+    },
+    {
+      "symbol": "2345",
+      "name": "智邦",
+      "shares": 129000,
+      "weightPercent": 2.42
+    },
+    {
+      "symbol": "2059",
+      "name": "川湖",
+      "shares": 20000,
+      "weightPercent": 2.32
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨*",
+      "shares": 388000,
+      "weightPercent": 2.32
+    },
+    {
+      "symbol": "2344",
+      "name": "華邦電子",
+      "shares": 1214000,
+      "weightPercent": 2.07
+    },
+    {
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "shares": 83000,
+      "weightPercent": 2.01
+    },
+    {
+      "symbol": "2308",
+      "name": "台達電子",
+      "shares": 108000,
+      "weightPercent": 1.94
+    },
+    {
+      "symbol": "2455",
+      "name": "全新",
+      "shares": 348000,
+      "weightPercent": 1.93
+    },
+    {
+      "symbol": "3008",
+      "name": "大立光電",
+      "shares": 26000,
+      "weightPercent": 1.56
+    },
+    {
+      "symbol": "1303",
+      "name": "南亞",
+      "shares": 553000,
+      "weightPercent": 1.37
+    },
+    {
+      "symbol": "4958",
+      "name": "臻鼎-KY",
+      "shares": 246000,
+      "weightPercent": 1.32
+    },
+    {
+      "symbol": "1560",
+      "name": "中砂",
+      "shares": 111000,
+      "weightPercent": 1.08
+    },
+    {
+      "symbol": "6213",
+      "name": "聯茂",
+      "shares": 105000,
+      "weightPercent": 0.68
+    },
+    {
+      "symbol": "2395",
+      "name": "研華",
+      "shares": 90000,
+      "weightPercent": 0.61
+    },
+    {
+      "symbol": "3711",
+      "name": "日月光投控",
+      "shares": 90000,
+      "weightPercent": 0.61
+    },
+    {
+      "symbol": "3324",
+      "name": "雙鴻科技",
+      "shares": 41000,
+      "weightPercent": 0.59
+    },
+    {
+      "symbol": "2006",
+      "name": "東和鋼鐵",
+      "shares": 699000,
+      "weightPercent": 0.58
+    },
+    {
+      "symbol": "3081",
+      "name": "聯亞光電",
+      "shares": 19000,
+      "weightPercent": 0.53
+    },
+    {
+      "symbol": "2412",
+      "name": "中華電",
+      "shares": 357000,
+      "weightPercent": 0.5
+    },
+    {
+      "symbol": "6805",
+      "name": "富世達",
+      "shares": 22000,
+      "weightPercent": 0.48
+    },
+    {
+      "symbol": "2347",
+      "name": "聯強",
+      "shares": 474000,
+      "weightPercent": 0.44
+    },
+    {
+      "symbol": "2606",
+      "name": "裕民",
+      "shares": 498000,
+      "weightPercent": 0.36
+    },
+    {
+      "symbol": "3532",
+      "name": "台勝科",
+      "shares": 80000,
+      "weightPercent": 0.36
+    },
+    {
+      "symbol": "6505",
+      "name": "台塑石化",
+      "shares": 378000,
+      "weightPercent": 0.36
+    },
+    {
+      "symbol": "2360",
+      "name": "致茂",
+      "shares": 15000,
+      "weightPercent": 0.31
+    },
+    {
+      "symbol": "2603",
+      "name": "長榮海運",
+      "shares": 135000,
+      "weightPercent": 0.31
+    },
+    {
+      "symbol": "3406",
+      "name": "玉晶光",
+      "shares": 33000,
+      "weightPercent": 0.3
+    },
+    {
+      "symbol": "3044",
+      "name": "健鼎科技",
+      "shares": 54000,
+      "weightPercent": 0.28
+    },
+    {
+      "symbol": "4904",
+      "name": "遠傳",
+      "shares": 266000,
+      "weightPercent": 0.27
+    },
+    {
+      "symbol": "2301",
+      "name": "光寶科技",
+      "shares": 89000,
+      "weightPercent": 0.24
+    },
+    {
+      "symbol": "2313",
+      "name": "華通",
+      "shares": 110000,
+      "weightPercent": 0.24
+    },
+    {
+      "symbol": "6147",
+      "name": "頎邦",
+      "shares": 113000,
+      "weightPercent": 0.24
+    },
+    {
+      "symbol": "2027",
+      "name": "大成鋼",
+      "shares": 459000,
+      "weightPercent": 0.21
+    },
+    {
+      "symbol": "2618",
+      "name": "長榮航",
+      "shares": 487000,
+      "weightPercent": 0.2
+    },
+    {
+      "symbol": "8299",
+      "name": "群聯電子",
+      "shares": 10000,
+      "weightPercent": 0.2
+    },
+    {
+      "symbol": "3491",
+      "name": "昇達科技",
+      "shares": 11000,
+      "weightPercent": 0.16
+    },
+    {
+      "symbol": "5289",
+      "name": "宜鼎國際",
+      "shares": 1873,
+      "weightPercent": 0.02
+    }
+  ],
+  "observation": {
+    "netAssetsTwd": 10479201510,
+    "stockAssetsTwd": null,
+    "equityWeightPercent": 97.01,
+    "validationMethod": "issuer_equity_weight_total",
+    "expectedRowCount": 51,
+    "announcementDate": null,
+    "pcfApplicableDate": "2026-10-05",
+    "uploadTimeDisplayed": null,
+    "scope": "展開整體基金股票表，逐股權重與官方股票比重按顯示精度核對；三處淨值與申購價金基準日一致。清單適用日另存，不能當成實際發布日；期貨不混入股票。",
+    "observedOn": "2026-10-02",
+    "captureSha256": "6ad86ac5f915ad88c20cca90fa189b4332020eaaf895e9bf1123e4a55bf97414",
+    "corporateActions": "unknown"
+  },
+  "sourceUrl": "https://etf.allianzgi.com.tw/list-trade",
+  "publishedAt": null,
+  "dataKind": "real",
+  "coverage": "full_equity",
+  "sharesBasis": "actual_shares",
+  "rowCount": 51
+}
