@@ -1,5 +1,5 @@
 import {publicFetch as fetch} from './preview-client.js';
-import {loadFundScope,filterFundTimeline,fundScopeHTML,FUND_SCOPE_NOTE} from './fund-scope.js';
+import {loadFundScope,filterFundTimeline,fundScopeHTML,FUND_SCOPE_NOTE} from './fund-scope.js?v=68';
 import {newestFirst,trajectoryChart,bindTrajectory} from './trajectory.js';
 import {buildIntervalReport,renderIntervalReport,intervalReportHTML} from './interval-report.js';
 import {mountUpdateStatus} from './update-status.js';
@@ -48,8 +48,7 @@ export async function mountWall(root){
    if(!selectedDate){$('#flow-board').innerHTML='<p class="panel content-panel">沒有符合條件的日期。</p>';return;}
    const available=data.funds.filter(f=>f.pairs.some(p=>p.to===selectedDate)),missing=data.funds.filter(f=>!f.pairs.some(p=>p.to===selectedDate));
    if(mode==='funds'){
-    const order=['00981A','00405A','00982A','00403A','00988A','00990A','00992A','00993A','00984A','00995A','00987A','00996A','00991A','00406A'];
-    $('#flow-board').innerHTML=data.funds.filter(f=>fund==='all'||f.fundSymbol===fund).sort((a,b)=>order.indexOf(a.fundSymbol)-order.indexOf(b.fundSymbol)).map(f=>{
+    $('#flow-board').innerHTML=data.funds.filter(f=>fund==='all'||f.fundSymbol===fund).map(f=>{
      const pair=f.pairs.find(p=>p.to===selectedDate),rows=visible.filter(e=>e.to===selectedDate&&e.fund===f.fundSymbol),up=rows.filter(e=>e.delta>0),down=rows.filter(e=>e.delta<0);
      return `<section class="panel flow-fund-block"><header><h2>${esc(f.fundSymbol)} <span>${esc(names[f.fundSymbol]??'')}</span></h2><p class="small subtle">${pair?pair.from+' → '+pair.to+(pair.rows.every(r=>r.delta===0)?' · 完整持股已更新，股數全部不變':' · 完整持股已更新'):'此日尚未取得可比較資料'}</p></header><div class="flow-sides"><section class="flow-side-increase"><h3>新增／增加 <span>${up.length}</span></h3>${pair?(up.length?up.map(card).join(''):'<p class="flow-empty">沒有符合篩選的新增／增加</p>'):'<p class="flow-empty">待補資料</p>'}</section><section class="flow-side-decrease"><h3>減少／移出 <span>${down.length}</span></h3>${pair?(down.length?down.map(card).join(''):'<p class="flow-empty">沒有符合篩選的減少／移出</p>'):'<p class="flow-empty">待補資料</p>'}</section></div></section>`;
     }).join('');
