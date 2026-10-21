@@ -1,5 +1,6 @@
 import {publicFetch as fetch} from './preview-client.js';
-import {applyReviewedDividends} from './reviewed-dividends.js';
+import {applyReviewedDividends} from './reviewed-dividends.js?v=69';
+import {mergeReviewedHistory} from './reviewed-history.js';
 // Overseas observations are a separately reviewed research snapshot, never a
 // replacement for the collector's signed TWSE/TPEx observations.
 export function validateOverseasData(data){
@@ -38,7 +39,10 @@ export function mergeOverseasData(market,data){
 }
 export async function loadMarketData(fetcher=fetch){
  const response=await fetcher('/market-data.json',{cache:'no-store'});if(!response.ok)throw Error('Market data unavailable');
- const market=applyReviewedDividends(await response.json());
+ let market=applyReviewedDividends(await response.json());
+ let history=null;
+ try{const r=await fetcher('/historical-prices-reviewed.json',{cache:'no-store'});if(r.ok)history=await r.json();}catch{}
+ market=history?mergeReviewedHistory(market,history):{...market,reviewedHistory:{unavailable:true}};
  try{const overseas=await fetcher('/overseas-market-data.json',{cache:'no-store'});if(!overseas.ok)throw Error();return mergeOverseasData(market,await overseas.json());}
  catch{return {...market,overseas:{unavailable:true}};}
 }

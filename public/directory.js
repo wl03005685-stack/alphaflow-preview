@@ -1,8 +1,8 @@
 import {publicFetch as fetch} from './preview-client.js';
 import {loadFundScope,fundScopeHTML,sortFundsBySize} from './fund-scope.js?v=68';
-import {mountDataHealth} from './data-health.js';
+import {mountDataHealth} from './data-health.js?v=69';
 import {mountDecomposition} from './decomposition.js';
-import {mountReturns} from './returns.js';
+import {mountReturns} from './returns.js?v=69';
 import {mountBehaviorCheck} from './behavior-check.js';
 import {mountPatterns} from './patterns.js';
 import {mountTimeline} from './timeline.js';

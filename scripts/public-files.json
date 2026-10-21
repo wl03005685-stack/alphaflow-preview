@@ -151,5 +151,6 @@
   "timeline-data.json",
   "tracking-data.json",
   "update-status.json",
-  "domestic-actions-reviewed.json"
+  "domestic-actions-reviewed.json",
+  "historical-prices-reviewed.json"
 ]

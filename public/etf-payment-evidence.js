@@ -84,7 +84,7 @@ export const paymentEvidence={
   "00406A": {
     "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00406A",
     "sha256": "d213c6a79b622ce8ba7cf4f3e734be30f4e981f0d3bef55d71c0f0086dfe3728",
-    "checkedAt": "2026-10-21T01:42:04.040Z",
+    "checkedAt": "2026-10-21T06:31:55.152Z",
     "records": [
       {
         "exDate": "2026-10-05",
@@ -106,7 +106,7 @@ export const paymentEvidence={
   "00984A": {
     "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00984A",
     "sha256": "f9d64547bec876cecfed1628b3fa38479798bfce425240b570cac17135600fcb",
-    "checkedAt": "2026-10-21T01:42:04.040Z",
+    "checkedAt": "2026-10-21T06:31:55.152Z",
     "records": [
       {
         "exDate": "2026-10-19",
@@ -138,7 +138,7 @@ export const paymentEvidence={
   "00992A": {
     "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00992A",
     "sha256": "572ccba64a6a1190d888cdb9345ded8d358635cf662d19e35aaf1303ceba3714",
-    "checkedAt": "2026-10-21T01:42:04.040Z",
+    "checkedAt": "2026-10-21T06:31:55.152Z",
     "records": [
       {
         "exDate": "2026-10-19",
@@ -151,6 +151,24 @@ export const paymentEvidence={
         "amount": 0.47
       }
     ]
+  },
+  "00991A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00991A",
+    "sha256": "4830cc059ba028b1f6a968a9a829513b3be737e4d23f17a4bdd6a741ff158f89",
+    "checkedAt": "2026-10-21T06:31:55.152Z",
+    "records": [
+      {
+        "exDate": "2026-07-21",
+        "paymentDate": "2026-08-14",
+        "amount": 0.77
+      }
+    ]
+  },
+  "00407A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00407A",
+    "sha256": "c10e65af07f0064b42dd7daf7275cc268517bc03ad358bf046d536f95508f310",
+    "checkedAt": "2026-10-21T06:31:55.152Z",
+    "records": []
   }
 };
 export function verifyPayments(symbol,records){return records.map(r=>({...r,paymentDateVerified:!!paymentEvidence[symbol]?.records.some(e=>e.exDate===r.exDate&&e.paymentDate===r.paymentDate&&e.amount===r.amount)}));}

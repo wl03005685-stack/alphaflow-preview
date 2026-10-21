@@ -91,6 +91,14 @@ export const reviewedDividends=[
     "amount": 0.47,
     "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00992A",
     "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00992A"
+  },
+  {
+    "symbol": "00991A",
+    "exDate": "2026-07-21",
+    "paymentDate": "2026-08-14",
+    "amount": 0.77,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00991A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00991A"
   }
 ];
 export function applyReviewedDividends(market){
