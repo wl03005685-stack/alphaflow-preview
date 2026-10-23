@@ -7,7 +7,7 @@ export function freshness(row,now=new Date()){
  const checkDay=row.lastCheckedAt?new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(row.lastCheckedAt)):null;
  if(checkDay!==today)return '今日尚未核對';
  const target=domesticDateTarget(now);
- if(['00981A','00403A','00405A','00982A','00415A','00992A','00993A','00984A','00995A','00987A','00410A','00408A','00994A','00407A','00996A','00991A','00406A'].includes(row.fundSymbol)&&target.closedToday&&target.targetAsOf&&row.latestSavedAsOf===target.targetAsOf&&['acquired','no_new_data'].includes(row.acquisition))return '休市日已核對最近交易日';
+ if(['00981A','00403A','00405A','00982A','00400A','00980A','00985A','00999A','00415A','00992A','00993A','00984A','00995A','00987A','00410A','00408A','00994A','00407A','00996A','00991A','00406A'].includes(row.fundSymbol)&&target.closedToday&&target.targetAsOf&&row.latestSavedAsOf===target.targetAsOf&&['acquired','no_new_data'].includes(row.acquisition))return '休市日已核對最近交易日';
  if(row.latestSavedAsOf&&row.latestSavedAsOf<today&&['acquired','no_new_data'].includes(row.acquisition))return '已檢查，但持股日較早';
  return {failed:'取得失敗',not_available:'尚未取得',acquired:'今日已核對',no_new_data:'來源暫無新資料'}[row.acquisition]??'今日尚未核對';
 }

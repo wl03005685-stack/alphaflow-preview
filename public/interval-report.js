@@ -1,5 +1,5 @@
 import {unresolvedShareActions} from './domestic-actions.js';
-export const fundNames={'00410A':'永豐科技趨勢','00408A':'第一金優股息','00994A':'第一金台股優','00407A':'凱基台灣','00996A':'兆豐台灣豐收','00987A':'台新優勢成長','00995A':'中信台灣卓越','00984A':'安聯台灣高息','00406A':'中信台灣收益','00991A':'復華未來50','00993A':'安聯台灣','00415A':'群益核心50','00992A':'群益科技創新','00982A':'群益台灣強棒','00405A':'富邦台灣龍耀','00403A':'統一升級50','00981A':'統一台股增長'};
+export const fundNames={'00410A':'永豐科技趨勢','00408A':'第一金優股息','00994A':'第一金台股優','00407A':'凱基台灣','00996A':'兆豐台灣豐收','00987A':'台新優勢成長','00995A':'中信台灣卓越','00984A':'安聯台灣高息','00406A':'中信台灣收益','00991A':'復華未來50','00993A':'安聯台灣','00400A':'國泰動能高息','00980A':'野村臺灣優選','00985A':'野村台灣50','00999A':'野村臺灣高息','00415A':'群益核心50','00992A':'群益科技創新','00982A':'群益台灣強棒','00405A':'富邦台灣龍耀','00403A':'統一升級50','00981A':'統一台股增長'};
 export function buildIntervalReport(data,market,actions,{from='',to='',query='',fund='all'}={}){
  const all=data.funds.filter(f=>fundNames[f.fundSymbol]&&(fund==='all'||fund===f.fundSymbol)),dates=all.flatMap(f=>f.dates.map(d=>d.asOf)).sort(),start=from||dates[0]||'',end=to||dates.at(-1)||'',stocks=new Map(),coverage=[];let boundaryPairs=0;
  if(start>end)return {from:start,to:end,error:'起日不能晚於迄日',stocks:[],coverage:[]};
