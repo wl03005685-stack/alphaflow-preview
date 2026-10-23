@@ -1,11 +1,11 @@
 import {publicFetch as fetch} from './preview-client.js';
 import {loadFundScope,filterFundTimeline,fundScopeHTML,FUND_SCOPE_NOTE} from './fund-scope.js?v=68';
 import {newestFirst,trajectoryChart,bindTrajectory} from './trajectory.js';
-import {buildIntervalReport,renderIntervalReport,intervalReportHTML} from './interval-report.js';
-import {mountUpdateStatus} from './update-status.js';
+import {buildIntervalReport,renderIntervalReport,intervalReportHTML} from './interval-report.js?v=70';
+import {mountUpdateStatus} from './update-status.js?v=70';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={added:'新出現',increased:'股數增加',decreased:'股數減少',removed:'清單移出'};
-const names={'00996A':'兆豐台灣豐收','00987A':'台新優勢成長','00995A':'中信台灣卓越','00984A':'安聯台灣高息','00406A':'中信台灣收益','00991A':'復華未來50','00993A':'安聯台灣','00992A':'群益科技創新','00982A':'群益台灣強棒','00405A':'富邦台灣龍耀','00403A':'統一升級50','00988A':'統一全球創新','00981A':'統一台股增長','00990A':'元大AI新經濟'};
+const names={'00996A':'兆豐台灣豐收','00987A':'台新優勢成長','00995A':'中信台灣卓越','00984A':'安聯台灣高息','00406A':'中信台灣收益','00991A':'復華未來50','00993A':'安聯台灣','00415A':'群益核心50','00992A':'群益科技創新','00982A':'群益台灣強棒','00405A':'富邦台灣龍耀','00403A':'統一升級50','00988A':'統一全球創新','00981A':'統一台股增長','00990A':'元大AI新經濟'};
 const qty=(n,s)=>new Intl.NumberFormat('zh-TW',{maximumFractionDigits:3}).format(n/(/^\d{4,6}$/.test(s)?1000:1))+(/^\d{4,6}$/.test(s)?' 張':' 股');
 export function wallEvents(data){return data.funds.flatMap(f=>f.pairs.flatMap(p=>p.rows.filter(r=>r.kind!=='unchanged').map(r=>({...r,fund:f.fundSymbol,source:f.sourceId,from:p.from,to:p.to,beforePath:p.beforePath,afterPath:p.afterPath})))).sort((a,b)=>b.to.localeCompare(a.to)||a.fund.localeCompare(b.fund)||a.symbol.localeCompare(b.symbol));}
 export function aggregateStocks(events){

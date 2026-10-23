@@ -14,7 +14,7 @@ export function decomposePair(pair){
 // Peer dates are only review candidates, never a substitute for an issuer calendar.
 export function peerDateGaps(data,fund){
  const own=new Set(fund.dates.map(d=>d.asOf));if(!own.size)return [];
- const domestic=new Set(['00981A','00982A','00403A','00405A','00992A','00993A','00984A','00995A','00987A','00410A','00408A','00994A','00407A','00996A','00991A','00406A']);
+ const domestic=new Set(['00981A','00982A','00403A','00405A','00415A','00992A','00993A','00984A','00995A','00987A','00410A','00408A','00994A','00407A','00996A','00991A','00406A']);
  if(!domestic.has(fund.fundSymbol))return [];
  const first=fund.dates[0].asOf,last=fund.dates.at(-1).asOf;
  return [...new Set(data.funds.filter(f=>domestic.has(f.fundSymbol)).flatMap(f=>f.dates.map(d=>d.asOf)))].filter(d=>d>first&&d<last&&!own.has(d)).sort();

@@ -1,7 +1,7 @@
 import {publicFetch as fetch} from './preview-client.js';
 import {loadFundScope,fundScopeHTML,sortFundsBySize} from './fund-scope.js?v=68';
-import {mountDataHealth} from './data-health.js?v=69';
-import {mountDecomposition} from './decomposition.js';
+import {mountDataHealth} from './data-health.js?v=70';
+import {mountDecomposition} from './decomposition.js?v=70';
 import {mountReturns} from './returns.js?v=69';
 import {mountBehaviorCheck} from './behavior-check.js';
 import {mountPatterns} from './patterns.js';
@@ -9,7 +9,7 @@ import {mountTimeline} from './timeline.js';
 import {mountHistory} from './history.js';
 import {mountTracking} from './tracking.js';
 import {mountPair} from './pair.js';
-const catalogFunds=[{code:'00410A',name:'主動永豐科技趨勢',market:'台灣'},{code:'00408A',name:'主動第一金優股息',market:'台灣'},{code:'00994A',name:'主動第一金台股優',market:'台灣'},{code:'00407A',name:'主動凱基台灣',market:'台灣'},{code:'00996A',name:'主動兆豐台灣豐收',market:'台灣'},{code:'00987A',name:'主動台新優勢成長',market:'台灣'},{code:'00995A',name:'主動中信台灣卓越',market:'台灣'},{code:'00984A',name:'主動安聯台灣高息',market:'台灣'},{code:'00406A',name:'主動中信台灣收益',market:'台灣'},{code:'00991A',name:'主動復華未來50',market:'台灣'},{code:'00993A',name:'主動安聯台灣',market:'台灣'},{code:'00992A',name:'主動群益科技創新',market:'台灣'},{code:'00403A',name:'主動統一升級50',market:'台灣'},{code:'00988A',name:'主動統一全球創新',market:'全球'},{code:'00981A',name:'主動統一台股增長',market:'台灣'}, {code:'00982A',name:'主動群益台灣強棒',market:'台灣'}, {code:'00405A',name:'主動富邦台灣龍耀',market:'台灣'}, {code:'00990A',name:'主動元大AI新經濟',market:'全球'}];
+const catalogFunds=[{code:'00415A',name:'主動群益核心50',market:'台灣'},{code:'00410A',name:'主動永豐科技趨勢',market:'台灣'},{code:'00408A',name:'主動第一金優股息',market:'台灣'},{code:'00994A',name:'主動第一金台股優',market:'台灣'},{code:'00407A',name:'主動凱基台灣',market:'台灣'},{code:'00996A',name:'主動兆豐台灣豐收',market:'台灣'},{code:'00987A',name:'主動台新優勢成長',market:'台灣'},{code:'00995A',name:'主動中信台灣卓越',market:'台灣'},{code:'00984A',name:'主動安聯台灣高息',market:'台灣'},{code:'00406A',name:'主動中信台灣收益',market:'台灣'},{code:'00991A',name:'主動復華未來50',market:'台灣'},{code:'00993A',name:'主動安聯台灣',market:'台灣'},{code:'00992A',name:'主動群益科技創新',market:'台灣'},{code:'00403A',name:'主動統一升級50',market:'台灣'},{code:'00988A',name:'主動統一全球創新',market:'全球'},{code:'00981A',name:'主動統一台股增長',market:'台灣'}, {code:'00982A',name:'主動群益台灣強棒',market:'台灣'}, {code:'00405A',name:'主動富邦台灣龍耀',market:'台灣'}, {code:'00990A',name:'主動元大AI新經濟',market:'全球'}];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function save(raw){const r=await fetch('/api/snapshots',{method:'POST',headers:{'Content-Type':'application/json'},body:raw});let b;try{b=await r.json();}catch{throw Error('保存未完成，請確認登入狀態後重試。');}if(!r.ok)throw Error(b.message??'保存失敗');return b;}
 export async function mountDirectory(root){
