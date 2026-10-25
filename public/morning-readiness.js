@@ -1,20 +1,79 @@
 import {publicFetch as fetch} from './preview-client.js';
 import {twseSession} from './trading-calendar.mjs';
+import {loadFundScope,MIN_FUND_ASSETS_TWD} from './fund-scope.js?v=68';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export function morningReadiness(status,market,overseas,now=new Date()){
- const local=new Date(now.getTime()+8*3600000),today=local.toISOString().slice(0,10),previous=new Date(local.getTime()-86400000).toISOString().slice(0,10);
- let target=null;for(let i=1;i<=32;i++){const date=new Date(local.getTime()-i*86400000).toISOString().slice(0,10),s=twseSession(date);if(!s.known)break;if(s.open){target=date;break;}}
- const checkedToday=t=>t&&new Date(Date.parse(t)+8*3600000).toISOString().slice(0,10)===today;
- const holdings=status.funds.map(f=>({symbol:f.fundSymbol,date:f.latestSavedAsOf,ready:!!target&&f.latestSavedAsOf>=target&&checkedToday(f.lastCheckedAt)&&['acquired','no_new_data'].includes(f.acquisition)}));
- const prices=Object.entries({...market.fundPrices,...market.constituents}).map(([symbol,s])=>({symbol,date:s.rows.at(-1)?.date,ready:!!target&&s.rows.at(-1)?.date>=target}));
- const foreign=Object.values(overseas.constituents).map(s=>({symbol:s.symbol,date:s.rows.at(-1)?.date,ready:s.rows.at(-1)?.date>=previous,reason:s.missingRows.find(r=>r.date===previous)?.reason??'較早日期或市場休市待核對'}));
- const sourceFresh=checkedToday(status.lastRunAt)&&checkedToday(overseas.generatedAt);
- return {today,target,overseasDateTarget:previous,sourceFresh,holdings,prices,foreign,complete:sourceFresh&&holdings.every(r=>r.ready)&&prices.every(r=>r.ready)&&foreign.every(r=>r.ready)};
+const validDate=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
+const taipeiDay=v=>{const n=Date.parse(v);return Number.isFinite(n)?new Date(n+8*3600000).toISOString().slice(0,10):null;};
+const successful=new Set(['acquired','no_new_data']);
+const stateLabels={ready:'已達日期目標',missing:'尚無保存資料',source_older:'來源本次仍回傳較早日期',source_restricted:'來源限制自動存取',source_failed:'來源取得或驗證失敗',not_checked:'今日尚未完成核對',missing_latest:'來源已有新版，尚未保存',calendar_unknown:'交易日曆待核對',date_pending:'日期仍待來源核對',market_failed:'行情重查失敗',market_deferred:'行情重查尚未完成'};
+
+export function buildReadinessContext(scope,snapshots=[]){
+ const rows=scope?.rows??[],eligible=scope?.eligible??new Set();
+ const unknownCount=rows.filter(r=>!Number.isFinite(r.assets)).length;
+ const selected=rows.filter(r=>eligible.has(r.symbol)&&r.assets>=MIN_FUND_ASSETS_TWD).sort((a,b)=>b.assets-a.assets||a.symbol.localeCompare(b.symbol));
+ const latest=new Map();for(const s of snapshots)if(!latest.has(s.fundSymbol)||latest.get(s.fundSymbol).asOf<s.asOf)latest.set(s.fundSymbol,s);
+ let snapshotsComplete=true;const constituents=new Set();
+ for(const r of selected){
+  const snapshot=latest.get(r.symbol);
+  if(!snapshot||snapshot.asOf!==r.asOf||!Array.isArray(snapshot.holdings)||!snapshot.holdings.length){snapshotsComplete=false;continue;}
+  for(const h of snapshot.holdings){const m=String(h.symbol??'').match(/^(\d{4,6})(?: (?:TW|TT))?$/);if(m)constituents.add(m[1]);}
+ }
+ const funds=selected.map(r=>r.symbol);
+ return {scopeKnown:!!scope&&rows.length>0&&funds.length>0&&unknownCount===0&&snapshotsComplete,funds,unknownCount,excludedCount:rows.filter(r=>Number.isFinite(r.assets)&&r.assets<MIN_FUND_ASSETS_TWD).length,expectedPrices:[...new Set([...funds,'0050'])].map(symbol=>({symbol,group:'fundPrices'})).concat([...constituents].sort().map(symbol=>({symbol,group:'constituents'})))};
 }
-export async function mountMorningReadiness(root,status){
+
+export async function loadReadinessContext(fetcher=fetch){
+ const response=await fetcher('/tracking-data.json',{cache:'no-store'});if(!response.ok)throw Error('Tracking unavailable');
+ const tracking=await response.json(),cache=new Map();
+ const cachedFetch=path=>{if(!cache.has(path))cache.set(path,(async()=>{const r=await fetcher(path,{cache:'no-store'});if(!r.ok)return {ok:false};const value=await r.json();return {ok:true,json:async()=>value};})());return cache.get(path);};
+ const scope=await loadFundScope(tracking,cachedFetch);
+ const snapshots=[];
+ for(const row of scope.rows.filter(r=>r.eligible)){const r=await cachedFetch(row.path);if(r.ok)snapshots.push(await r.json());}
+ return buildReadinessContext(scope,snapshots);
+}
+
+function holdingState(row,target,today){
+ const saved=validDate(row?.latestSavedAsOf)?row.latestSavedAsOf:null,official=validDate(row?.latestOfficialAsOf)?row.latestOfficialAsOf:null;
+ if(official&&(!saved||official>saved))return 'missing_latest';
+ if(!row||taipeiDay(row.lastCheckedAt)!==today)return saved?'not_checked':'missing';
+ if(row.acquisition==='failed')return row.reason==='來源限制自動存取，未繞過限制。'?'source_restricted':'source_failed';
+ if(!saved)return 'missing';
+ if(!successful.has(row.acquisition))return 'not_checked';
+ if(!target)return 'calendar_unknown';
+ if(saved>=target)return 'ready';
+ return official&&official<target?'source_older':'date_pending';
+}
+
+export function morningReadiness(status,market,overseas,now=new Date(),context){
+ const local=new Date(now.getTime()+8*3600000),today=local.toISOString().slice(0,10);
+ let target=null;for(let i=1;i<=32;i++){const date=new Date(local.getTime()-i*86400000).toISOString().slice(0,10),s=twseSession(date);if(!s.known)break;if(s.open){target=date;break;}}
+ const checkedToday=t=>taipeiDay(t)===today;
+ const sourceFresh=checkedToday(status.lastRunAt),marketCheckFresh=checkedToday(status.marketRefresh?.finishedAt);
+ const holdings=(context?.funds??[]).map(symbol=>{const f=status.funds?.find(r=>r.fundSymbol===symbol),state=holdingState(f,target,today);return {symbol,date:f?.latestSavedAsOf??null,officialDate:f?.latestOfficialAsOf??null,checkedAt:f?.lastCheckedAt??null,reason:f?.reason??'',state,ready:state==='ready'};});
+ const failed=new Set(Array.isArray(status.marketRefresh?.failed)?status.marketRefresh.failed.map(r=>typeof r==='string'?r:r.symbol):[]),deferred=new Set(status.marketRefresh?.deferred??[]);
+ const prices=(context?.expectedPrices??[]).map(({symbol,group})=>{
+  const series=market?.[group]?.[symbol],date=series?.rows?.at(-1)?.date??null;
+  const state=!validDate(date)?'missing':status.marketRefresh?.failed===true&&sourceFresh?'market_failed':!marketCheckFresh?'not_checked':failed.has(symbol)?'market_failed':deferred.has(symbol)?'market_deferred':!target?'calendar_unknown':date>=target?'ready':'date_pending';
+  return {symbol,group,date,state,ready:state==='ready'};
+ });
+ // No reviewed overseas holiday calendar is available; display observations
+ // without treating yesterday's calendar date as a required trading session.
+ const foreign=Object.values(overseas?.constituents??{}).map(s=>({symbol:s.symbol,date:s.rows?.at(-1)?.date??null,state:'calendar_pending',missingRows:s.missingRows??[]}));
+ const scopeKnown=context?.scopeKnown===true,complete=scopeKnown&&sourceFresh&&marketCheckFresh&&holdings.length>0&&prices.length>0&&holdings.every(r=>r.ready)&&prices.every(r=>r.ready);
+ return {today,target,scopeKnown,excludedCount:context?.excludedCount??0,unknownCount:context?.unknownCount??0,sourceFresh,marketCheckFresh,holdings,prices,foreign,overseasDateTarget:null,overseasCheckedToday:checkedToday(overseas?.generatedAt),overseasGeneratedAt:overseas?.generatedAt??null,complete};
+}
+
+export function readinessMarkup(r){
+ const unresolved=r.holdings.filter(x=>!x.ready),priceIssues=r.prices.filter(x=>!x.ready);
+ const grouped=Object.entries(stateLabels).map(([state,label])=>({label,count:unresolved.filter(x=>x.state===state).length})).filter(x=>x.count);
+ const time=v=>Number.isFinite(Date.parse(v))?new Date(v).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}):'未記錄';
+ const foreignDates=[...new Set(r.foreign.map(x=>x.date).filter(Boolean))].sort();
+ return `<h3>早晨資料驗收 · 百億主清單</h3><p><strong>${r.complete?'主要清單持股與台股行情已達日期目標':'主要清單尚有待核對項目'}</strong> · ${esc(r.today)} 核對；台股前一預定交易日 ${esc(r.target??'日曆待核對')}。</p><p>日期達標：主要 ETF 持股 ${r.holdings.filter(x=>x.ready).length} / ${r.holdings.length} 檔 · 相關台股行情 ${r.prices.filter(x=>x.ready).length} / ${r.prices.length} 檔。低於 100 億的 ${r.excludedCount} 檔不計入；規模待確認 ${r.unknownCount} 檔。</p>${!r.scopeKnown?'<p class="note">主要清單或最新持股未能完整核對，不能宣稱資料齊全。</p>':''}${grouped.length?`<p>${grouped.map(x=>`${x.label} ${x.count} 檔`).join(' · ')}</p>`:''}<details${unresolved.length?' open':''}><summary>逐檔查看持股日期與原因（${r.holdings.length} 檔）</summary><div class="table-wrap"><table><thead><tr><th>ETF</th><th>已保存持股日</th><th>本次來源日期</th><th>核對結果</th></tr></thead><tbody>${r.holdings.map(x=>`<tr><td>${esc(x.symbol)}</td><td>${esc(x.date??'尚無')}</td><td>${esc(x.officialDate??'無法確認')}</td><td>${esc(stateLabels[x.state])}</td></tr>`).join('')}</tbody></table></div><p class="small subtle">來源回傳較早日期，不等於系統漏抓或官方所有管道尚未公布。全球型 ETF 的公告日與持股基準日可能不同，日期落後仍須按該基金揭露方式核對。受限來源保留已保存持股，不能當作今日採集成功。</p></details><details><summary>相關台股行情待核對（${priceIssues.length} 檔）</summary><p>範圍為主清單 ETF、0050 基準及主清單最新持股中的台股。行情日期與重查結果分別核對。</p><ul>${priceIssues.map(x=>`<li>${esc(x.symbol)}：${esc(x.date??'尚無')} · ${esc(stateLabels[x.state])}</li>`).join('')||'<li>目前沒有行情日期缺口。</li>'}</ul></details><details><summary>海外研究行情 · 交易日曆待核對</summary><p>已保存 ${r.foreign.length} 組海外股票行情；資料日期 ${foreignDates.length?esc(foreignDates.join('、')):'尚無'}；最後採集 ${esc(time(r.overseasGeneratedAt))}。</p><p>海外交易日與假日尚未逐市場核對，不把昨日曆日直接當作應有行情日，也不計入上方台股驗收數量。此處不代表海外資料已完整。</p></details><p class="small subtle">本區檢查目前資料日期；08:00 是否準時仍須核對正式發布與朋友版完成紀錄。稍後人工補檔不會成為準時完成的證明。預定日曆不含臨時停市。</p>`;
+}
+
+export async function mountMorningReadiness(root,status,context){
  try{
-  const [market,overseas]=await Promise.all(['/market-data.json','/overseas-market-data.json'].map(async p=>{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error();return r.json();}));
-  const r=morningReadiness(status,market,overseas),missing=[...r.holdings.filter(x=>!x.ready).map(x=>`${x.symbol} 持股：${x.date??'尚無'}／尚未達目標或今日未核對`),...r.prices.filter(x=>!x.ready).map(x=>`${x.symbol} 台股行情：${x.date??'尚無'}`),...r.foreign.filter(x=>!x.ready).map(x=>`${x.symbol} 海外行情：${x.date??'尚無'}（${x.reason==='inconsistent_provider_ohlc'?'來源價格矛盾':x.reason==='incomplete_provider_bar'?'來源缺完整日行情':x.reason}）`)];
-  root.innerHTML=`<h3>隔日 08:00 前更新目標</h3><p><strong>${r.complete?'本次目標資料已齊全':'尚有缺口，不能宣稱完整'}</strong> · ${r.today} 早晨核對：台股最近前一交易日 ${r.target??'日曆待核對'}；海外先檢查 ${r.overseasDateTarget}，休市與較晚公告另列。</p><p>持股 ${r.holdings.filter(x=>x.ready).length}/${r.holdings.length} · 台股行情 ${r.prices.filter(x=>x.ready).length}/${r.prices.length} · 海外行情 ${r.foreign.filter(x=>x.ready).length}/${r.foreign.length}（持股代碼數，含同股票別名）</p><p>今日持股及海外來源檢查：${r.sourceFresh?'已收到更新':'尚未全部收到'}。最後海外採集：${esc(new Date(overseas.generatedAt).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}))}。</p><details><summary>查看未齊項目（${missing.length}）</summary><ul>${missing.map(s=>`<li>${esc(s)}</li>`).join('')||'<li>日期目標無缺口；日期完整不代表公司行動、匯率或策略驗證已完成。</li>'}</ul></details><p class="small subtle">排程補抓：21:30、23:30、05:30、06:30、07:20、07:40。主機需開機、連網並保持登入；官方尚未公布或來源異常會保留真實日期。</p>`;
- }catch{root.textContent='早晨完整性驗收暫時無法讀取，不能確認所有資料已齊。';}
+  const [market,overseas,scope]=await Promise.all([fetch('/market-data.json',{cache:'no-store'}).then(async r=>{if(!r.ok)throw Error();return r.json();}),fetch('/overseas-market-data.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),context??loadReadinessContext()]);
+  root.innerHTML=readinessMarkup(morningReadiness(status,market,overseas,new Date(),scope));
+ }catch{root.textContent='早晨完整性驗收暫時無法讀取，不能確認主要清單資料已齊。';}
 }
