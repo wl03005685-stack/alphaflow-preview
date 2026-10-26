@@ -6,3 +6,5 @@
 @media print{.holding-trend,.holding-summary tr{break-inside:avoid}}
 
 .holding-trend svg.trend-mobile{display:none}@media(max-width:650px){.holding-trend svg.trend-desktop{display:none}.holding-trend svg.trend-mobile{display:block}}
+
+.stock-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;padding:18px;border:1px solid #c8dcde;background:#f4f9f9;border-radius:10px}.stock-picker label{display:block;min-width:0;max-width:none;margin-bottom:7px;font-size:14px}.stock-search-row{display:flex;gap:8px;min-width:0}.stock-picker input,.stock-picker select{font:inherit;font-size:16px;padding:11px 12px;border:1px solid #b8ccd1;border-radius:6px;background:white;color:#20364d;min-width:0;width:100%;height:46px}.stock-search-row input{flex:1}.stock-search-row button{flex:none;white-space:nowrap}.stock-picker input:focus,.stock-picker select:focus{outline:2px solid #147b85;outline-offset:2px}.stock-picker p{grid-column:1/-1;margin:0;font-size:13px}.stock-picker .stock-picker-scope{font-size:12px}@media(max-width:650px){.stock-picker{grid-template-columns:minmax(0,1fr);padding:14px}.stock-search-row{width:100%}}
