@@ -1,5 +1,5 @@
 import {fundNames} from './interval-report.js?v=71';
-import {periodReference,actionReasons} from './cost-basis.js?v=74';
+import {periodReference,actionReasons,latestPriceFor} from './cost-basis.js?v=75';
 
 const issuers={ezmoney:'統一投信',yuanta:'元大投信',fubon:'富邦投信',capital:'群益投信',allianz:'安聯投信',fuhhwa:'復華投信',ctbc:'中信投信',taishin:'台新投信',mega:'兆豐投信',kgi:'凱基投信',first:'第一金投信',sinopac:'永豐投信',cathay:'國泰投信',nomura:'野村投信'};
 const validDate=d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d+'T00:00:00Z').toISOString().slice(0,10)===d;
@@ -11,13 +11,17 @@ const key=(a,b)=>a+'|'+b;
 // Build complete observed inventories, including unchanged and zero positions.
 // Empty rows in a complete snapshot mean absent holdings, never a missing price.
 function observations(f,snapshots,to){
- const dates=new Map(),links=new Map();let conflict=false;
+ const dates=new Map(),links=new Map(),conflictedSymbols=new Set();
  function add(date,path,units,holdings){
   if(!validDate(date)||date>to)return;
-  const rows=new Map(holdings.filter(r=>positive(r.shares)).map(r=>[r.symbol,{...r}]));
+  const rows=new Map(),seen=new Map();
+  for(const r of holdings){
+   if(!validShares(r.shares)||(seen.has(r.symbol)&&seen.get(r.symbol)!==r.shares))conflictedSymbols.add(r.symbol);
+   seen.set(r.symbol,r.shares);
+   if(positive(r.shares))rows.set(r.symbol,{...r});
+  }
   const old=dates.get(date);
-  if(old){const symbols=new Set([...old.rows.keys(),...rows.keys()]);if([...symbols].some(s=>(old.rows.get(s)?.shares??0)!==(rows.get(s)?.shares??0)))conflict=true;return;}
-  if(holdings.some(r=>!validShares(r.shares)))conflict=true;
+  if(old){const symbols=new Set([...old.rows.keys(),...rows.keys()]);for(const s of symbols)if((old.rows.get(s)?.shares??0)!==(rows.get(s)?.shares??0))conflictedSymbols.add(s);return;}
   dates.set(date,{date,path,units,rows});
  }
  for(const p of f.pairs??[]){
@@ -27,11 +31,11 @@ function observations(f,snapshots,to){
   if(p.to<=to)links.set(key(p.from,p.to),p);
  }
  for(const s of snapshots.filter(s=>s?.fundSymbol===f.fundSymbol&&(!s.sourceId||s.sourceId===f.sourceId)))add(s.asOf,s.path,s.fundUnits,s.holdings??[]);
- return {points:[...dates.values()].sort((a,b)=>a.date.localeCompare(b.date)),links,conflict};
+ return {points:[...dates.values()].sort((a,b)=>a.date.localeCompare(b.date)),links,conflictedSymbols};
 }
 
 function estimate(f,symbol,obs,market,actions,opening){
- const {points,links,conflict}=obs,first=points[0],last=points.at(-1);
+ const {points,links,conflictedSymbols}=obs,first=points[0],last=points.at(-1);
  let shares=first.rows.get(symbol)?.shares??0,covered=0,cost=0,low=0,high=0,seeded=0;
  const warnings=new Set(),history=[];
  function clear(){covered=0;cost=0;low=0;high=0;seeded=0;}
@@ -42,6 +46,7 @@ function estimate(f,symbol,obs,market,actions,opening){
    else warnings.add('期初當日行情不足');
   }else warnings.add('期初持股買價未知');
  }
+ const openingPoint={to:first.date,shares,coveredShares:covered,average:covered>0?cost/covered:null,status:shares===0?'尚未持有':seeded>0?'期初市價情境':opening==='market'?'期初行情不足':'期初成本未知'};
  for(let i=1;i<points.length;i++){
   const prev=points[i-1],next=points[i],before=prev.rows.get(symbol)?.shares??0,after=next.rows.get(symbol)?.shares??0,pair=links.get(key(prev.date,next.date));
   const delta=after-before;let status='股數不變',ref=null;
@@ -63,11 +68,16 @@ function estimate(f,symbol,obs,market,actions,opening){
   shares=after;if(shares===0)clear();
   history.push({from:prev.date,to:next.date,delta,shares,coveredShares:covered,average:covered>0?cost/covered:null,status});
  }
- if(conflict){clear();warnings.add('同日持股資料不一致');}
+ if(conflictedSymbols.has(symbol)){
+  clear();warnings.add('同日持股資料不一致');
+  // A disputed observation cannot support a reliable cost path. Keep the
+  // observed share history, but invalidate all modeled prices for this stock.
+  for(const point of [openingPoint,...history]){point.coveredShares=0;point.average=null;point.status='同日持股資料不一致，成本未知';}
+ }
  const unknown=Math.max(0,shares-covered),complete=shares>0&&unknown<1e-6,average=covered>1e-9?cost/covered:null;
  return {fund:f.fundSymbol,issuer:issuers[(f.sourceId??'').split('.')[0]]??'投信待核對',sourceId:f.sourceId,symbol,name:last.rows.get(symbol)?.name??first.rows.get(symbol)?.name??symbol,
   from:first.date,asOf:last.date,path:last.path,shares,coveredShares:covered,unknownShares:unknown,coverage:shares>0?covered/shares:0,seededShares:seeded,average,low:covered>1e-9?low/covered:null,high:covered>1e-9?high/covered:null,
-  fullAverage:complete?average:null,complete,opening,warnings:[...warnings],history:history.reverse()};
+  fullAverage:complete?average:null,complete,opening,openingPoint,warnings:[...warnings],history:history.reverse()};
 }
 
 export function buildHoldingCostReport(data,market,actions,{to='',query='',fund='all',opening='unknown',snapshots=[]}={}){
@@ -83,7 +93,7 @@ export function buildHoldingCostReport(data,market,actions,{to='',query='',fund=
    if(!/^\d{4,6}$/.test(symbol))continue;
    const issuer=issuers[(f.sourceId??'').split('.')[0]]??'';
    if(![symbol,row.name,f.fundSymbol,fundNames[f.fundSymbol],issuer].join(' ').toLowerCase().includes(search))continue;
-   const entry=estimate(f,symbol,obs,market,actions,result.opening),stock=map.get(symbol)??{symbol,name:row.name??symbol,funds:[]};stock.funds.push(entry);map.set(symbol,stock);
+   const entry=estimate(f,symbol,obs,market,actions,result.opening),stock=map.get(symbol)??{symbol,name:row.name??symbol,latestPrice:latestPriceFor(symbol,market,end),funds:[]};stock.funds.push(entry);map.set(symbol,stock);
   }
  }
  result.stocks=[...map.values()].sort((a,b)=>b.funds.length-a.funds.length||a.symbol.localeCompare(b.symbol));

@@ -33,6 +33,12 @@ const positive=n=>finite(n)&&n>0;
 const shift=(d,n)=>new Date(Date.parse(d+'T00:00:00Z')+n*86400000).toISOString().slice(0,10);
 const newest=(a,b)=>b.to.localeCompare(a.to)||b.from.localeCompare(a.from)||a.fund.localeCompare(b.fund);
 
+export function latestPriceFor(symbol,market,to){
+ if(!validDate(to))return null;
+ const last=(market?.constituents?.[symbol]?.rows??[]).filter(r=>validDate(r.date)&&r.date<=to&&positive(r.close)).sort((a,b)=>a.date.localeCompare(b.date)).at(-1);
+ return last?{date:last.date,close:last.close}:null;
+}
+
 export function periodReference(pair,symbol,market){
  const series=market?.constituents?.[symbol];
  if(!/^\d{4,6}$/.test(symbol)||!['TWSE','TPEx'].includes(series?.market))return {reference:null,priceStatus:'unsupported_stock'};
@@ -123,8 +129,7 @@ export function buildCostReport(data,market,actions,{from='',to='',query='',fund
  for(const [symbol,events] of byStock){
   const byFund=new Map();for(const e of events){const group=byFund.get(e.fund)??[];group.push(e);byFund.set(e.fund,group);}
   const funds=[...byFund].map(([fund,events])=>({fund,...groupSummary(events),events})).sort((a,b)=>fundOrder.get(a.fund)-fundOrder.get(b.fund));
-  const last=(market?.constituents?.[symbol]?.rows??[]).filter(r=>validDate(r.date)&&r.date<=end&&positive(r.close)).sort((a,b)=>a.date.localeCompare(b.date)).at(-1);
-  report.stocks.push({symbol,name:events[0].name,...groupSummary(events),funds,events,latestPrice:last?{date:last.date,close:last.close}:null});
+  report.stocks.push({symbol,name:events[0].name,...groupSummary(events),funds,events,latestPrice:latestPriceFor(symbol,market,end)});
  }
  report.stocks.sort((a,b)=>b.increaseShares-a.increaseShares||b.decreaseShares-a.decreaseShares||a.symbol.localeCompare(b.symbol));
  const counts=new Map();for(const e of report.events)for(const r of e.reasons)counts.set(r.code,(counts.get(r.code)??0)+1);
