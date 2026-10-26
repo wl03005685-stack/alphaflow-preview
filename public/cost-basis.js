@@ -33,7 +33,7 @@ const positive=n=>finite(n)&&n>0;
 const shift=(d,n)=>new Date(Date.parse(d+'T00:00:00Z')+n*86400000).toISOString().slice(0,10);
 const newest=(a,b)=>b.to.localeCompare(a.to)||b.from.localeCompare(a.from)||a.fund.localeCompare(b.fund);
 
-function periodReference(pair,symbol,market){
+export function periodReference(pair,symbol,market){
  const series=market?.constituents?.[symbol];
  if(!/^\d{4,6}$/.test(symbol)||!['TWSE','TPEx'].includes(series?.market))return {reference:null,priceStatus:'unsupported_stock'};
  const expected=[];
@@ -58,7 +58,7 @@ function periodReference(pair,symbol,market){
  return {priceStatus:'ready',reference:{low:Math.min(...selected.map(r=>r.low)),high:Math.max(...selected.map(r=>r.high)),vwap:turnover/volume,firstDate:expected[0],lastDate:expected.at(-1),sessionCount:selected.length,expectedSessionCount:expected.length,sourceUrls:[...new Set((series.sourceUrls??[]).filter(u=>typeof u==='string'))]}};
 }
 
-function actionReasons(symbol,pair,actions){
+export function actionReasons(symbol,pair,actions){
  const out=[];
  if(!validDate(actions?.from)||!validDate(actions?.through)||pair.from<actions.from||pair.to>actions.through||!Array.isArray(actions?.records))out.push(reason('action_coverage'));
  const records=Array.isArray(actions?.records)?actions.records:[];
