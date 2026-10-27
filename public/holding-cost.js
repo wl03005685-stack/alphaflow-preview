@@ -1,5 +1,5 @@
 import {fundNames} from './interval-report.js?v=71';
-import {periodReference,actionReasons,latestPriceFor} from './cost-basis.js?v=77';
+import {periodReference,actionReasons,latestPriceFor} from './cost-basis.js?v=78';
 
 const issuers={ezmoney:'統一投信',yuanta:'元大投信',fubon:'富邦投信',capital:'群益投信',allianz:'安聯投信',fuhhwa:'復華投信',ctbc:'中信投信',taishin:'台新投信',mega:'兆豐投信',kgi:'凱基投信',first:'第一金投信',sinopac:'永豐投信',cathay:'國泰投信',nomura:'野村投信'};
 const validDate=d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d))&&new Date(d+'T00:00:00Z').toISOString().slice(0,10)===d;

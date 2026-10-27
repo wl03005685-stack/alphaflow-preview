@@ -1,6 +1,6 @@
 import {fundNames} from './interval-report.js';
 import {unresolvedShareActions} from './domestic-actions.js';
-import {twseSession} from './trading-calendar.mjs';
+import {twseSession} from './trading-calendar.mjs?v=78';
 
 // Holdings differences are observations, not executions. In-kind ETF creations
 // can change holdings without an exchange trade (TWSE ETF issuing mechanism).
