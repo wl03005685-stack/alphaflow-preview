@@ -109,7 +109,7 @@ export function buildCostReport(data,market,actions,{from='',to='',query='',fund
  const allFunds=Array.isArray(data?.funds)?data.funds:[],domestic=allFunds.filter(f=>Object.hasOwn(fundNames,f.fundSymbol)&&(fund==='all'||fund===f.fundSymbol));
  const latest=domestic.flatMap(f=>(f.dates??[]).map(d=>d.asOf)).filter(validDate).sort().at(-1)??'';
  const end=to||latest,start=from||(validDate(end)?shift(end,-29):'');
- const report={from:start,to:end,defaultWindow:!from,query,fund,error:null,boundaryPairs:0,excludedFunds:[...new Set(allFunds.filter(f=>!Object.hasOwn(fundNames,f.fundSymbol)).map(f=>f.fundSymbol))],coverage:[],stocks:[],events:[],summary:{stockCount:0,eventCount:0,eligibleEventCount:0,pendingEventCount:0,pendingReasons:[]},limitations:[...COST_REFERENCE_LIMITATIONS],sources:[...COST_REFERENCE_SOURCES]};
+ const report={from:start,to:end,defaultWindow:!from,query,fund,error:null,actionReview:validDate(actions?.from)&&validDate(actions?.through)?{from:actions.from,through:actions.through,reviewedOn:validDate(actions.reviewedOn)?actions.reviewedOn:null}:null,boundaryPairs:0,excludedFunds:[...new Set(allFunds.filter(f=>!Object.hasOwn(fundNames,f.fundSymbol)).map(f=>f.fundSymbol))],coverage:[],stocks:[],events:[],summary:{stockCount:0,eventCount:0,eligibleEventCount:0,pendingEventCount:0,pendingReasons:[]},limitations:[...COST_REFERENCE_LIMITATIONS],sources:[...COST_REFERENCE_SOURCES]};
  if(!validDate(start)||!validDate(end)){report.error='請選擇有效的起迄日期；目前名單需有已保存的持股日期。';return report;}
  if(start>end){report.error='起日不能晚於迄日';return report;}
  const search=String(query).trim().toLowerCase(),fundOrder=new Map(domestic.map((f,i)=>[f.fundSymbol,i]));
