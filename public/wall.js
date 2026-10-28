@@ -6,7 +6,7 @@ import {renderCostReport,costReportHTML} from './cost-view.js?v=77';
 import {loadFundScope,filterFundTimeline,fundScopeHTML,FUND_SCOPE_NOTE} from './fund-scope.js?v=68';
 import {newestFirst,trajectoryChart,bindTrajectory} from './trajectory.js';
 import {buildIntervalReport,renderIntervalReport,intervalReportHTML} from './interval-report.js?v=71';
-import {mountUpdateStatus} from './update-status.js?v=78';
+import {mountUpdateStatus} from './update-status.js?v=79';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={added:'新出現',increased:'股數增加',decreased:'股數減少',removed:'清單移出'};
 const names={'00996A':'兆豐台灣豐收','00987A':'台新優勢成長','00995A':'中信台灣卓越','00984A':'安聯台灣高息','00406A':'中信台灣收益','00991A':'復華未來50','00993A':'安聯台灣','00400A':'國泰動能高息','00980A':'野村臺灣優選','00985A':'野村台灣50','00999A':'野村臺灣高息','00415A':'群益核心50','00992A':'群益科技創新','00982A':'群益台灣強棒','00405A':'富邦台灣龍耀','00403A':'統一升級50','00988A':'統一全球創新','00981A':'統一台股增長','00990A':'元大AI新經濟'};
