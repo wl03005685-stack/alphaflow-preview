@@ -1,6 +1,6 @@
 import {publicFetch as fetch} from './preview-client.js';
 import {attachObservedEvidence} from './observed-evidence.js';
-import {mountETFStarter} from './etf-starter.js?v=69';
+import {mountETFStarter} from './etf-starter.js?v=81';
 import {guardEventActions} from './domestic-actions.js';
 import {pendingMarketView} from './pending-market-view.js';
 import {mountAsianStudies} from './asian-study-view.js';
@@ -8,7 +8,7 @@ import {backtestMethodology} from './backtest-methodology.js';
 import {mountStrategy} from './strategy.js';
 import {simulateNav,simulateMarket,alignBenchmark,auditHoldingsMarketEvents} from './return-engine.js';
 import {verifiedSplits} from './corporate-actions.js';
-import {loadMarketData} from './overseas-market.js?v=69';
+import {loadMarketData} from './overseas-market.js?v=81';
 import {mountUSStudy} from './us-study-view.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=x=>x==null?'待補':(x*100).toFixed(2)+'%';

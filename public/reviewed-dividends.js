@@ -99,6 +99,86 @@ export const reviewedDividends=[
     "amount": 0.77,
     "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00991A",
     "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00991A"
+  },
+  {
+    "symbol": "00400A",
+    "exDate": "2026-10-08",
+    "paymentDate": "2026-11-05",
+    "amount": 0.12,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A"
+  },
+  {
+    "symbol": "00400A",
+    "exDate": "2026-09-07",
+    "paymentDate": "2026-10-05",
+    "amount": 0.12,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A"
+  },
+  {
+    "symbol": "00400A",
+    "exDate": "2026-08-05",
+    "paymentDate": "2026-08-31",
+    "amount": 0.12,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A"
+  },
+  {
+    "symbol": "00400A",
+    "exDate": "2026-07-09",
+    "paymentDate": "2026-07-31",
+    "amount": 0.12,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A"
+  },
+  {
+    "symbol": "00985A",
+    "exDate": "2026-10-19",
+    "paymentDate": "2026-11-13",
+    "amount": 2.15,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00985A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00985A"
+  },
+  {
+    "symbol": "00980A",
+    "exDate": "2026-08-18",
+    "paymentDate": "2026-09-11",
+    "amount": 0.638,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A"
+  },
+  {
+    "symbol": "00980A",
+    "exDate": "2026-05-19",
+    "paymentDate": "2026-06-12",
+    "amount": 0.48,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A"
+  },
+  {
+    "symbol": "00980A",
+    "exDate": "2026-02-26",
+    "paymentDate": "2026-03-26",
+    "amount": 0.368,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A"
+  },
+  {
+    "symbol": "00980A",
+    "exDate": "2025-11-18",
+    "paymentDate": "2025-12-12",
+    "amount": 0.328,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A"
+  },
+  {
+    "symbol": "00999A",
+    "exDate": "2026-09-16",
+    "paymentDate": "2026-10-15",
+    "amount": 0.29,
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00999A",
+    "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00999A"
   }
 ];
 export function applyReviewedDividends(market){

@@ -169,6 +169,84 @@ export const paymentEvidence={
     "sha256": "c10e65af07f0064b42dd7daf7275cc268517bc03ad358bf046d536f95508f310",
     "checkedAt": "2026-10-21T06:31:55.152Z",
     "records": []
+  },
+  "00400A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00400A",
+    "sha256": "b4988bd5d0b00a879b3c859502a5eda2c74a49acb59ff18901ac9638a0b7e365",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": [
+      {
+        "exDate": "2026-10-08",
+        "paymentDate": "2026-11-05",
+        "amount": 0.12
+      },
+      {
+        "exDate": "2026-09-07",
+        "paymentDate": "2026-10-05",
+        "amount": 0.12
+      },
+      {
+        "exDate": "2026-08-05",
+        "paymentDate": "2026-08-31",
+        "amount": 0.12
+      },
+      {
+        "exDate": "2026-07-09",
+        "paymentDate": "2026-07-31",
+        "amount": 0.12
+      }
+    ]
+  },
+  "00985A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00985A",
+    "sha256": "2cebb4190453e5ea3d27b96b9f89a92aa8088a273d6650f363a8baec5a20e981",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": [
+      {
+        "exDate": "2026-10-19",
+        "paymentDate": "2026-11-13",
+        "amount": 2.15
+      }
+    ]
+  },
+  "00980A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00980A",
+    "sha256": "09e428f4dcf73988848bd96861349c8d2253c098d17e6b2e0f7dca1d951d5d23",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": [
+      {
+        "exDate": "2026-08-18",
+        "paymentDate": "2026-09-11",
+        "amount": 0.638
+      },
+      {
+        "exDate": "2026-05-19",
+        "paymentDate": "2026-06-12",
+        "amount": 0.48
+      },
+      {
+        "exDate": "2026-02-26",
+        "paymentDate": "2026-03-26",
+        "amount": 0.368
+      },
+      {
+        "exDate": "2025-11-18",
+        "paymentDate": "2025-12-12",
+        "amount": 0.328
+      }
+    ]
+  },
+  "00999A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00999A",
+    "sha256": "a7deba76648f9334ec87ad079d828a5b2525d75119e53ce11891dbbc0c23a9fc",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": [
+      {
+        "exDate": "2026-09-16",
+        "paymentDate": "2026-10-15",
+        "amount": 0.29
+      }
+    ]
   }
 };
 export function verifyPayments(symbol,records){return records.map(r=>({...r,paymentDateVerified:!!paymentEvidence[symbol]?.records.some(e=>e.exDate===r.exDate&&e.paymentDate===r.paymentDate&&e.amount===r.amount)}));}

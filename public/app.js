@@ -1,5 +1,5 @@
 import {mountWall} from './wall.js?v=80';
-import {mountDirectory} from './directory.js?v=71';
+import {mountDirectory} from './directory.js?v=81';
 import {openJournal} from './journal.js';
 import {openEvidence} from './evidence.js';
 import {activeSubjects,activeContent,activeIdentity,activeSourceBody} from './active.js';

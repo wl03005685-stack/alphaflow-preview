@@ -1,6 +1,6 @@
 import {publicFetch as fetch} from './preview-client.js';
 import {auditHoldingsMarketEvents} from './return-engine.js';
-import {loadMarketData} from './overseas-market.js?v=69';
+import {loadMarketData} from './overseas-market.js?v=81';
 const domestic=new Set(['00981A','00982A','00403A','00405A','00400A','00980A','00985A','00999A','00415A','00992A','00993A','00984A','00995A','00987A','00410A','00408A','00994A','00407A','00996A','00991A','00406A']);
 export function fundDataHealth(timeline,market,symbol,{from='0000-01-01',to='9999-12-31'}={}){
  const f=timeline.funds.find(x=>x.fundSymbol===symbol)??{fundSymbol:symbol,dates:[],pairs:[]};
@@ -49,6 +49,6 @@ export async function mountDataHealth(root,symbol){
    section.innerHTML=`<h3>海外歷史行情已取得</h3><p>Yahoo Finance 第三方資料 · 核對時間 ${esc(r.overseas.generatedAt)}。海外資料已接入專用主機排程補抓；實際成功時間與缺價日如下。</p><p class="note">價格依當地幣別與交易日期列示。已取得資料不代表逐日完整，空值不補零；美股、日本、香港與深圳已另提供官方日曆下的公告日延遲情境研究；首次公告時間、其他市場與匯率仍待驗收，海外不加入台幣跟單資金模擬。</p><div class="table-wrap"><table><thead><tr><th>持股代碼／來源代碼</th><th>來源名稱</th><th>市場／幣別</th><th>價格起迄／筆數</th><th>来源空值日期</th><th>來源</th></tr></thead><tbody>${r.overseas.series.map(s=>`<tr><td>${esc(s.symbol)}<br>${esc(s.providerSymbol)}</td><td>${esc(s.providerName)}${s.mappingNote?'<br><small>'+esc(s.mappingNote)+'</small>':''}</td><td>${esc(s.exchange)}／${esc(s.currency)}<br><small>${esc(s.timeZone)}</small></td><td>${s.rows[0].date} → ${s.rows.at(-1).date}<br>${s.rows.length} 筆</td><td>${s.missingRows.map(x=>esc(x.date)).join('、')||'來源未回傳空值；不等於無缺日'}</td><td><a href="${esc(s.historyUrl)}" target="_blank" rel="noopener">歷史行情</a></td></tr>`).join('')}</tbody></table></div><p><a href="/overseas-market-data.json" download>下載海外價格與來源紀錄</a></p>`;
    root.querySelector('[data-health-export]').before(section);
   }
-  root.querySelector('[data-health-export]').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(r,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=symbol+'-data-health.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+  root.querySelector('[data-health-export]').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(r,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=symbol+'-data-health.js?v=81on';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
  }catch{root.textContent='資料體檢載入失敗，請重新開啟分頁。';}
 }

@@ -5,7 +5,7 @@ export function mergeReviewedHistory(market,history){
  const fundPrices={...market.fundPrices},coverage={};
  const fields=['volume','turnover','open','high','low','close','trades'];
  for(const [symbol,s] of Object.entries(history.fundPrices)){
-  if(!['00991A','00992A','00984A','00406A','00407A'].includes(symbol)||s.symbol!==symbol||s.market!=='TWSE'||!Array.isArray(s.sourceUrls)||!s.sourceUrls.length||!Array.isArray(s.rows)||!s.rows.length)fail();
+  if(!['00991A','00992A','00984A','00406A','00407A','00400A','00985A','00980A','00999A'].includes(symbol)||s.symbol!==symbol||s.market!=='TWSE'||!Array.isArray(s.sourceUrls)||!s.sourceUrls.length||!Array.isArray(s.rows)||!s.rows.length)fail();
   const months=new Set();for(const url of s.sourceUrls){let u;try{u=new URL(url);}catch{fail();}if(u.origin!=='https://www.twse.com.tw'||u.pathname!=='/exchangeReport/STOCK_DAY'||u.searchParams.get('stockNo')!==symbol||!/^\d{6}01$/.test(u.searchParams.get('date')??''))fail();months.add(u.searchParams.get('date').slice(0,6));}
   let last='';for(const r of s.rows){if(!/^\d{4}-\d{2}-\d{2}$/.test(r.date)||!Number.isFinite(Date.parse(r.date))||new Date(r.date).toISOString().slice(0,10)!==r.date||r.date<=last||r.date>history.checkedAt.slice(0,10)||!months.has(r.date.slice(0,7).replace('-',''))||!fields.every(k=>typeof r[k]==='number'&&Number.isFinite(r[k])&&r[k]>=0)||r.close<=0||r.low>r.high||r.open<r.low||r.open>r.high||r.close<r.low||r.close>r.high)fail();last=r.date;}
   const prior=market.fundPrices?.[symbol];if(!prior?.rows?.length)continue;
