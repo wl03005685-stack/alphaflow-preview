@@ -181,6 +181,36 @@ export const reviewedDividends=[
     "paymentSourceUrl": "https://www.twse.com.tw/zh/ETFortune/dividendList?startDate=2025&endDate=2026&stkNo=00999A"
   }
 ];
+export const reviewedSplitEvidence={
+  "00400A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/etfInfo/00400A",
+    "sha256": "7ca65e6c5e1b9d71421848aba031b63b9d1c81f0c3a9cbaced7c893f20447fed",
+    "status": "official_page_displays_no_records",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": []
+  },
+  "00985A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/etfInfo/00985A",
+    "sha256": "da0eb938e6912ea4a0062d9548665a40f5347ca3fb423a401e52deb13d034999",
+    "status": "official_page_displays_no_records",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": []
+  },
+  "00980A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/etfInfo/00980A",
+    "sha256": "bdcf957809d69c2c7cbec215d7ef6bf9727dd3d11d61d8d1699b65d487682ab9",
+    "status": "official_page_displays_no_records",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": []
+  },
+  "00999A": {
+    "sourceUrl": "https://www.twse.com.tw/zh/ETFortune/etfInfo/00999A",
+    "sha256": "c65117402df87c2ccb49180d5ccd0ef97dee07dc605fc2c840754f0cd1e63c94",
+    "status": "official_page_displays_no_records",
+    "checkedAt": "2026-10-29T11:55:41.067Z",
+    "records": []
+  }
+};
 export function applyReviewedDividends(market){
  const dividends=structuredClone(market.dividends??{});
  for(const d of reviewedDividends){
@@ -189,5 +219,5 @@ export function applyReviewedDividends(market){
   if(existing){if(existing.amount!==d.amount)throw Error('配息金額與已核對資料不符，請先核對來源。');if(d.paymentDate){if(existing.paymentDate&&existing.paymentDate!==d.paymentDate)throw Error('配息發放日與已核對資料不符，請先核對來源。');existing.paymentDate=d.paymentDate;existing.paymentSourceUrl=d.paymentSourceUrl;}continue;}
   fund.records.push({exDate:d.exDate,amount:d.amount,paymentDate:d.paymentDate??null,sourceUrl:d.sourceUrl,...(d.paymentSourceUrl?{paymentSourceUrl:d.paymentSourceUrl}:{})});fund.records.sort((a,b)=>a.exDate.localeCompare(b.exDate));
  }
- return {...market,dividends};
+ return {...market,dividends,splits:{...reviewedSplitEvidence,...market.splits}};
 }

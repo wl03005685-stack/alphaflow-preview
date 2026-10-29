@@ -1,5 +1,5 @@
 import {renderETFPlanReport} from './etf-plan-report.js';
-import {paymentEvidence,verifyPayments} from './etf-payment-evidence.js?v=81';
+import {paymentEvidence,verifyPayments} from './etf-payment-evidence.js?v=82';
 import {compareETFPlans,latestAlignedStart} from './etf-plan-engine.js';
 import {verifiedSplits} from './corporate-actions.js';
 const money=n=>n.toLocaleString('zh-TW',{maximumFractionDigits:0}),pct=n=>n===null?'未滿一年':(n*100).toFixed(2)+'%';
