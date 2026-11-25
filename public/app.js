@@ -1,4 +1,4 @@
-import {mountWall} from './wall.js?v=80';
+import {mountWall} from './wall.js?v=83';
 import {mountDirectory} from './directory.js?v=82';
 import {openJournal} from './journal.js';
 import {openEvidence} from './evidence.js';

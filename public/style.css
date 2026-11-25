@@ -34,3 +34,4 @@
 .holding-mode select{font:inherit;padding:10px 12px;border:1px solid #cad6df;border-radius:7px;background:white;color:#20364d}
 
 @media(max-width:540px){.flow-dialog-toolbar{top:-16px}}
+.flow-fund-block>header{display:block;height:auto;padding:0 0 14px;background:transparent;border:0;overflow-wrap:anywhere}.flow-fund-block>header p{margin:8px 0 0}.backup-holdings table{min-width:450px}.backup-holdings th,.backup-holdings td{white-space:nowrap}.backup-holdings td:first-child{min-width:130px}
