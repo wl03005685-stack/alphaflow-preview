@@ -20,7 +20,7 @@ jobs:
       PAGES_ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -35,7 +35,7 @@ jobs:
           name: ${{ env.PAGES_ARTIFACT_NAME }}
           path: public
       - name: Verify this attempt's uploaded Pages artifact
-        timeout-minutes: 3
+        timeout-minutes: 6
         env:
           GH_TOKEN: ${{ github.token }}
           PAGES_ARTIFACT_ID: ${{ steps.pages_artifact.outputs.artifact_id }}
@@ -43,6 +43,7 @@ jobs:
         run: |
           set -euo pipefail
           : "${GITHUB_REPOSITORY:?Missing repository}"
+          : "${GITHUB_RUN_ID:?Missing workflow run ID}"
           : "${PAGES_ARTIFACT_NAME:?Missing artifact name}"
           if [[ ! "${PAGES_ARTIFACT_ID:-}" =~ ^[0-9]+$ ]]; then
             echo "::error::The upload did not return a valid artifact ID."
@@ -52,11 +53,20 @@ jobs:
             if metadata="$(timeout 10s gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$PAGES_ARTIFACT_ID" --jq '[.id, .name, .expired] | @tsv' 2>artifact-lookup.err)"; then
               IFS=$'\t' read -r actual_id actual_name expired extra <<< "$metadata"
               if [[ "$actual_id" == "$PAGES_ARTIFACT_ID" && "$actual_name" == "$PAGES_ARTIFACT_NAME" && "$expired" == "false" && -z "$extra" ]]; then
-                echo "The exact uploaded Pages artifact is available and unexpired."
-                exit 0
+                if listed_metadata="$(timeout 10s gh api --paginate "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?per_page=100" --jq ".artifacts[] | select(.name == \"$PAGES_ARTIFACT_NAME\") | [.id, .name, .expired] | @tsv" 2>artifact-list-lookup.err)"; then
+                  if [[ "$listed_metadata" == "$metadata" ]]; then
+                    echo "The exact uploaded Pages artifact is available in both API paths and unexpired."
+                    exit 0
+                  fi
+                  if [[ -n "$listed_metadata" ]]; then
+                    echo "::error::The run artifact list is ambiguous or does not match the uploaded artifact."
+                    exit 1
+                  fi
+                fi
+              else
+                echo "::error::Uploaded artifact metadata does not match this attempt; refusing deployment."
+                exit 1
               fi
-              echo "::error::Uploaded artifact metadata does not match this attempt; refusing deployment."
-              exit 1
             fi
             echo "::notice::Artifact lookup is not ready (attempt $attempt of 12)."
             if [[ "$attempt" -lt 12 ]]; then
@@ -67,5 +77,14 @@ jobs:
           exit 1
       - uses: actions/deploy-pages@v4
         id: deployment
+        continue-on-error: true
+        with:
+          artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
+      - name: Wait before the single deployment retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 10
+      - uses: actions/deploy-pages@v4
+        if: steps.deployment.outcome == 'failure'
+        id: deployment_retry
         with:
           artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
