@@ -1,5 +1,5 @@
-import {resolveSignalTiming} from './signal-timing.js';
-import {unresolvedShareActions} from './domestic-actions.js';
+import {resolveSignalTiming} from './signal-timing.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {unresolvedShareActions} from './domestic-actions.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 export function simulateNav(points,{capital=100000,buyCost=0,sellCost=0}={}){
  if(!Number.isFinite(capital)||capital<=0||![buyCost,sellCost].every(x=>Number.isFinite(x)&&x>=0&&x<1))throw Error('Invalid simulation inputs');
  if(points.length<2)throw Error('Need two observations');

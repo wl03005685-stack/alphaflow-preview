@@ -1,4 +1,4 @@
-import {esc} from './interval-report.js?v=71';
+import {esc} from './interval-report.js?v=71&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const normalize=value=>String(value??'').normalize('NFKC').replace(/臺/g,'台').replace(/\s+/g,'').toLowerCase();
 
 export function costStockChoices(report){

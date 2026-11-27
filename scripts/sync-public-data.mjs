@@ -10,5 +10,6 @@ const queue=[...names],files=new Map();await Promise.all(Array.from({length:6},a
 const after=await get('update-status.json');if(before.value.contentId!==after.value.contentId)throw Error('Source updated during sync. Retry without publishing mixed data.');
 for(const s of tracking.value.snapshots){const text=files.get(s.path.slice(1));if(!text||createHash('sha256').update(text).digest('hex')!==s.sha256)throw Error('Snapshot hash mismatch: '+s.path);}
 for(const [name,text] of files)await writeFile(new URL(name,root),text);
-const status={syncedAt:new Date().toISOString(),source:base,sourceContentId:after.value.contentId,files:files.size,snapshots:catalog.value.snapshots.length,retryCount,funds:after.value.funds.map(f=>({symbol:f.fundSymbol,asOf:f.latestSavedAsOf,acquisition:f.acquisition}))};
+let ui=null;try{ui=JSON.parse(await readFile(new URL('ui-sync-status.json',root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+const status={syncedAt:new Date().toISOString(),source:base,sourceContentId:after.value.contentId,sourceUIIndexSha256:ui?.sourceIndexSha256??null,sourceUIGraphSha256:ui?.sourceGraphSha256??null,uiFiles:ui?.files?.length??null,files:files.size,snapshots:catalog.value.snapshots.length,retryCount,funds:after.value.funds.map(f=>({symbol:f.fundSymbol,asOf:f.latestSavedAsOf,acquisition:f.acquisition}))};
 await writeFile(new URL('sync-status.json',root),JSON.stringify(status,null,2));console.log(JSON.stringify(status));

@@ -1,4 +1,4 @@
-import {auditUSEvents} from './us-event-study.js';
+import {auditUSEvents} from './us-event-study.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=x=>x==null?'待驗收／待資料':(x*100).toFixed(2)+'%';
 const reasons={entry_session_not_closed:'進場日尚未在台灣截止時間前收盤',missing_announcement:'缺公告日期',announcement_after_cutoff:'公告晚於截止日',outside_reviewed_calendar:'超出已核對交易日期間',waiting_entry:'尚未到進場時間',missing_prices:'缺價格',market_not_reviewed:'非本輪核對的美股市場',source_metadata_missing:'來源欄位不足',missing_entry_price:'預定進場日缺價',after_taipei_cutoff:'收盤晚於台灣時間截止日',corporate_action_in_window:'區間內有已收錄股利／分割',missing_session_price:'區間內缺交易日價格'};

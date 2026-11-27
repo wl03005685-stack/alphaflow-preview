@@ -1,7 +1,7 @@
-import {renderETFPlanReport} from './etf-plan-report.js';
-import {paymentEvidence,verifyPayments} from './etf-payment-evidence.js?v=82';
-import {compareETFPlans,latestAlignedStart} from './etf-plan-engine.js';
-import {verifiedSplits} from './corporate-actions.js';
+import {renderETFPlanReport} from './etf-plan-report.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {paymentEvidence,verifyPayments} from './etf-payment-evidence.js?v=82&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {compareETFPlans,latestAlignedStart} from './etf-plan-engine.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {verifiedSplits} from './corporate-actions.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const money=n=>n.toLocaleString('zh-TW',{maximumFractionDigits:0}),pct=n=>n===null?'未滿一年':(n*100).toFixed(2)+'%';
 export function mountETFStarter(root,symbol,market){
  const series=market.fundPrices[symbol].rows,bench=market.fundPrices['0050'].rows,common=series.filter(p=>bench.some(b=>b.date===p.date));

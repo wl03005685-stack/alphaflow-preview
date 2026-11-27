@@ -1,5 +1,5 @@
-import {auditStrategyActions,unresolvedShareActions} from './domestic-actions.js';
-import {resolveSignalTiming} from './signal-timing.js';
+import {auditStrategyActions,unresolvedShareActions} from './domestic-actions.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {resolveSignalTiming} from './signal-timing.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 // A funded, long-only hypothesis simulation. No inference of manager intent.
 export function simulateFollowing(f, constituents, calendar, {
  from, to, capital=100000, slots=5, holdingDays=5, buyCost=0, sellCost=0,

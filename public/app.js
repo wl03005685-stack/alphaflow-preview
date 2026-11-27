@@ -1,9 +1,9 @@
-import {mountWall} from './wall.js?v=83';
-import {mountDirectory} from './directory.js?v=82';
-import {openJournal} from './journal.js';
-import {openEvidence} from './evidence.js';
-import {activeSubjects,activeContent,activeIdentity,activeSourceBody} from './active.js';
-import {source,subjects,evaluateCases,assessChange} from './research.js';
+import {mountWall} from './wall.js?v=87&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountDirectory} from './directory.js?v=82&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {openJournal} from './journal.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {openEvidence} from './evidence.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {activeSubjects,activeContent,activeIdentity,activeSourceBody} from './active.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {source,subjects,evaluateCases,assessChange} from './research.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const $=s=>document.querySelector(s);
 const state={subject:'00981A',tab:'overview',filter:'all',query:'',mode:'growth',reveal:false};
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

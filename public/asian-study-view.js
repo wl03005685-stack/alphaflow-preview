@@ -1,5 +1,5 @@
-import {ASIAN_MARKETS} from './asian-calendars.js';
-import {auditMarketEvents} from './us-event-study.js';
+import {ASIAN_MARKETS} from './asian-calendars.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {auditMarketEvents} from './us-event-study.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=x=>x==null?'待資料':(x*100).toFixed(2)+'%';
 const reasons={missing_announcement:'缺公告日',announcement_after_cutoff:'公告晚於截止日',outside_reviewed_calendar:'超出核對期間',waiting_entry:'等待進場日',entry_session_not_closed:'進場日尚未收盤',missing_prices:'缺價格',market_not_reviewed:'市場或幣別未通過核對',source_metadata_missing:'缺來源欄位',missing_entry_price:'進場日缺價格',after_taipei_cutoff:'超出截止時間',corporate_action_in_window:'已收錄股利或分割',missing_session_price:'交易日缺價格'};

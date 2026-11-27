@@ -1,6 +1,6 @@
-import {costStockChoices,renderStockPicker} from './stock-picker.js?v=76';
-import {renderHoldingCosts} from './holding-cost-view.js?v=75';
-import {esc,fundNames} from './interval-report.js?v=71';
+import {costStockChoices,renderStockPicker} from './stock-picker.js?v=76&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {renderHoldingCosts} from './holding-cost-view.js?v=75&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {esc,fundNames} from './interval-report.js?v=71&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const num=x=>Number.isFinite(x)?new Intl.NumberFormat('zh-TW',{maximumFractionDigits:2}).format(x):'待核對';
 const price=x=>Number.isFinite(x)?num(x)+' 元':'待核對';
 const qty=x=>num(x/1000)+' 張';

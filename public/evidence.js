@@ -1,9 +1,9 @@
-import {publicFetch as fetch} from './preview-client.js';
-import {mountHistory} from './history.js';
-import {mountTracking} from './tracking.js';
-import {mountDomestic} from './domestic.js';
-import {mountPair} from './pair.js';
-import {mountOfficial} from './official.js';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountHistory} from './history.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountTracking} from './tracking.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountDomestic} from './domestic.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountPair} from './pair.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountOfficial} from './official.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const encode=encodeURIComponent;
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let records=[],cursor=null,busy=false;
@@ -11,7 +11,7 @@ const coverLabel={full_equity:'宣告完整股票持股',partial_equity:'部分�
 const categoryLabel={added:'新增持股',removed:'移除持股',increased:'每單位增加',decreased:'每單位減少',unchanged:'每單位不變',present:'待核對校正'};
 async function api(path,options={}){const response=await fetch(path,{...options,headers:{'Content-Type':'application/json',...(options.headers??{})}});let body;try{body=await response.json();}catch{throw new Error('無法讀取服務回應；請保留原始檔後再試。');}if(!response.ok)throw new Error(body.message??'操作失敗');return body;}
 function note(message,isError=false){const box=document.querySelector('#evidence-status');if(box){box.textContent=message;box.setAttribute('role',isError?'alert':'status');}}
-function rowList(){const target=document.querySelector('#saved-records');if(!target)return;target.innerHTML=records.length?`<div class="table-wrap"><table><thead><tr><th>基金／日期</th><th>來源／資料範圍</th><th>保存紀錄</th></tr></thead><tbody>${records.map(r=>`<tr><td>${escapeHtml(r.metadata.fundSymbol)}<br>${escapeHtml(r.metadata.asOf)}<br><span class="badge ${r.metadata.dataKind==='synthetic'?'demo':'neutral'}">${r.metadata.dataKind==='synthetic'?'合成資料':'使用者提供 · 未獨立核實'}</span></td><td>${escapeHtml(r.metadata.sourceId)}<br>${escapeHtml(coverLabel[r.metadata.coverage]??r.metadata.coverage)} · ${escapeHtml(r.metadata.rowCount)} 列</td><td><small>${escapeHtml(r.metadata.receivedAt)}</small><br><button class="source-link" data-record="${escapeHtml(r.key)}">來源與摘要</button> · <a href="./api/snapshot?download=1&key=${encode(r.key)}">下載原始快照</a></td></tr>`).join('')}</tbody></table></div>`:'<div class="locked"><strong>還沒有保存快照</strong><p>有完整來源資料再匯入；沒有紀錄不等於沒有交易。</p></div>';
+function rowList(){const target=document.querySelector('#saved-records');if(!target)return;target.innerHTML=records.length?`<div class="table-wrap"><table><thead><tr><th>基金／日期</th><th>來源／資料範圍</th><th>保存紀錄</th></tr></thead><tbody>${records.map(r=>`<tr><td>${escapeHtml(r.metadata.fundSymbol)}<br>${escapeHtml(r.metadata.asOf)}<br><span class="badge ${r.metadata.dataKind==='synthetic'?'demo':'neutral'}">${r.metadata.dataKind==='synthetic'?'合成資料':'使用者提供 · 未獨立核實'}</span></td><td>${escapeHtml(r.metadata.sourceId)}<br>${escapeHtml(coverLabel[r.metadata.coverage]??r.metadata.coverage)} · ${escapeHtml(r.metadata.rowCount)} 列</td><td><small>${escapeHtml(r.metadata.receivedAt)}</small><br><button class="source-link" data-record="${escapeHtml(r.key)}">來源與摘要</button> · <a href="/api/snapshot?download=1&key=${encode(r.key)}">下載原始快照</a></td></tr>`).join('')}</tbody></table></div>`:'<div class="locked"><strong>還沒有保存快照</strong><p>有完整來源資料再匯入；沒有紀錄不等於沒有交易。</p></div>';
  for(const id of ['before-snapshot','after-snapshot']){const select=document.getElementById(id);if(!select)continue;const old=select.value;select.innerHTML='<option value="">選擇已保存的快照</option>'+records.map(r=>`<option value="${escapeHtml(r.key)}">${escapeHtml(r.metadata.fundSymbol)} / ${escapeHtml(r.metadata.asOf)} / ${escapeHtml(r.metadata.sourceId)} / ${r.metadata.dataKind==='synthetic'?'合成':'未核實'} / ${escapeHtml(coverLabel[r.metadata.coverage]??r.metadata.coverage)}</option>`).join('');if(records.some(r=>r.key===old))select.value=old;}
  document.querySelector('#more-records').hidden=!cursor;
 }

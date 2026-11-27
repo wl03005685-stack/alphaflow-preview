@@ -21,7 +21,18 @@ test('friend backup modules preserve provisional dates and zero-weight holdings'
 test('friend entry points retain repository routing, installation and private-data protection',async()=>{
  const get=name=>readFile(new URL('../public/'+name,import.meta.url),'utf8');
  const wall=await get('wall.js'),index=await get('index.html'),mobile=await get('mobile.js');
- assert.match(wall,/import \{publicFetch as fetch\} from '\.\/preview-client\.js'/);assert.match(wall,/buildCostReport\(officialData,/);
- assert.match(index,/app\.js\?v=83/);assert.match(index,/style\.css\?v=83/);assert.match(index,/朋友試用版/);assert.match(index,/manifest\.webmanifest/);assert.match(index,/mobile\.js/);
+ assert.match(wall,/import \{publicFetch as fetch\} from '\.\/preview-client\.js(?:\?ui=[a-f0-9]{64})?'/);assert.match(wall,/buildCostReport\(officialData,/);
+ assert.match(index,/app\.js\?v=\d+/);assert.match(index,/style\.css\?v=\d+/);assert.match(index,/朋友試用版/);assert.match(index,/manifest\.webmanifest/);assert.match(index,/mobile\.js/);
  assert.match(mobile,/serviceWorker\.register\('\.\/sw\.js'\)/);assert.match(mobile,/stopImmediatePropagation/);assert.match(mobile,/private-help/);
+});
+
+test('global ETF backup dates and exact foreign shares survive the complete friend display path',()=>{
+ for(const symbol of ['00988A','00990A']){
+  const row={...record,asOf:'2026-11-25',provisionalAsOf:null,sourceDisplayedDate:'2026-11-25',dateConfidence:'source_labeled_holdings_date',dateRule:'source_explicit_holdings_date_no_offset',dateRuleConfirmedBySource:true,dateStatus:'source_labeled',contentMatchesOfficialDates:[],holdings:[{symbol:'MSFT US',name:'Microsoft',shares:116560,weightPercent:5},{symbol:'6098 JP',name:'Recruit',shares:100200,weightPercent:0}]};
+  const group={...feeds['00406A'],fundSymbol:symbol,sourceUrl:'https://zdsetf.com/etf/'+symbol,series:[row]};
+  const valid=validateThirdPartyHoldings({[symbol]:group},{now:Date.parse('2026-11-25T02:00:00Z')});
+  const merged=mergeThirdPartyTimeline({funds:[]},valid),html=backupHoldingsHTML(valid[symbol],valid[symbol].series[0]);
+  assert.equal(merged.funds[0].dates[0].asOf,'2026-11-25');assert.match(html,/來源標示持股日/);assert.match(html,/未減一天/);assert.doesNotMatch(html,/暫定持股日|依指定方式減一天/);
+  assert.match(html,/Microsoft<\/td><td>116,560<\/td><td>—<\/td>/);assert.match(html,/Recruit<\/td><td>100,200<\/td><td>—<\/td><td>0%/);
+ }
 });

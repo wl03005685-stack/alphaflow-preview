@@ -1,4 +1,4 @@
-import {publicFetch as fetch} from './preview-client.js';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>n==null?'無法計算':n.toLocaleString('zh-TW',{maximumFractionDigits:2});
 export function decomposePair(pair){

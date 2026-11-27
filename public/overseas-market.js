@@ -1,6 +1,6 @@
-import {publicFetch as fetch} from './preview-client.js';
-import {applyReviewedDividends} from './reviewed-dividends.js?v=82';
-import {mergeReviewedHistory} from './reviewed-history.js?v=82';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {applyReviewedDividends} from './reviewed-dividends.js?v=82&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mergeReviewedHistory} from './reviewed-history.js?v=82&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 // Overseas observations are a separately reviewed research snapshot, never a
 // replacement for the collector's signed TWSE/TPEx observations.
 export function validateOverseasData(data){

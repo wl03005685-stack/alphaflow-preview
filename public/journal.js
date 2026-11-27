@@ -1,4 +1,4 @@
-import {publicFetch as fetch} from './preview-client.js';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const je=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const expectation={appears:'新出現在持股清單',disappears:'從持股清單消失',shares_up:'原始股數增加',shares_down:'原始股數減少',shares_same:'原始股數不變'};
 let hypotheses=[],snapshots=[],hc=null,sc=null,selected=null,reviewCursor=null,reviewList=[],saveAttempt=null,reviewAttempt=null,loading=false;

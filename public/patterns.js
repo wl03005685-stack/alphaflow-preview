@@ -1,4 +1,4 @@
-import {publicFetch as fetch} from './preview-client.js';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function summarizeBehavior(f){
  const stocks=new Map();let activePeriods=0,normalizedOpposite=0;

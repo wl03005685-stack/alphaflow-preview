@@ -1,6 +1,6 @@
-import {publicFetch as fetch} from './preview-client.js';
-import {mountMorningReadiness,loadReadinessContext} from './morning-readiness.js?v=78';
-import {domesticDateTarget} from './trading-calendar.mjs?v=78';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {mountMorningReadiness,loadReadinessContext} from './morning-readiness.js?v=78&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {domesticDateTarget} from './trading-calendar.mjs?v=78&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function freshness(row,now=new Date()){
  const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);

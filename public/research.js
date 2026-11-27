@@ -1,4 +1,4 @@
-import {activeSubjects} from './active.js';
+import {activeSubjects} from './active.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 export const source={id:'YUANTA-0050-20260910',title:'元大投信｜0050 基本資訊',url:'https://www.yuantaetfs.com/product/detail/0050/Basic_information',checkedAt:'2026-09-10',publishedAt:null,scope:'基金身分、追蹤指數、指數調整規則，以及頁面列示的 2026-06-22 調整摘要。',limits:'頁面初次公開時間未確認。未取得指數異動名單、完整歷史持股、實際成交或資金流資料。公開可閱不等於已取得自動採集、保存或再散布授權。'};
 export const subjects=[
  ...activeSubjects,

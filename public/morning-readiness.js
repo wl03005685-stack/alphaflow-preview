@@ -1,6 +1,6 @@
-import {publicFetch as fetch} from './preview-client.js';
-import {twseSession,TWSE_REVIEWED_CLOSURES} from './trading-calendar.mjs?v=78';
-import {loadFundScope,MIN_FUND_ASSETS_TWD} from './fund-scope.js?v=68';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {twseSession,TWSE_REVIEWED_CLOSURES} from './trading-calendar.mjs?v=78&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {loadFundScope,MIN_FUND_ASSETS_TWD} from './fund-scope.js?v=68&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const validDate=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
 const taipeiDay=v=>{const n=Date.parse(v);return Number.isFinite(n)?new Date(n+8*3600000).toISOString().slice(0,10):null;};

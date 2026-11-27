@@ -1,4 +1,4 @@
-import {publicFetch as fetch} from './preview-client.js';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 export const MIN_FUND_ASSETS_TWD=10_000_000_000;
 export const FUND_SCOPE_NOTE='主要觀察僅納入最新已保存基金淨資產達新臺幣 100 億的 ETF（含 100 億），依規模由大到小排列。低於門檻或規模未確認者不計入合計；歷史資料仍保留。這是目前觀察名單，不代表歷史當時的基金規模。';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

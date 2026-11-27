@@ -1,4 +1,4 @@
-import {simulateFollowing} from './strategy-engine.js';
+import {simulateFollowing} from './strategy-engine.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 export function signalTimingSensitivity(f,prices,calendar,settings){
  return [1,2,3].map(signalLag=>{const r=simulateFollowing(f,prices,calendar,{...settings,timingMode:'holdings_scenario',signalLag});return {signalLag,blocked:!!r.corporateActionAudit?.blocked,returnRate:r.returnRate,buys:r.ledger.filter(t=>t.side==='buy').length,sells:r.ledger.filter(t=>t.side==='sell').length,openPositions:r.openPositions.length,valuationGaps:r.valuationGaps.length};});
 }

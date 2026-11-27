@@ -1,4 +1,4 @@
-import {esc,fundNames} from './interval-report.js?v=71';
+import {esc,fundNames} from './interval-report.js?v=71&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const n=x=>Number.isFinite(x)?x.toLocaleString('zh-TW',{maximumFractionDigits:2}):'未知';
 const money=x=>Number.isFinite(x)?n(x)+' 元':'無法估算';
 export function holdingTrendPoints(row){

@@ -1,5 +1,5 @@
-import {auditPendingMarkets} from './pending-market-review.js';
-import {PENDING_EVIDENCE} from './pending-market-evidence.js';
+import {auditPendingMarkets} from './pending-market-review.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {PENDING_EVIDENCE} from './pending-market-evidence.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function pendingMarketView(f,constituents,settings){
  const reviews=auditPendingMarkets(f,constituents,settings);

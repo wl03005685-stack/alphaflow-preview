@@ -1,4 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {spawnSync} from 'node:child_process';
+import {pathToFileURL} from 'node:url';
 const fixtureCode=String.raw`
 import fs from 'node:fs';import {createHash} from 'node:crypto';
 const mode=process.env.SYNC_TEST_MODE,counts={};
@@ -23,7 +24,7 @@ function run(mode){
  for(const file of ['sync-public-data.mjs','retry-json.mjs'])fs.copyFileSync(new URL('./'+file,import.meta.url),path.join(dir,'scripts',file));
  fs.writeFileSync(path.join(dir,'scripts/public-files.json'),JSON.stringify(['update-status.json','catalog.json','tracking-data.json']));
  fs.writeFileSync(path.join(dir,'mock.mjs'),fixtureCode);fs.writeFileSync(path.join(dir,'public/sentinel.txt'),'original');
- const result=spawnSync(process.execPath,['--import',path.join(dir,'mock.mjs'),path.join(dir,'scripts/sync-public-data.mjs')],{encoding:'utf8',env:{...process.env,SYNC_TEST_MODE:mode}});
+ const result=spawnSync(process.execPath,['--import',pathToFileURL(path.join(dir,'mock.mjs')).href,path.join(dir,'scripts/sync-public-data.mjs')],{encoding:'utf8',env:{...process.env,SYNC_TEST_MODE:mode}});
  return {dir,result,counts:JSON.parse(fs.readFileSync(path.join(dir,'counts.json'),'utf8'))};
 }
 test('complete sync recovers a503 and validates holdings before publishing files',()=>{

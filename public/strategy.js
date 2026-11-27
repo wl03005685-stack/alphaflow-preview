@@ -1,5 +1,5 @@
-import {chronologicalHoldout,costSensitivity,walkForwardValidation,signalTimingSensitivity} from './backtest-validation.js';
-import {simulateFollowing} from './strategy-engine.js';
+import {chronologicalHoldout,costSensitivity,walkForwardValidation,signalTimingSensitivity} from './backtest-validation.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {simulateFollowing} from './strategy-engine.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>n.toLocaleString('zh-TW',{maximumFractionDigits:2});
 const pct=n=>Number.isFinite(n)?(100*n).toFixed(2)+'%':'待校正';

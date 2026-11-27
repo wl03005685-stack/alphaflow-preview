@@ -1,5 +1,5 @@
-import {renderHoldingTrend} from './holding-cost-trend.js?v=75';
-import {esc,fundNames} from './interval-report.js?v=71';
+import {renderHoldingTrend} from './holding-cost-trend.js?v=75&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {esc,fundNames} from './interval-report.js?v=71&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const n=x=>Number.isFinite(x)?x.toLocaleString('zh-TW',{maximumFractionDigits:2}):'未知';
 const qty=x=>n(x/1000)+' 張';
 const money=x=>x==null?'無法估算':n(x)+' 元';

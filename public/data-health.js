@@ -1,6 +1,6 @@
-import {publicFetch as fetch} from './preview-client.js';
-import {auditHoldingsMarketEvents} from './return-engine.js';
-import {loadMarketData} from './overseas-market.js?v=82';
+import {publicFetch as fetch} from './preview-client.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {auditHoldingsMarketEvents} from './return-engine.js?ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
+import {loadMarketData} from './overseas-market.js?v=82&ui=b11a8565f761949f03da331d7350784598a7d9cf24184f021ad4f058c6f89911';
 const domestic=new Set(['00981A','00982A','00403A','00405A','00400A','00980A','00985A','00999A','00415A','00992A','00993A','00984A','00995A','00987A','00410A','00408A','00994A','00407A','00996A','00991A','00406A']);
 export function fundDataHealth(timeline,market,symbol,{from='0000-01-01',to='9999-12-31'}={}){
  const f=timeline.funds.find(x=>x.fundSymbol===symbol)??{fundSymbol:symbol,dates:[],pairs:[]};
